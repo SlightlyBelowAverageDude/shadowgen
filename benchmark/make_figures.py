@@ -620,20 +620,20 @@ def fig_pareto_scale():
             return f"{s/60:.0f} min"
         return f"{s:.0f} s"
 
-    pts = [("M2", "M2", "work", 8, 8, "left"),
-           ("M7", "M7", "work", 8, -13, "left"),
-           ("M6adapted", "M6adapted", "work", 8, 6, "left"),
-           ("M9", "M9", "fail", 9, 3, "left"),
-           ("M6original", "M6original", "fail", -8, 6, "right")]
-    cmap = {"ours": "#1D9E75", "work": "#378ADD", "fail": "#b8403e"}
+    pts = [("M2", "M2", 8, 8, "left"),
+           ("M7", "M7", 8, -13, "left"),
+           ("M6adapted", "M6adapted", 8, 6, "left"),
+           ("M9", "M9", 9, 3, "left"),
+           ("M6original", "M6original", -8, 6, "right")]
+    # One neutral ink for every method; M1 is set apart by its star marker only.
+    c = "0.15"
     XMAX = 150
     fig, ax = plt.subplots(figsize=(6.6, 4.2))
-    for base, meth, kind, dx, dy, ha in pts:
+    for base, meth, dx, dy, ha in pts:
         t, tlo, thi = time_stats(meth)
         mae, mlo, mhi = mae_stats(meth)
         if np.isnan(t) or np.isnan(mae):
             continue
-        c = cmap[kind]
         # horizontal min-max cell-time whisker; the worst cells run to hours,
         # off this linear axis, so clip at the edge with an arrow and label the
         # true maximum. vertical whisker = min-max per-log MAE.
@@ -673,9 +673,8 @@ def fig_pareto_scale():
         if len(d) >= 3:
             m1_pl.append(float(np.mean(d)))
     m1, m1lo, m1hi = float(np.mean(m1_pl)), float(min(m1_pl)), float(max(m1_pl))
-    c1 = cmap["ours"]
-    ax.plot([t1, t1], [m1lo, m1hi], color=c1, lw=0.9, alpha=0.45, zorder=2)
-    ax.scatter(t1, m1, s=220, marker="*", color=c1, edgecolor="white",
+    ax.plot([t1, t1], [m1lo, m1hi], color=c, lw=0.9, alpha=0.45, zorder=2)
+    ax.scatter(t1, m1, s=220, marker="*", color=c, edgecolor="white",
                linewidth=0.8, zorder=4)
     ax.annotate("M1", (t1, m1), textcoords="offset points",
                 xytext=(8, 6), fontsize=9, ha="left")
@@ -687,7 +686,7 @@ def fig_pareto_scale():
     ax.annotate("better", xy=(4, 0.02), xytext=(22, 0.14), fontsize=9, color="0.3",
                 arrowprops=dict(arrowstyle="->", color="0.45"))
     ax.text(0.98, 0.97, "not shown: M5 (8.6–11.8 h GPU per log);\nM4/M8: insufficient coverage",
-            transform=ax.transAxes, ha="right", va="top", fontsize=8, color="#b8403e")
+            transform=ax.transAxes, ha="right", va="top", fontsize=8, color="0.3")
     ax.text(0.63, 0.115, "bars: min–max over cells (horizontal, arrows run off axis,\nlabel = worst cell) and over per-log error (vertical)",
             transform=ax.transAxes, ha="center", va="bottom", fontsize=7, color="0.4")
     ax.spines[["top", "right"]].set_visible(False); ax.grid(ls=":", alpha=.5)
