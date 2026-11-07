@@ -1,0 +1,312 @@
+{
+ "D1": {
+  "shadowgen~holdout_fit": {
+   "pearson": 0.9983708919170187,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.01763562909526437,
+   "spread_metric": 0.7477416106729404,
+   "spread_gt": 0.755188332348742,
+   "n": 6
+  },
+  "shadowgen~unseen_fit": {
+   "pearson": 0.9930959839358332,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.02510835103711197,
+   "spread_metric": 0.7477416106729404,
+   "spread_gt": 0.7790135886609633,
+   "n": 6
+  },
+  "shadowgen_strict~holdout_fit_strict": {
+   "pearson": 0.9988175212656834,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.9856107606091624,
+   "kendall_tau_b": 0.9660917830792959,
+   "mae": 0.11516402116402118,
+   "spread_metric": 0.639,
+   "spread_gt": 0.9904761904761905,
+   "n": 6
+  },
+  "shadowgen_strict~unseen_fit_strict": {
+   "pearson": 0.9996155286864793,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.9411239481143202,
+   "kendall_tau_b": 0.8944271909999159,
+   "mae": 0.11475034867503485,
+   "spread_metric": 0.639,
+   "spread_gt": 0.9874476987447699,
+   "n": 6
+  },
+  "m2~holdout_fit": {
+   "pearson": -0.14208118489869181,
+   "spearman": 0.08571428571428573,
+   "spearman_ties": 0.08571428571428573,
+   "kendall_tau_b": 0.06666666666666667,
+   "mae": 0.17502072369593594,
+   "spread_metric": 0.09269361062440862,
+   "spread_gt": 0.755188332348742,
+   "n": 6
+  },
+  "m2~unseen_fit": {
+   "pearson": -0.12444488738973934,
+   "spearman": 0.08571428571428573,
+   "spearman_ties": 0.08571428571428573,
+   "kendall_tau_b": 0.06666666666666667,
+   "mae": 0.1732359377270877,
+   "spread_metric": 0.09269361062440862,
+   "spread_gt": 0.7790135886609633,
+   "n": 6
+  }
+ },
+ "D2": {
+  "shadowgen~holdout_fit": {
+   "pearson": 0.9590534813571807,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.05002315948847677,
+   "spread_metric": 0.7741646825999796,
+   "spread_gt": 0.6310873706107001,
+   "n": 6
+  },
+  "shadowgen~unseen_fit": {
+   "pearson": 0.9936869789103476,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.022397047184683463,
+   "spread_metric": 0.7741646825999796,
+   "spread_gt": 0.8194990342526668,
+   "n": 6
+  },
+  "shadowgen_strict~holdout_fit_strict": {
+   "pearson": 0.9922193639133565,
+   "spearman": 1.0,
+   "spearman_ties": 0.9856107606091624,
+   "kendall_tau_b": 0.9660917830792959,
+   "mae": 0.06232054109689747,
+   "spread_metric": 0.992,
+   "spread_gt": 1.0,
+   "n": 6
+  },
+  "shadowgen_strict~unseen_fit_strict": {
+   "pearson": 0.9972051073211616,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.942857142857143,
+   "kendall_tau_b": 0.8666666666666667,
+   "mae": 0.02733333333333335,
+   "spread_metric": 0.992,
+   "spread_gt": 1.0,
+   "n": 6
+  },
+  "m2~holdout_fit": {
+   "pearson": 0.25991282470234955,
+   "spearman": -0.028571428571428574,
+   "spearman_ties": -0.028571428571428574,
+   "kendall_tau_b": -0.06666666666666667,
+   "mae": 0.21342016834868183,
+   "spread_metric": 0.18587608210109996,
+   "spread_gt": 0.6310873706107001,
+   "n": 6
+  },
+  "m2~unseen_fit": {
+   "pearson": 0.11854845067262718,
+   "spearman": -0.028571428571428574,
+   "spearman_ties": -0.028571428571428574,
+   "kendall_tau_b": -0.06666666666666667,
+   "mae": 0.2067728129919176,
+   "spread_metric": 0.18587608210109996,
+   "spread_gt": 0.8194990342526668,
+   "n": 6
+  }
+ },
+ "D3": {
+  "shadowgen~holdout_fit": {
+   "pearson": 0.9997931094407677,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.006312444310743598,
+   "spread_metric": 0.6054537215956239,
+   "spread_gt": 0.5896639322793974,
+   "n": 6
+  },
+  "shadowgen~unseen_fit": {
+   "pearson": 0.9999499112997394,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.002202279464981314,
+   "spread_metric": 0.6054537215956239,
+   "spread_gt": 0.6083336272502325,
+   "n": 6
+  },
+  "shadowgen_strict~holdout_fit_strict": {
+   "pearson": 0.9844095865740944,
+   "spearman": 1.0,
+   "spearman_ties": 0.9999999999999999,
+   "kendall_tau_b": 1.0,
+   "mae": 0.03690123064988188,
+   "spread_metric": 0.965,
+   "spread_gt": 1.0,
+   "n": 6
+  },
+  "shadowgen_strict~unseen_fit_strict": {
+   "pearson": 0.9909071945006774,
+   "spearman": 1.0,
+   "spearman_ties": 0.9999999999999999,
+   "kendall_tau_b": 1.0,
+   "mae": 0.02641445562671547,
+   "spread_metric": 0.965,
+   "spread_gt": 1.0,
+   "n": 6
+  },
+  "m2~holdout_fit": {
+   "pearson": -0.6987393913533743,
+   "spearman": -0.6,
+   "spearman_ties": -0.6377481392176932,
+   "kendall_tau_b": -0.5520524474738834,
+   "mae": 0.1344390145231326,
+   "spread_metric": 0.053710259942380656,
+   "spread_gt": 0.5896639322793974,
+   "n": 6
+  },
+  "m2~unseen_fit": {
+   "pearson": -0.7080621493233489,
+   "spearman": -0.6,
+   "spearman_ties": -0.6377481392176932,
+   "kendall_tau_b": -0.5520524474738834,
+   "mae": 0.13878869733122448,
+   "spread_metric": 0.053710259942380656,
+   "spread_gt": 0.6083336272502325,
+   "n": 6
+  }
+ },
+ "D4": {
+  "shadowgen~holdout_fit": {
+   "pearson": 0.9641762846799977,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.05049825342774452,
+   "spread_metric": 0.7631644112990392,
+   "spread_gt": 0.743543499634008,
+   "n": 6
+  },
+  "shadowgen~unseen_fit": {
+   "pearson": 0.9655539756224591,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_tau_b": 1.0,
+   "mae": 0.049167563290628824,
+   "spread_metric": 0.7631644112990392,
+   "spread_gt": 0.7446863293846737,
+   "n": 6
+  },
+  "shadowgen_strict~holdout_fit_strict": {
+   "pearson": 0.9990982366843435,
+   "spearman": 1.0,
+   "spearman_ties": 0.7745966692414834,
+   "kendall_tau_b": 0.7453559924999299,
+   "mae": 0.0072934768824976445,
+   "spread_metric": 1.0,
+   "spread_gt": 0.9992391387050141,
+   "n": 6
+  },
+  "shadowgen_strict~unseen_fit_strict": {
+   "pearson": 0.9990982366843433,
+   "spearman": 1.0,
+   "spearman_ties": 0.7745966692414834,
+   "kendall_tau_b": 0.7453559924999299,
+   "mae": 0.007364890580399623,
+   "spread_metric": 1.0,
+   "spread_gt": 0.9988106565176023,
+   "n": 6
+  },
+  "m2~holdout_fit": {
+   "pearson": -0.5737185257361259,
+   "spearman": -0.4285714285714286,
+   "spearman_ties": -0.4285714285714286,
+   "kendall_tau_b": -0.2,
+   "mae": 0.26688629353478244,
+   "spread_metric": 0.09931998681120535,
+   "spread_gt": 0.743543499634008,
+   "n": 6
+  },
+  "m2~unseen_fit": {
+   "pearson": -0.5729476374636765,
+   "spearman": -0.4285714285714286,
+   "spearman_ties": -0.4285714285714286,
+   "kendall_tau_b": -0.2,
+   "mae": 0.26569939823509586,
+   "spread_metric": 0.09931998681120535,
+   "spread_gt": 0.7446863293846737,
+   "n": 6
+  }
+ },
+ "D5": {
+  "shadowgen~holdout_fit": {
+   "pearson": 0.9826203296747579,
+   "spearman": 0.8857142857142858,
+   "spearman_ties": 0.8857142857142858,
+   "kendall_tau_b": 0.7333333333333333,
+   "mae": 0.06000379126714714,
+   "spread_metric": 0.7095914531784353,
+   "spread_gt": 0.5322055754077009,
+   "n": 6
+  },
+  "shadowgen~unseen_fit": {
+   "pearson": 0.965336060116736,
+   "spearman": 0.8857142857142858,
+   "spearman_ties": 0.8857142857142858,
+   "kendall_tau_b": 0.7333333333333333,
+   "mae": 0.07327704314540627,
+   "spread_metric": 0.7095914531784353,
+   "spread_gt": 0.5133798248466952,
+   "n": 6
+  },
+  "shadowgen_strict~holdout_fit_strict": {
+   "pearson": 0.8074945995709152,
+   "spearman": 0.8857142857142858,
+   "spearman_ties": 0.9276336570439174,
+   "kendall_tau_b": 0.8280786712108251,
+   "mae": 0.1462341666556322,
+   "spread_metric": 0.957,
+   "spread_gt": 0.9999735172998239,
+   "n": 6
+  },
+  "shadowgen_strict~unseen_fit_strict": {
+   "pearson": 0.6588141653147453,
+   "spearman": 0.8857142857142858,
+   "spearman_ties": 0.9276336570439174,
+   "kendall_tau_b": 0.8280786712108251,
+   "mae": 0.175698702351987,
+   "spread_metric": 0.957,
+   "spread_gt": 0.9998719426302983,
+   "n": 6
+  },
+  "m2~holdout_fit": {
+   "pearson": -0.2558354678755643,
+   "spearman": 0.14285714285714288,
+   "spearman_ties": 0.14285714285714288,
+   "kendall_tau_b": 0.2,
+   "mae": 0.18953968611937855,
+   "spread_metric": 0.14669345399985545,
+   "spread_gt": 0.5322055754077009,
+   "n": 6
+  },
+  "m2~unseen_fit": {
+   "pearson": -0.2214607242269789,
+   "spearman": 0.14285714285714288,
+   "spearman_ties": 0.14285714285714288,
+   "kendall_tau_b": 0.2,
+   "mae": 0.17126311433825367,
+   "spread_metric": 0.14669345399985545,
+   "spread_gt": 0.5133798248466952,
+   "n": 6
+  }
+ }
+}

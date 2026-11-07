@@ -1,0 +1,331 @@
+{
+ "log": "L5",
+ "dataset": "BPI2019",
+ "cut": "2018-08-31 13:54:00+00:00",
+ "n_train": 176213,
+ "n_test": 75521,
+ "temporal": {
+  "unseen_share": 0.20680340567524264,
+  "top_shifts": [
+   {
+    "activity": "Create Purchase Requisition Item",
+    "train": 0.008830222514797433,
+    "future": 0.596337442565644,
+    "future_unseen": 0.7922269176591112,
+    "delta": 0.5875072200508465
+   },
+   {
+    "activity": "Clear Invoice",
+    "train": 0.868136857099079,
+    "future": 0.40650944770328784,
+    "future_unseen": 0.2917787168651556,
+    "delta": -0.4616274093957911
+   },
+   {
+    "activity": "Record Invoice Receipt",
+    "train": 0.8812119423652057,
+    "future": 0.7428132572397081,
+    "future_unseen": 0.7736585990523754,
+    "delta": -0.13839868512549758
+   },
+   {
+    "activity": "Vendor creates invoice",
+    "train": 0.8730400140738765,
+    "future": 0.7429059466903245,
+    "future_unseen": 0.7741067998463311,
+    "delta": -0.13013406738355204
+   },
+   {
+    "activity": "Record Goods Receipt",
+    "train": 0.9533121846855794,
+    "future": 0.8804570914050397,
+    "future_unseen": 0.8963375592265335,
+    "delta": -0.07285509328053974
+   },
+   {
+    "activity": "Remove Payment Block",
+    "train": 0.24040791542054218,
+    "future": 0.17844043378662888,
+    "future_unseen": 0.3832757075169676,
+    "delta": -0.0619674816339133
+   },
+   {
+    "activity": "Receive Order Confirmation",
+    "train": 0.11684722466560356,
+    "future": 0.15189152686007865,
+    "future_unseen": 0.3932641823536945,
+    "delta": 0.03504430219447509
+   },
+   {
+    "activity": "Cancel Invoice Receipt",
+    "train": 0.03172864658112625,
+    "future": 0.01165238807748838,
+    "future_unseen": 0.04808554232296069,
+    "delta": -0.02007625850363787
+   }
+  ],
+  "max_abs_delta": 0.5875072200508465,
+  "n_abs_delta_above_0.1": 4,
+  "rise_above_0.2": [
+   "Create Purchase Requisition Item"
+  ],
+  "fall_above_0.2": [
+   "Clear Invoice"
+  ],
+  "labels_absent_from_train": {
+   "Release Purchase Requisition": 0.006183710491121675
+  },
+  "future_with_new_df": 0.00643529614279472,
+  "unseen_with_new_df": 0.0311179408374952
+ },
+ "random": {
+  "unseen_share": 0.03806888150315806,
+  "top_shifts": [
+   {
+    "activity": "Create Purchase Requisition Item",
+    "train": 0.18454370562898312,
+    "future": 0.1863455197891977,
+    "future_unseen": 0.13634782608695653,
+    "delta": 0.0018018141602145765
+   },
+   {
+    "activity": "Clear Invoice",
+    "train": 0.7301617928302679,
+    "future": 0.7284463923941685,
+    "future_unseen": 0.696695652173913,
+    "delta": -0.0017154004360994124
+   },
+   {
+    "activity": "Change Price",
+    "train": 0.04499668015413165,
+    "future": 0.04363024854014115,
+    "future_unseen": 0.14921739130434783,
+    "delta": -0.0013664316139904986
+   },
+   {
+    "activity": "Remove Payment Block",
+    "train": 0.2221572755699069,
+    "future": 0.22102461566981368,
+    "future_unseen": 0.3676521739130435,
+    "delta": -0.0011326599000932025
+   },
+   {
+    "activity": "Change Quantity",
+    "train": 0.07021048390300375,
+    "future": 0.06909336475947088,
+    "future_unseen": 0.29634782608695653,
+    "delta": -0.001117119143532866
+   },
+   {
+    "activity": "Record Goods Receipt",
+    "train": 0.9312082536475742,
+    "future": 0.9320321499980138,
+    "future_unseen": 0.969391304347826,
+    "delta": 0.0008238963504395569
+   },
+   {
+    "activity": "Record Service Entry Sheet",
+    "train": 0.02247280280115542,
+    "future": 0.021768779544762383,
+    "future_unseen": 0.3245217391304348,
+    "delta": -0.0007040232563930368
+   },
+   {
+    "activity": "Release Purchase Order",
+    "train": 0.0036546679302889118,
+    "future": 0.004197507977913428,
+    "future_unseen": 0.013217391304347827,
+    "delta": 0.000542840047624516
+   }
+  ],
+  "max_abs_delta": 0.0018018141602145765,
+  "n_abs_delta_above_0.1": 0,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.00043696455290581426,
+  "unseen_with_new_df": 0.011478260869565217
+ },
+ "flagged_by_start_month": {
+  "2017-12": {
+   "n": 123,
+   "share": 0.04065040650406504
+  },
+  "2018-01": {
+   "n": 21269,
+   "share": 0.009779491278386385
+  },
+  "2018-02": {
+   "n": 20894,
+   "share": 0.007897003924571648
+  },
+  "2018-03": {
+   "n": 24846,
+   "share": 0.007083635192787571
+  },
+  "2018-04": {
+   "n": 22460,
+   "share": 0.008771148708815672
+  },
+  "2018-05": {
+   "n": 23000,
+   "share": 0.009956521739130435
+  },
+  "2018-06": {
+   "n": 22271,
+   "share": 0.006196398904404831
+  },
+  "2018-07": {
+   "n": 21081,
+   "share": 0.009866704615530573
+  },
+  "2018-08": {
+   "n": 20198,
+   "share": 0.01183285473809288
+  },
+  "2018-09": {
+   "n": 18650,
+   "share": 0.6116890080428954
+  },
+  "2018-10": {
+   "n": 21855,
+   "share": 0.6324868451155342
+  },
+  "2018-11": {
+   "n": 20616,
+   "share": 0.5983216918897943
+  },
+  "2018-12": {
+   "n": 14128,
+   "share": 0.5278878822197055
+  },
+  "2019-01": {
+   "n": 202,
+   "share": 0.0
+  }
+ },
+ "share_with_flag": {
+  "train": 0.008830222514797433,
+  "future": 0.596337442565644
+ },
+ "nets": {
+  "Alpha": {
+   "temporal": {
+    "shadowgen": 0.39029955638814756,
+    "unseen_fit_stored": 0.48661562056909846,
+    "holdout_fit_stored": 0.4677934826887737,
+    "train": {
+     "n": 176213,
+     "graded": 0.3880608819602364,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 75521,
+     "graded": 0.4677934826887737,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 15618,
+     "graded": 0.48661562056909846,
+     "strict": 0.0
+    },
+    "future_with_flag": {
+     "n": 45036,
+     "graded": 0.5030120824136763,
+     "strict": 0.0
+    },
+    "future_without_flag": {
+     "n": 30485,
+     "graded": 0.4157644567018715,
+     "strict": 0.0
+    },
+    "unseen_without_flag": {
+     "n": 3245,
+     "graded": 0.3753865561508808,
+     "strict": 0.0
+    },
+    "train_with_flag": {
+     "n": 1556,
+     "graded": 0.4593554629231012,
+     "strict": 0.0
+    },
+    "n_transitions": 41
+   },
+   "random": {
+    "shadowgen": 0.36654499177053196,
+    "shadowgen_strict": 0.006,
+    "train": {
+     "n": 176213,
+     "graded": 0.3439246736745098,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 2875,
+     "graded": 0.2742445093875026,
+     "strict": 0.0
+    },
+    "n_transitions": 42
+   }
+  },
+  "Alpha+": {
+   "temporal": {
+    "shadowgen": 0.28625222216711904,
+    "unseen_fit_stored": 0.580235827860752,
+    "holdout_fit_stored": 0.5182603841601847,
+    "train": {
+     "n": 176213,
+     "graded": 0.3332098867756046,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 75521,
+     "graded": 0.5182603841601847,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 15618,
+     "graded": 0.580235827860752,
+     "strict": 0.0
+    },
+    "future_with_flag": {
+     "n": 45036,
+     "graded": 0.6425216528717062,
+     "strict": 0.0
+    },
+    "future_without_flag": {
+     "n": 30485,
+     "graded": 0.3346871350969706,
+     "strict": 0.0
+    },
+    "unseen_without_flag": {
+     "n": 3245,
+     "graded": 0.3461204492887281,
+     "strict": 0.0
+    },
+    "train_with_flag": {
+     "n": 1556,
+     "graded": 0.6428571428571429,
+     "strict": 0.0
+    },
+    "n_transitions": 43
+   },
+   "random": {
+    "shadowgen": 0.29137110088096835,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 176213,
+     "graded": 0.3644362074940983,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 2875,
+     "graded": 0.36072313097510633,
+     "strict": 0.0
+    },
+    "n_transitions": 44
+   }
+  }
+ },
+ "seconds": 166.21004676818848,
+ "protocol": "temporal split 70/30 by case start; random split seed 0, same sizes; flag rule: case share up by more than 0.2; replay per variant, weighted by count; ShadowGen v2.6 seed 42 K=1 N=6 tau=5 mle; pm4py 2.7.22.2"
+}

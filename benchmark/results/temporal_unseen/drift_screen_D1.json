@@ -1,0 +1,223 @@
+{
+ "log": "L1",
+ "dataset": "Sepsis",
+ "cut": "2014-09-19 06:14:18+00:00",
+ "n_train": 735,
+ "n_test": 315,
+ "temporal": {
+  "unseen_share": 0.7587301587301587,
+  "top_shifts": [
+   {
+    "activity": "Return ER",
+    "train": 0.3074829931972789,
+    "future": 0.21587301587301588,
+    "future_unseen": 0.25523012552301255,
+    "delta": -0.09160997732426301
+   },
+   {
+    "activity": "Release A",
+    "train": 0.6476190476190476,
+    "future": 0.6190476190476191,
+    "future_unseen": 0.7489539748953975,
+    "delta": -0.02857142857142858
+   },
+   {
+    "activity": "IV Antibiotics",
+    "train": 0.7904761904761904,
+    "future": 0.7682539682539683,
+    "future_unseen": 0.8661087866108786,
+    "delta": -0.022222222222222143
+   },
+   {
+    "activity": "Release D",
+    "train": 0.0163265306122449,
+    "future": 0.0380952380952381,
+    "future_unseen": 0.0502092050209205,
+    "delta": 0.0217687074829932
+   },
+   {
+    "activity": "Admission IC",
+    "train": 0.11020408163265306,
+    "future": 0.09206349206349207,
+    "future_unseen": 0.12133891213389121,
+    "delta": -0.018140589569160995
+   },
+   {
+    "activity": "Leucocytes",
+    "train": 0.9687074829931973,
+    "future": 0.9523809523809523,
+    "future_unseen": 0.99581589958159,
+    "delta": -0.016326530612244983
+   },
+   {
+    "activity": "LacticAcid",
+    "train": 0.8149659863945579,
+    "future": 0.8285714285714286,
+    "future_unseen": 0.9079497907949791,
+    "delta": 0.013605442176870763
+   },
+   {
+    "activity": "Release C",
+    "train": 0.027210884353741496,
+    "future": 0.015873015873015872,
+    "future_unseen": 0.02092050209205021,
+    "delta": -0.011337868480725623
+   }
+  ],
+  "max_abs_delta": 0.09160997732426301,
+  "n_abs_delta_above_0.1": 0,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.03492063492063492,
+  "unseen_with_new_df": 0.04602510460251046
+ },
+ "random": {
+  "unseen_share": 0.780952380952381,
+  "top_shifts": [
+   {
+    "activity": "IV Liquid",
+    "train": 0.7346938775510204,
+    "future": 0.6761904761904762,
+    "future_unseen": 0.7357723577235772,
+    "delta": -0.058503401360544216
+   },
+   {
+    "activity": "IV Antibiotics",
+    "train": 0.7959183673469388,
+    "future": 0.7555555555555555,
+    "future_unseen": 0.8333333333333334,
+    "delta": -0.040362811791383235
+   },
+   {
+    "activity": "Admission NC",
+    "train": 0.7714285714285715,
+    "future": 0.7396825396825397,
+    "future_unseen": 0.8780487804878049,
+    "delta": -0.031746031746031744
+   },
+   {
+    "activity": "Admission IC",
+    "train": 0.11292517006802721,
+    "future": 0.08571428571428572,
+    "future_unseen": 0.10975609756097561,
+    "delta": -0.0272108843537415
+   },
+   {
+    "activity": "Release A",
+    "train": 0.6448979591836734,
+    "future": 0.6253968253968254,
+    "future_unseen": 0.7357723577235772,
+    "delta": -0.019501133786848035
+   },
+   {
+    "activity": "LacticAcid",
+    "train": 0.8136054421768707,
+    "future": 0.8317460317460318,
+    "future_unseen": 0.9065040650406504,
+    "delta": 0.018140589569161092
+   },
+   {
+    "activity": "Release B",
+    "train": 0.04897959183673469,
+    "future": 0.06349206349206349,
+    "future_unseen": 0.08130081300813008,
+    "delta": 0.014512471655328797
+   },
+   {
+    "activity": "CRP",
+    "train": 0.963265306122449,
+    "future": 0.9492063492063492,
+    "future_unseen": 0.9959349593495935,
+    "delta": -0.014058956916099818
+   }
+  ],
+  "max_abs_delta": 0.058503401360544216,
+  "n_abs_delta_above_0.1": 0,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.015873015873015872,
+  "unseen_with_new_df": 0.02032520325203252
+ },
+ "nets": {
+  "Alpha": {
+   "temporal": {
+    "shadowgen": 0.22842791790100012,
+    "unseen_fit_stored": 0.2206965733295335,
+    "holdout_fit_stored": 0.2445917588123016,
+    "train": {
+     "n": 735,
+     "graded": 0.24522928902389787,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 315,
+     "graded": 0.2445917588123016,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 239,
+     "graded": 0.2206965733295335,
+     "strict": 0.0
+    },
+    "n_transitions": 16
+   },
+   "random": {
+    "shadowgen": 0.266363120458717,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 735,
+     "graded": 0.2815258145564012,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 246,
+     "graded": 0.27204681924741275,
+     "strict": 0.0
+    },
+    "n_transitions": 16
+   }
+  },
+  "Alpha+": {
+   "temporal": {
+    "shadowgen": 0.756211461749309,
+    "unseen_fit_stored": 0.8445109765009072,
+    "holdout_fit_stored": 0.8007288264924315,
+    "train": {
+     "n": 735,
+     "graded": 0.8024565816817294,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 315,
+     "graded": 0.8007288264924315,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 239,
+     "graded": 0.8445109765009072,
+     "strict": 0.0
+    },
+    "n_transitions": 18
+   },
+   "random": {
+    "shadowgen": 0.7467913530501398,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 735,
+     "graded": 0.801756806844703,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 246,
+     "graded": 0.8227904669996294,
+     "strict": 0.0
+    },
+    "n_transitions": 18
+   }
+  }
+ },
+ "seconds": 4.513204336166382,
+ "protocol": "temporal split 70/30 by case start; random split seed 0, same sizes; flag rule: case share up by more than 0.2; replay per variant, weighted by count; ShadowGen v2.6 seed 42 K=1 N=6 tau=5 mle; pm4py 2.7.22.2"
+}

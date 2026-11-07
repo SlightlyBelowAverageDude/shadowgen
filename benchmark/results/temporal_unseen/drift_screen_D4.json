@@ -1,0 +1,351 @@
+{
+ "log": "L4",
+ "dataset": "BPI2018",
+ "cut": "2017-04-09 22:00:00+00:00",
+ "n_train": 30666,
+ "n_test": 13143,
+ "temporal": {
+  "unseen_share": 0.6397321768241649,
+  "top_shifts": [
+   {
+    "activity": "finish pre-check",
+    "train": 0.06159916519924346,
+    "future": 1.0,
+    "future_unseen": 1.0,
+    "delta": 0.9384008348007565
+   },
+   {
+    "activity": "abort payment",
+    "train": 0.8124633144198787,
+    "future": 0.13071597047858174,
+    "future_unseen": 0.1186964795432921,
+    "delta": -0.681747343941297
+   },
+   {
+    "activity": "revoke decision",
+    "train": 0.670286310571969,
+    "future": 0.017195465266681885,
+    "future_unseen": 0.026879162702188392,
+    "delta": -0.653090845305287
+   },
+   {
+    "activity": "create",
+    "train": 0.5190112828539751,
+    "future": 1.0,
+    "future_unseen": 1.0,
+    "delta": 0.48098871714602487
+   },
+   {
+    "activity": "save",
+    "train": 0.7502771799386944,
+    "future": 0.5097009815110706,
+    "future_unseen": 0.7602283539486203,
+    "delta": -0.2405761984276238
+   },
+   {
+    "activity": "check",
+    "train": 0.20824365747081458,
+    "future": 0,
+    "future_unseen": 0,
+    "delta": -0.20824365747081458
+   },
+   {
+    "activity": "insert document",
+    "train": 0.8389747603208766,
+    "future": 0.9997717416115042,
+    "future_unseen": 0.9996431969552807,
+    "delta": 0.16079698129062758
+   },
+   {
+    "activity": "clear",
+    "train": 0.021130894149872823,
+    "future": 0.12888990337061554,
+    "future_unseen": 0.1380827783063749,
+    "delta": 0.10775900922074272
+   }
+  ],
+  "max_abs_delta": 0.9384008348007565,
+  "n_abs_delta_above_0.1": 8,
+  "rise_above_0.2": [
+   "finish pre-check",
+   "create"
+  ],
+  "fall_above_0.2": [
+   "abort payment",
+   "revoke decision",
+   "save",
+   "check"
+  ],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.010271627482309975,
+  "unseen_with_new_df": 0.016056137012369173
+ },
+ "random": {
+  "unseen_share": 0.6164498211975957,
+  "top_shifts": [
+   {
+    "activity": "revoke decision",
+    "train": 0.4713037239939999,
+    "future": 0.48147302746709275,
+    "future_unseen": 0.5048136262651197,
+    "delta": 0.010169303473092861
+   },
+   {
+    "activity": "finish pre-check",
+    "train": 0.346083610513272,
+    "future": 0.33622460625427986,
+    "future_unseen": 0.2775857812885707,
+    "delta": -0.009859004258992166
+   },
+   {
+    "activity": "save",
+    "train": 0.679384334442053,
+    "future": 0.6751122270410104,
+    "future_unseen": 0.9474203900271538,
+    "delta": -0.0042721074010426685
+   },
+   {
+    "activity": "abort payment",
+    "train": 0.6067305810995891,
+    "future": 0.6107433614852013,
+    "future_unseen": 0.6818069612441372,
+    "delta": 0.004012780385612147
+   },
+   {
+    "activity": "plan",
+    "train": 0.07066457966477532,
+    "future": 0.06672753557026553,
+    "future_unseen": 0.10664033571957542,
+    "delta": -0.0039370440945097895
+   },
+   {
+    "activity": "finish preparations",
+    "train": 0.07053414204656623,
+    "future": 0.06672753557026553,
+    "future_unseen": 0.10664033571957542,
+    "delta": -0.0038066064763006974
+   },
+   {
+    "activity": "begin preparations",
+    "train": 0.07050153264201396,
+    "future": 0.06672753557026553,
+    "future_unseen": 0.10664033571957542,
+    "delta": -0.003773997071748428
+   },
+   {
+    "activity": "clear",
+    "train": 0.054588143220504794,
+    "future": 0.05082553450505973,
+    "future_unseen": 0.05159219945692422,
+    "delta": -0.003762608715445065
+   }
+  ],
+  "max_abs_delta": 0.010169303473092861,
+  "n_abs_delta_above_0.1": 0,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.0025869284029521418,
+  "unseen_with_new_df": 0.004196494692668477
+ },
+ "flagged_by_start_month": {
+  "2015-04": {
+   "n": 6031,
+   "share": 0.0
+  },
+  "2015-05": {
+   "n": 8691,
+   "share": 0.00023012311586698885
+  },
+  "2016-04": {
+   "n": 5856,
+   "share": 1.0
+  },
+  "2016-05": {
+   "n": 8672,
+   "share": 1.0
+  },
+  "2017-03": {
+   "n": 107,
+   "share": 1.0
+  },
+  "2017-04": {
+   "n": 7071,
+   "share": 1.0
+  },
+  "2017-05": {
+   "n": 7296,
+   "share": 1.0
+  }
+ },
+ "share_with_flag": {
+  "train": 0.5190112828539751,
+  "future": 1.0
+ },
+ "year_counts": {
+  "train": {
+   "2015": 14750,
+   "2016": 14552,
+   "2017": 1364
+  },
+  "future": {
+   "2017": 13143
+  }
+ },
+ "nets": {
+  "Alpha": {
+   "temporal": {
+    "shadowgen": 0.2368355887009608,
+    "unseen_fit_stored": 0.25529485224774534,
+    "holdout_fit_stored": 0.25644446165073526,
+    "train": {
+     "n": 30666,
+     "graded": 0.2315493426934732,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 13143,
+     "graded": 0.25644446165073526,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 8408,
+     "graded": 0.25529485224774534,
+     "strict": 0.0
+    },
+    "future_with_flag": {
+     "n": 13143,
+     "graded": 0.25644446165073526,
+     "strict": 0.0
+    },
+    "future_without_flag": {
+     "n": 0,
+     "graded": null,
+     "strict": null
+    },
+    "unseen_without_flag": {
+     "n": 0,
+     "graded": null,
+     "strict": null
+    },
+    "train_with_flag": {
+     "n": 15916,
+     "graded": 0.25785859964362207,
+     "strict": 0.0
+    },
+    "by_year": {
+     "train_2015": {
+      "n": 14750,
+      "graded": 0.20316031668542306
+     },
+     "train_2016": {
+      "n": 14552,
+      "graded": 0.2576336371135532
+     },
+     "train_2017": {
+      "n": 1364,
+      "graded": 0.26025863977343905
+     },
+     "future_2017": {
+      "n": 13143,
+      "graded": 0.25644446165072077
+     }
+    },
+    "n_transitions": 41
+   },
+   "random": {
+    "shadowgen": 0.2204412986152234,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 30666,
+     "graded": 0.21734496893712968,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 8102,
+     "graded": 0.20875907682930256,
+     "strict": 0.0
+    },
+    "n_transitions": 41
+   }
+  },
+  "Alpha+": {
+   "temporal": {
+    "shadowgen": 0.5006259152543047,
+    "unseen_fit_stored": 0.2654677013527095,
+    "holdout_fit_stored": 0.260807261447965,
+    "train": {
+     "n": 30666,
+     "graded": 0.4747641603149169,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 13143,
+     "graded": 0.260807261447965,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 8408,
+     "graded": 0.2654677013527095,
+     "strict": 0.0
+    },
+    "future_with_flag": {
+     "n": 13143,
+     "graded": 0.260807261447965,
+     "strict": 0.0
+    },
+    "future_without_flag": {
+     "n": 0,
+     "graded": null,
+     "strict": null
+    },
+    "unseen_without_flag": {
+     "n": 0,
+     "graded": null,
+     "strict": null
+    },
+    "train_with_flag": {
+     "n": 15916,
+     "graded": 0.2970678016034605,
+     "strict": 0.0
+    },
+    "by_year": {
+     "train_2015": {
+      "n": 14750,
+      "graded": 0.666507566772597
+     },
+     "train_2016": {
+      "n": 14552,
+      "graded": 0.3010714063947441
+     },
+     "train_2017": {
+      "n": 1364,
+      "graded": 0.2543548566450883
+     },
+     "future_2017": {
+      "n": 13143,
+      "graded": 0.2608072614479787
+     }
+    },
+    "n_transitions": 43
+   },
+   "random": {
+    "shadowgen": 0.583372203051212,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 30666,
+     "graded": 0.6080809791380822,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 8102,
+     "graded": 0.6281183328364232,
+     "strict": 0.0
+    },
+    "n_transitions": 42
+   }
+  }
+ },
+ "seconds": 539.7407038211823,
+ "protocol": "temporal split 70/30 by case start; random split seed 0, same sizes; flag rule: case share up by more than 0.2; replay per variant, weighted by count; ShadowGen v2.6 seed 42 K=1 N=6 tau=5 mle; pm4py 2.7.22.2"
+}

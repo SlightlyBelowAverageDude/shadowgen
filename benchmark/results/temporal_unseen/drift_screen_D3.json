@@ -1,0 +1,225 @@
+{
+ "log": "L3",
+ "dataset": "BPI2017",
+ "cut": "2016-09-16 15:07:41.531000+00:00",
+ "n_train": 22056,
+ "n_test": 9453,
+ "temporal": {
+  "unseen_share": 0.46249867766846503,
+  "top_shifts": [
+   {
+    "activity": "W_Call incomplete files",
+    "train": 0.4659956474428727,
+    "future": 0.4998413202158045,
+    "future_unseen": 0.7913998170173834,
+    "delta": 0.03384567277293182
+   },
+   {
+    "activity": "A_Incomplete",
+    "train": 0.4659956474428727,
+    "future": 0.4998413202158045,
+    "future_unseen": 0.7913998170173834,
+    "delta": 0.03384567277293182
+   },
+   {
+    "activity": "A_Denied",
+    "train": 0.11556945955749003,
+    "future": 0.12726118692478577,
+    "future_unseen": 0.17337602927721865,
+    "delta": 0.011691727367295748
+   },
+   {
+    "activity": "O_Refused",
+    "train": 0.11461733768589046,
+    "future": 0.12609753517401884,
+    "future_unseen": 0.17086001829826167,
+    "delta": 0.011480197488128382
+   },
+   {
+    "activity": "A_Pending",
+    "train": 0.5501450852375771,
+    "future": 0.5388765471278959,
+    "future_unseen": 0.6738334858188472,
+    "delta": -0.011268538109681203
+   },
+   {
+    "activity": "O_Accepted",
+    "train": 0.5501450852375771,
+    "future": 0.5388765471278959,
+    "future_unseen": 0.6738334858188472,
+    "delta": -0.011268538109681203
+   },
+   {
+    "activity": "A_Cancelled",
+    "train": 0.3342854552049329,
+    "future": 0.32349518671321276,
+    "future_unseen": 0.1303751143641354,
+    "delta": -0.010790268491720156
+   },
+   {
+    "activity": "O_Cancelled",
+    "train": 0.4999093217265143,
+    "future": 0.4925420501428118,
+    "future_unseen": 0.45196706312900276,
+    "delta": -0.007367271583702484
+   }
+  ],
+  "max_abs_delta": 0.03384567277293182,
+  "n_abs_delta_above_0.1": 0,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.0029620226383158784,
+  "unseen_with_new_df": 0.006404391582799634
+ },
+ "random": {
+  "unseen_share": 0.4605945202581191,
+  "top_shifts": [
+   {
+    "activity": "A_Cancelled",
+    "train": 0.3332879941965905,
+    "future": 0.32582249021474663,
+    "future_unseen": 0.15135507579237484,
+    "delta": -0.007465503981843868
+   },
+   {
+    "activity": "W_Validate application",
+    "train": 0.6920112441059122,
+    "future": 0.6989315561197503,
+    "future_unseen": 0.9021589343132751,
+    "delta": 0.006920312013838137
+   },
+   {
+    "activity": "A_Validating",
+    "train": 0.6920112441059122,
+    "future": 0.6989315561197503,
+    "future_unseen": 0.9021589343132751,
+    "delta": 0.006920312013838137
+   },
+   {
+    "activity": "O_Returned",
+    "train": 0.6888375045339137,
+    "future": 0.6955463873902464,
+    "future_unseen": 0.8950390445567294,
+    "delta": 0.006708882856332754
+   },
+   {
+    "activity": "A_Pending",
+    "train": 0.5452484584693508,
+    "future": 0.5503014915899714,
+    "future_unseen": 0.691548001837391,
+    "delta": 0.005053033120620665
+   },
+   {
+    "activity": "O_Accepted",
+    "train": 0.5452484584693508,
+    "future": 0.5503014915899714,
+    "future_unseen": 0.691548001837391,
+    "delta": 0.005053033120620665
+   },
+   {
+    "activity": "A_Submitted",
+    "train": 0.6489844033369605,
+    "future": 0.6462498677668465,
+    "future_unseen": 0.6380339917317409,
+    "delta": -0.0027345355701140495
+   },
+   {
+    "activity": "W_Handle leads",
+    "train": 0.6489844033369605,
+    "future": 0.6462498677668465,
+    "future_unseen": 0.6380339917317409,
+    "delta": -0.0027345355701140495
+   }
+  ],
+  "max_abs_delta": 0.007465503981843868,
+  "n_abs_delta_above_0.1": 0,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [],
+  "labels_absent_from_train": {
+   "W_Personal Loan collection": 0.0002115730455939913
+  },
+  "future_with_new_df": 0.0008462921823759652,
+  "unseen_with_new_df": 0.0018373909049150207
+ },
+ "nets": {
+  "Alpha": {
+   "temporal": {
+    "shadowgen": 0.39413212422283467,
+    "unseen_fit_stored": 0.39166637274976746,
+    "holdout_fit_stored": 0.4103360677206026,
+    "train": {
+     "n": 22056,
+     "graded": 0.4093518115556453,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 9453,
+     "graded": 0.4103360677206026,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 4372,
+     "graded": 0.39166637274976746,
+     "strict": 0.0
+    },
+    "n_transitions": 26
+   },
+   "random": {
+    "shadowgen": 0.4218301621036882,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 22056,
+     "graded": 0.43567995013296623,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 4354,
+     "graded": 0.42306121293121024,
+     "strict": 0.0
+    },
+    "n_transitions": 25
+   }
+  },
+  "Alpha+": {
+   "temporal": {
+    "shadowgen": 0.8534490802916926,
+    "unseen_fit_stored": 0.8553930148547524,
+    "holdout_fit_stored": 0.859931181877991,
+    "train": {
+     "n": 22056,
+     "graded": 0.8597873306918579,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 9453,
+     "graded": 0.859931181877991,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 4372,
+     "graded": 0.8553930148547524,
+     "strict": 0.0
+    },
+    "n_transitions": 26
+   },
+   "random": {
+    "shadowgen": 0.8613026408367866,
+    "shadowgen_strict": 0.053,
+    "train": {
+     "n": 22056,
+     "graded": 0.8820742248520751,
+     "strict": 0.1800417120058034
+    },
+    "unseen": {
+     "n": 4354,
+     "graded": 0.8586447565937275,
+     "strict": 0.04317868626550299
+    },
+    "n_transitions": 26
+   }
+  }
+ },
+ "seconds": 140.79237937927246,
+ "protocol": "temporal split 70/30 by case start; random split seed 0, same sizes; flag rule: case share up by more than 0.2; replay per variant, weighted by count; ShadowGen v2.6 seed 42 K=1 N=6 tau=5 mle; pm4py 2.7.22.2"
+}

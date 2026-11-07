@@ -1,0 +1,169 @@
+{
+ "log": "L2",
+ "dataset": "BPI2013_Incidents",
+ "cut": "2012-05-03 10:09:20+00:00",
+ "n_train": 5287,
+ "n_test": 2267,
+ "temporal": {
+  "unseen_share": 0.07278341420379356,
+  "top_shifts": [
+   {
+    "activity": "Queued",
+    "train": 0.6595422735010403,
+    "future": 0.4516982796647552,
+    "future_unseen": 0.9393939393939394,
+    "delta": -0.20784399383628516
+   },
+   {
+    "activity": "Completed",
+    "train": 0.9998108568186117,
+    "future": 0.9969122187913542,
+    "future_unseen": 0.9575757575757575,
+    "delta": -0.0028986380272575385
+   },
+   {
+    "activity": "Unmatched",
+    "train": 0.0005674295441649329,
+    "future": 0.000882223202470225,
+    "future_unseen": 0,
+    "delta": 0.00031479365830529207
+   },
+   {
+    "activity": "Accepted",
+    "train": 0.9998108568186117,
+    "future": 0.9995588883987648,
+    "future_unseen": 0.9939393939393939,
+    "delta": -0.0002519684198468708
+   }
+  ],
+  "max_abs_delta": 0.20784399383628516,
+  "n_abs_delta_above_0.1": 1,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [
+   "Queued"
+  ],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.0,
+  "unseen_with_new_df": 0.0
+ },
+ "random": {
+  "unseen_share": 0.17512130569033965,
+  "top_shifts": [
+   {
+    "activity": "Queued",
+    "train": 0.5992055986381691,
+    "future": 0.5924128804587561,
+    "future_unseen": 0.9874055415617129,
+    "delta": -0.006792718179413071
+   },
+   {
+    "activity": "Completed",
+    "train": 0.9994325704558351,
+    "future": 0.9977944419938244,
+    "future_unseen": 0.9924433249370277,
+    "delta": -0.001638128462010724
+   },
+   {
+    "activity": "Accepted",
+    "train": 0.9996217136372234,
+    "future": 1.0,
+    "future_unseen": 1.0,
+    "delta": 0.000378286362776592
+   },
+   {
+    "activity": "Unmatched",
+    "train": 0.0007565727255532438,
+    "future": 0.0004411116012351125,
+    "future_unseen": 0,
+    "delta": -0.00031546112431813137
+   }
+  ],
+  "max_abs_delta": 0.006792718179413071,
+  "n_abs_delta_above_0.1": 0,
+  "rise_above_0.2": [],
+  "fall_above_0.2": [],
+  "labels_absent_from_train": {},
+  "future_with_new_df": 0.0,
+  "unseen_with_new_df": 0.0
+ },
+ "nets": {
+  "Alpha": {
+   "temporal": {
+    "shadowgen": 0.22570341931546745,
+    "unseen_fit_stored": 0.18050096574733318,
+    "holdout_fit_stored": 0.36891262938929986,
+    "train": {
+     "n": 5287,
+     "graded": 0.28193205946693767,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 2267,
+     "graded": 0.36891262938929986,
+     "strict": 0.0004411116012351125
+    },
+    "unseen": {
+     "n": 165,
+     "graded": 0.18050096574733318,
+     "strict": 0.006060606060606061
+    },
+    "n_transitions": 4
+   },
+   "random": {
+    "shadowgen": 0.2557005918099957,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 5287,
+     "graded": 0.30799344718971866,
+     "strict": 0.00018914318138831096
+    },
+    "unseen": {
+     "n": 397,
+     "graded": 0.1294016256546746,
+     "strict": 0.0
+    },
+    "n_transitions": 4
+   }
+  },
+  "Alpha+": {
+   "temporal": {
+    "shadowgen": 0.6739847148258526,
+    "unseen_fit_stored": 0.7434456310901513,
+    "holdout_fit_stored": 0.5313061380649559,
+    "train": {
+     "n": 5287,
+     "graded": 0.6233832766572913,
+     "strict": 0.0
+    },
+    "future": {
+     "n": 2267,
+     "graded": 0.5313061380649559,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 165,
+     "graded": 0.7434456310901513,
+     "strict": 0.0
+    },
+    "n_transitions": 6
+   },
+   "random": {
+    "shadowgen": 0.6308372793164588,
+    "shadowgen_strict": 0.0,
+    "train": {
+     "n": 5287,
+     "graded": 0.5955180024656971,
+     "strict": 0.0
+    },
+    "unseen": {
+     "n": 397,
+     "graded": 0.8079760699849068,
+     "strict": 0.0
+    },
+    "n_transitions": 6
+   }
+  }
+ },
+ "seconds": 5.57611083984375,
+ "protocol": "temporal split 70/30 by case start; random split seed 0, same sizes; flag rule: case share up by more than 0.2; replay per variant, weighted by count; ShadowGen v2.6 seed 42 K=1 N=6 tau=5 mle; pm4py 2.7.22.2"
+}

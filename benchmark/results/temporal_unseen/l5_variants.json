@@ -1,0 +1,650 @@
+{
+ "n_transitions": 68,
+ "n_train": 176213,
+ "n_test": 75521,
+ "train_strict_from_variants": 0.9871348878913587,
+ "test_seen_strict_from_variants": 0.4484249536751081,
+ "top_test_variants": [
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "test_count": 8466,
+   "test_share": 0.11210126984547344,
+   "train_count": 455,
+   "train_share": 0.0025821023420519486,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 4208,
+   "test_share": 0.05571960117053535,
+   "train_count": 2,
+   "train_share": 1.1349900404623949e-05,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Record Goods Receipt"
+   ],
+   "test_count": 3571,
+   "test_share": 0.047284861164444324,
+   "train_count": 152,
+   "train_share": 0.0008625924307514201,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Order Item",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 3444,
+   "test_share": 0.045603209703261344,
+   "train_count": 104,
+   "train_share": 0.0005901948210404454,
+   "accepted": true
+  },
+  {
+   "variant": [
+    "Create Purchase Order Item",
+    "Record Goods Receipt"
+   ],
+   "test_count": 3316,
+   "test_share": 0.04390831689199031,
+   "train_count": 8898,
+   "train_share": 0.05049570690017195,
+   "accepted": true
+  },
+  {
+   "variant": [
+    "Create Purchase Order Item",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "test_count": 2971,
+   "test_share": 0.03934005111161134,
+   "train_count": 27827,
+   "train_share": 0.15791683927973532,
+   "accepted": true
+  },
+  {
+   "variant": [
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "test_count": 2626,
+   "test_share": 0.034771785331232374,
+   "train_count": 47660,
+   "train_share": 0.2704681266421887,
+   "accepted": true
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "test_count": 2550,
+   "test_share": 0.03376544272454019,
+   "train_count": 144,
+   "train_share": 0.0008171928291329243,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 2516,
+   "test_share": 0.03331523682154632,
+   "train_count": 249,
+   "train_share": 0.0014130626003756818,
+   "accepted": true
+  },
+  {
+   "variant": [
+    "Create Purchase Order Item"
+   ],
+   "test_count": 2439,
+   "test_share": 0.03229565286476609,
+   "train_count": 396,
+   "train_share": 0.002247280280115542,
+   "accepted": true
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Receive Order Confirmation",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 2220,
+   "test_share": 0.029395797195482052,
+   "train_count": 1,
+   "train_share": 5.674950202311974e-06,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 2051,
+   "test_share": 0.02715800903060076,
+   "train_count": 3,
+   "train_share": 1.7024850606935926e-05,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt",
+    "Remove Payment Block",
+    "Clear Invoice"
+   ],
+   "test_count": 1853,
+   "test_share": 0.024536221713165874,
+   "train_count": 18,
+   "train_share": 0.00010214910364161554,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item"
+   ],
+   "test_count": 1486,
+   "test_share": 0.019676646230849696,
+   "train_count": 2,
+   "train_share": 1.1349900404623949e-05,
+   "accepted": false
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Invoice Receipt",
+    "Record Goods Receipt",
+    "Remove Payment Block",
+    "Clear Invoice"
+   ],
+   "test_count": 1175,
+   "test_share": 0.015558586353464599,
+   "train_count": 130,
+   "train_share": 0.0007377435263005568,
+   "accepted": false
+  }
+ ],
+ "rejected_seen_test_cases": 33041,
+ "rejected_seen_top": [
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "test_count": 8466,
+   "train_count": 455
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 4208,
+   "train_count": 2
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Record Goods Receipt"
+   ],
+   "test_count": 3571,
+   "train_count": 152
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt",
+    "Clear Invoice"
+   ],
+   "test_count": 2550,
+   "train_count": 144
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Receive Order Confirmation",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 2220,
+   "train_count": 1
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Record Goods Receipt",
+    "Vendor creates invoice",
+    "Record Invoice Receipt"
+   ],
+   "test_count": 2051,
+   "train_count": 3
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Goods Receipt",
+    "Record Invoice Receipt",
+    "Remove Payment Block",
+    "Clear Invoice"
+   ],
+   "test_count": 1853,
+   "train_count": 18
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item"
+   ],
+   "test_count": 1486,
+   "train_count": 2
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Vendor creates invoice",
+    "Record Invoice Receipt",
+    "Record Goods Receipt",
+    "Remove Payment Block",
+    "Clear Invoice"
+   ],
+   "test_count": 1175,
+   "train_count": 130
+  },
+  {
+   "variant": [
+    "Create Purchase Requisition Item",
+    "Create Purchase Order Item",
+    "Delete Purchase Order Item"
+   ],
+   "test_count": 935,
+   "train_count": 64
+  }
+ ],
+ "activity_shift": [
+  {
+   "activity": "Create Purchase Requisition Item",
+   "train": 0.008830222514797433,
+   "test": 0.596337442565644
+  },
+  {
+   "activity": "Clear Invoice",
+   "train": 0.868136857099079,
+   "test": 0.40650944770328784
+  },
+  {
+   "activity": "Record Invoice Receipt",
+   "train": 0.8812119423652057,
+   "test": 0.7428132572397081
+  },
+  {
+   "activity": "Vendor creates invoice",
+   "train": 0.8730400140738765,
+   "test": 0.7429059466903245
+  },
+  {
+   "activity": "Record Goods Receipt",
+   "train": 0.9533121846855794,
+   "test": 0.8804570914050397
+  },
+  {
+   "activity": "Remove Payment Block",
+   "train": 0.24040791542054218,
+   "test": 0.17844043378662888
+  },
+  {
+   "activity": "Receive Order Confirmation",
+   "train": 0.11684722466560356,
+   "test": 0.15189152686007865
+  },
+  {
+   "activity": "Cancel Invoice Receipt",
+   "train": 0.03172864658112625,
+   "test": 0.01165238807748838
+  },
+  {
+   "activity": "Vendor creates debit memo",
+   "train": 0.028403125762571434,
+   "test": 0.013016247136558044
+  },
+  {
+   "activity": "Change Approval for Purchase Order",
+   "train": 0.012865112108641247,
+   "test": 0.027939248685796003
+  },
+  {
+   "activity": "Change Quantity",
+   "train": 0.07358140432317706,
+   "test": 0.06122800280716622
+  },
+  {
+   "activity": "Change Price",
+   "train": 0.04719288588242638,
+   "test": 0.03850584605606388
+  }
+ ],
+ "cases_with_repeated_activity": {
+  "train": 0.09636065443525733,
+  "test": 0.07227128878060407
+ },
+ "new_activities": [
+  "Create Purchase Requisition Item"
+ ],
+ "infrequent_net_has_label": {
+  "Create Purchase Requisition Item": true
+ },
+ "share_with_new": {
+  "test": 0.596337442565644,
+  "test_unseen": 0.7922269176591112,
+  "train": 0.008830222514797433
+ },
+ "miners": {
+  "Alpha": {
+   "shadowgen": 0.39029955638814756,
+   "shadowgen_strict": 0.001,
+   "has_new_label": {
+    "Create Purchase Requisition Item": true
+   },
+   "all": {
+    "n": 75521,
+    "strict": 0.0,
+    "graded": 0.4677934826887737
+   },
+   "unseen": {
+    "n": 15618,
+    "strict": 0.0,
+    "graded": 0.48661562056909846
+   },
+   "with_new": {
+    "n": 45036,
+    "strict": 0.0,
+    "graded": 0.5030120824136763
+   },
+   "without_new": {
+    "n": 30485,
+    "strict": 0.0,
+    "graded": 0.4157644567018715
+   },
+   "unseen_without_new": {
+    "n": 3245,
+    "strict": 0.0,
+    "graded": 0.3753865561508808
+   }
+  },
+  "Alpha+": {
+   "shadowgen": 0.28625222216711904,
+   "shadowgen_strict": 0.0,
+   "has_new_label": {
+    "Create Purchase Requisition Item": true
+   },
+   "all": {
+    "n": 75521,
+    "strict": 0.0,
+    "graded": 0.5182603841601847
+   },
+   "unseen": {
+    "n": 15618,
+    "strict": 0.0,
+    "graded": 0.580235827860752
+   },
+   "with_new": {
+    "n": 45036,
+    "strict": 0.0,
+    "graded": 0.6425216528717062
+   },
+   "without_new": {
+    "n": 30485,
+    "strict": 0.0,
+    "graded": 0.3346871350969706
+   },
+   "unseen_without_new": {
+    "n": 3245,
+    "strict": 0.0,
+    "graded": 0.3461204492887281
+   }
+  },
+  "Heuristics": {
+   "shadowgen": 0.8394043541362346,
+   "shadowgen_strict": 0.004,
+   "has_new_label": {
+    "Create Purchase Requisition Item": true
+   },
+   "all": {
+    "n": 75521,
+    "strict": 0.055997669522384504,
+    "graded": 0.8365348757999376
+   },
+   "unseen": {
+    "n": 15618,
+    "strict": 0.019464720194647202,
+    "graded": 0.8306258791676225
+   },
+   "with_new": {
+    "n": 45036,
+    "strict": 0.037503330668798296,
+    "graded": 0.8317794708174799
+   },
+   "without_new": {
+    "n": 30485,
+    "strict": 0.08331966540921765,
+    "graded": 0.8435601150582603
+   },
+   "unseen_without_new": {
+    "n": 3245,
+    "strict": 0.031124807395993836,
+    "graded": 0.8716104527726286
+   }
+  },
+  "Heuristics_Strict": {
+   "shadowgen": 0.8960519085335241,
+   "shadowgen_strict": 0.02,
+   "has_new_label": {
+    "Create Purchase Requisition Item": true
+   },
+   "all": {
+    "n": 75521,
+    "strict": 0.06886826180797394,
+    "graded": 0.9176608187453252
+   },
+   "unseen": {
+    "n": 15618,
+    "strict": 0.05986682033551031,
+    "graded": 0.9023141890893134
+   },
+   "with_new": {
+    "n": 45036,
+    "strict": 0.038902211564082065,
+    "graded": 0.9142306945721409
+   },
+   "without_new": {
+    "n": 30485,
+    "strict": 0.11313760865999672,
+    "graded": 0.9227281985145079
+   },
+   "unseen_without_new": {
+    "n": 3245,
+    "strict": 0.2061633281972265,
+    "graded": 0.9337286962612611
+   }
+  },
+  "Inductive_Strict": {
+   "shadowgen": 0.9952992512940531,
+   "shadowgen_strict": 0.791,
+   "has_new_label": {
+    "Create Purchase Requisition Item": true
+   },
+   "all": {
+    "n": 75521,
+    "strict": 0.9999735172998239,
+    "graded": 0.9999990580964746
+   },
+   "unseen": {
+    "n": 15618,
+    "strict": 0.9998719426302983,
+    "graded": 0.9999954454157937
+   },
+   "with_new": {
+    "n": 45036,
+    "strict": 1.0,
+    "graded": 1.0
+   },
+   "without_new": {
+    "n": 30485,
+    "strict": 0.9999343939642447,
+    "graded": 0.9999976666066546
+   },
+   "unseen_without_new": {
+    "n": 3245,
+    "strict": 0.9993836671802774,
+    "graded": 0.9999780790458757
+   }
+  },
+  "Inductive_Infrequent": {
+   "shadowgen": 0.9958436753455544,
+   "shadowgen_strict": 0.957,
+   "has_new_label": {
+    "Create Purchase Requisition Item": true
+   },
+   "all": {
+    "n": 75521,
+    "strict": 0.3903947246461249,
+    "graded": 0.9746923882200391
+   },
+   "unseen": {
+    "n": 15618,
+    "strict": 0.1678191829939813,
+    "graded": 0.9669023340638423
+   },
+   "with_new": {
+    "n": 45036,
+    "strict": 0.0005773159250377476,
+    "graded": 0.9597887810759272
+   },
+   "without_new": {
+    "n": 30485,
+    "strict": 0.9662784976217812,
+    "graded": 0.9967097361400729
+   },
+   "unseen_without_new": {
+    "n": 3245,
+    "strict": 0.8033898305084746,
+    "graded": 0.9800825414720088
+   }
+  }
+ },
+ "by_start_month": {
+  "2018-01": {
+   "n": 21269,
+   "strict": 0.9869763505571489
+  },
+  "2018-02": {
+   "n": 20894,
+   "strict": 0.9886091700966785
+  },
+  "2018-03": {
+   "n": 24846,
+   "strict": 0.983578845689447
+  },
+  "2018-04": {
+   "n": 22460,
+   "strict": 0.9874443455031167
+  },
+  "2018-05": {
+   "n": 23000,
+   "strict": 0.9825217391304348
+  },
+  "2018-06": {
+   "n": 22271,
+   "strict": 0.9922769520901621
+  },
+  "2018-07": {
+   "n": 21081,
+   "strict": 0.9890897016270576
+  },
+  "2018-08": {
+   "n": 20198,
+   "strict": 0.9879195959996039
+  },
+  "2018-09": {
+   "n": 18650,
+   "strict": 0.38595174262734583
+  },
+  "2018-10": {
+   "n": 21855,
+   "strict": 0.3591855410661176
+  },
+  "2018-11": {
+   "n": 20616,
+   "strict": 0.3978463329452852
+  },
+  "2018-12": {
+   "n": 14128,
+   "strict": 0.43148357870894677
+  },
+  "2019-01": {
+   "n": 202,
+   "strict": 0.3910891089108911
+  }
+ }
+}
