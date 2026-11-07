@@ -1,0 +1,4346 @@
+{
+  "dataset_key": "D2",
+  "dataset": "BPI2013_Incidents",
+  "log": {
+    "n_traces": 7554,
+    "n_variants": 1511,
+    "alphabet_size": 4,
+    "mean_len": 8.675271379401641,
+    "max_len": 123
+  },
+  "parameters": {
+    "algorithm_version": "v2.6",
+    "method": "M1g",
+    "max_n": 6,
+    "safe_threshold": 5,
+    "successor_weighting": "mle",
+    "num_shadow_traces": 1000,
+    "iterations": 5,
+    "seed": 42,
+    "timeout_s": 600,
+    "sanity_tolerance": 0.03,
+    "playout_seed": 1042,
+    "random_seed": 2042,
+    "drift_runs": 3
+  },
+  "command": "benchmark/axiom_check.py --dataset D2 --rediscover Alpha+",
+  "environment": {
+    "python": "3.14.5",
+    "pm4py": "2.7.22.2",
+    "platform": "Windows-11-10.0.22631-SP0",
+    "PYTHONHASHSEED": "0"
+  },
+  "models": {
+    "Trace_Filtered": {
+      "source": "cache",
+      "path": "benchmark/models/D2/Trace_Filtered.pnml",
+      "size": {
+        "places": 361,
+        "transitions": 409,
+        "silent": 0,
+        "arcs": 818
+      },
+      "duplicate_place_names": {}
+    },
+    "Alpha": {
+      "source": "cache",
+      "path": "benchmark/models/D2/Alpha.pnml",
+      "size": {
+        "places": 2,
+        "transitions": 4,
+        "silent": 0,
+        "arcs": 5
+      },
+      "duplicate_place_names": {}
+    },
+    "Alpha+": {
+      "source": "rediscovered (run_m1_family.MINERS)",
+      "path": "benchmark/models/D2/Alpha+.pnml",
+      "size": {
+        "places": 6,
+        "transitions": 6,
+        "silent": 2,
+        "arcs": 10
+      },
+      "duplicate_place_names": {
+        "({'artificial_start'}, {'artificial_end'})": 2
+      },
+      "cached_size": {
+        "places": 6,
+        "transitions": 6,
+        "silent": 2,
+        "arcs": 10
+      }
+    },
+    "Heuristics": {
+      "source": "cache",
+      "path": "benchmark/models/D2/Heuristics.pnml",
+      "size": {
+        "places": 8,
+        "transitions": 15,
+        "silent": 11,
+        "arcs": 30
+      },
+      "duplicate_place_names": {}
+    },
+    "Heuristics_Strict": {
+      "source": "cache",
+      "path": "benchmark/models/D2/Heuristics_Strict.pnml",
+      "size": {
+        "places": 8,
+        "transitions": 15,
+        "silent": 12,
+        "arcs": 30
+      },
+      "duplicate_place_names": {}
+    },
+    "Inductive_Strict": {
+      "source": "cache",
+      "path": "benchmark/models/D2/Inductive_Strict.pnml",
+      "size": {
+        "places": 17,
+        "transitions": 23,
+        "silent": 19,
+        "arcs": 50
+      },
+      "duplicate_place_names": {}
+    },
+    "Inductive_Infrequent": {
+      "source": "cache",
+      "path": "benchmark/models/D2/Inductive_Infrequent.pnml",
+      "size": {
+        "places": 10,
+        "transitions": 12,
+        "silent": 9,
+        "arcs": 26
+      },
+      "duplicate_place_names": {}
+    },
+    "Flower": {
+      "source": "cache",
+      "path": "benchmark/models/D2/Flower.pnml",
+      "size": {
+        "places": 1,
+        "transitions": 4,
+        "silent": 0,
+        "arcs": 8
+      },
+      "duplicate_place_names": {}
+    }
+  },
+  "stored_m1g": {
+    "Trace_Filtered": {
+      "mean": 0.599988436321828,
+      "std": 0.002863557612243153,
+      "gen_accept": 0.0,
+      "gen_accept_std": 0.0,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle",
+        "trace_model_top_k": 50
+      },
+      "timestamp": "2026-06-15T16:20:52Z"
+    },
+    "Alpha": {
+      "mean": 0.25715432532133864,
+      "std": 0.00501439571935336,
+      "gen_accept": 0.0014,
+      "gen_accept_std": 0.0012,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle"
+      },
+      "timestamp": "2026-06-15T16:20:53Z"
+    },
+    "Alpha+": {
+      "mean": 0.6301101956581971,
+      "std": 0.007821157741973912,
+      "gen_accept": 0.0,
+      "gen_accept_std": 0.0,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle"
+      },
+      "timestamp": "2026-06-15T16:20:54Z"
+    },
+    "Heuristics": {
+      "mean": 0.9935438029823809,
+      "std": 0.00028442461575149165,
+      "gen_accept": 0.836,
+      "gen_accept_std": 0.006811754546370567,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle"
+      },
+      "timestamp": "2026-06-15T16:20:56Z"
+    },
+    "Heuristics_Strict": {
+      "mean": 0.9977911098636438,
+      "std": 0.0003257928791611382,
+      "gen_accept": 0.9458,
+      "gen_accept_std": 0.007440430095095276,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle"
+      },
+      "timestamp": "2026-06-15T16:20:58Z"
+    },
+    "Inductive_Strict": {
+      "mean": 0.9999760209580957,
+      "std": 1.375064840138668e-05,
+      "gen_accept": 0.9984,
+      "gen_accept_std": 0.0008000000000000007,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle"
+      },
+      "timestamp": "2026-06-15T16:21:00Z"
+    },
+    "Inductive_Infrequent": {
+      "mean": 0.990713284248954,
+      "std": 0.000705901801792226,
+      "gen_accept": 0.8378,
+      "gen_accept_std": 0.008772684879784531,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle"
+      },
+      "timestamp": "2026-06-15T16:21:02Z"
+    },
+    "Flower": {
+      "mean": 1.0,
+      "std": 0.0,
+      "gen_accept": 1.0,
+      "gen_accept_std": 0.0,
+      "parameters": {
+        "algorithm_version": "v2.6",
+        "max_n": 1,
+        "safe_threshold": 5,
+        "num_shadow_traces": 1000,
+        "iterations": 5,
+        "successor_weighting": "mle"
+      },
+      "timestamp": "2026-06-15T16:21:03Z"
+    }
+  },
+  "notes": [
+    "Alpha+: rediscovered (run_m1_family.MINERS) instead of benchmark/models/D2/Alpha+.pnml (cached size {'places': 6, 'transitions': 6, 'silent': 2, 'arcs': 10}, duplicate place names in cached net: {\"({'artificial_start'}, {'artificial_end'})\": 2})."
+  ],
+  "timings": {
+    "sanity": 27.73098850250244,
+    "T1": 5.0067901611328125e-06,
+    "T2": 0.025661230087280273,
+    "T3": 78.17563438415527,
+    "T4": 67.8776125907898,
+    "T5": 131.59050941467285,
+    "total": 307.62572598457336
+  },
+  "shadow_base": {
+    "k": 5,
+    "seed": 42,
+    "duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 246,
+    "mutation_share_per_draw": [
+      0.013,
+      0.012,
+      0.016,
+      0.017,
+      0.016
+    ],
+    "gen_time_s": 0.8163046836853027
+  },
+  "sanity": {
+    "rows": [
+      {
+        "model": "Trace_Filtered",
+        "mean": 0.640380192427748,
+        "std": 0.005068311841296012,
+        "accept_mean": 0.0,
+        "accept_std": 0.0,
+        "runtime_s": 14.53285837173462,
+        "timeout": false,
+        "stored_mean": 0.599988436321828,
+        "stored_std": 0.002863557612243153,
+        "stored_accept": 0.0,
+        "tolerance": 0.05,
+        "diff_mean": 0.04039175610592005,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "model": "Alpha",
+        "mean": 0.25715432532133864,
+        "std": 0.005014395719353382,
+        "accept_mean": 0.0014,
+        "accept_std": 0.0012,
+        "runtime_s": 1.2797610759735107,
+        "timeout": false,
+        "stored_mean": 0.25715432532133864,
+        "stored_std": 0.00501439571935336,
+        "stored_accept": 0.0014,
+        "tolerance": 0.03,
+        "diff_mean": 0.0,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "model": "Alpha+",
+        "mean": 0.6301101956581971,
+        "std": 0.007821157741973912,
+        "accept_mean": 0.0,
+        "accept_std": 0.0,
+        "runtime_s": 1.089625597000122,
+        "timeout": false,
+        "stored_mean": 0.6301101956581971,
+        "stored_std": 0.007821157741973912,
+        "stored_accept": 0.0,
+        "tolerance": 0.03,
+        "diff_mean": 0.0,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "model": "Heuristics",
+        "mean": 0.9935438029823809,
+        "std": 0.00028442461575152006,
+        "accept_mean": 0.836,
+        "accept_std": 0.006811754546370567,
+        "runtime_s": 2.1193673610687256,
+        "timeout": false,
+        "stored_mean": 0.9935438029823809,
+        "stored_std": 0.00028442461575149165,
+        "stored_accept": 0.836,
+        "tolerance": 0.03,
+        "diff_mean": 0.0,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "model": "Heuristics_Strict",
+        "mean": 0.9977911098636436,
+        "std": 0.00032579287916112464,
+        "accept_mean": 0.9458,
+        "accept_std": 0.007440430095095276,
+        "runtime_s": 2.121746778488159,
+        "timeout": false,
+        "stored_mean": 0.9977911098636438,
+        "stored_std": 0.0003257928791611382,
+        "stored_accept": 0.9458,
+        "tolerance": 0.03,
+        "diff_mean": -2.220446049250313e-16,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "model": "Inductive_Strict",
+        "mean": 0.9999760209580957,
+        "std": 1.37506484013897e-05,
+        "accept_mean": 0.9984,
+        "accept_std": 0.0008000000000000007,
+        "runtime_s": 2.6291892528533936,
+        "timeout": false,
+        "stored_mean": 0.9999760209580957,
+        "stored_std": 1.375064840138668e-05,
+        "stored_accept": 0.9984,
+        "tolerance": 0.03,
+        "diff_mean": 0.0,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "model": "Inductive_Infrequent",
+        "mean": 0.990713284248954,
+        "std": 0.000705901801792226,
+        "accept_mean": 0.8378,
+        "accept_std": 0.008772684879784531,
+        "runtime_s": 2.186890125274658,
+        "timeout": false,
+        "stored_mean": 0.990713284248954,
+        "stored_std": 0.000705901801792226,
+        "stored_accept": 0.8378,
+        "tolerance": 0.03,
+        "diff_mean": 0.0,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      },
+      {
+        "model": "Flower",
+        "mean": 1.0,
+        "std": 0.0,
+        "accept_mean": 1.0,
+        "accept_std": 0.0,
+        "runtime_s": 0.9489572048187256,
+        "timeout": false,
+        "stored_mean": 1.0,
+        "stored_std": 0.0,
+        "stored_accept": 1.0,
+        "tolerance": 0.03,
+        "diff_mean": 0.0,
+        "diff_accept": 0.0,
+        "within_tolerance": true
+      }
+    ],
+    "worst_abs_diff_excluding_trace": 2.220446049250313e-16,
+    "tolerance": 0.03,
+    "trace_tolerance": 0.05,
+    "passed": true
+  },
+  "T1": {
+    "model": "Flower",
+    "readings": {
+      "graded": {
+        "score": 1.0,
+        "sd": 0.0,
+        "d": 0.0,
+        "verdict": "holds"
+      },
+      "accept": {
+        "score": 1.0,
+        "sd": 0.0,
+        "d": 0.0,
+        "verdict": "holds"
+      }
+    }
+  },
+  "T2": {
+    "pairs": [
+      {
+        "m1": "Trace_Filtered",
+        "m2": "Flower",
+        "inclusion": "every model <= Flower (by construction)",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 14.53285837173462,
+          "k": 5,
+          "model_key": "Trace_Filtered",
+          "mean": 0.640380192427748,
+          "std": 0.005068311841296012,
+          "accept_mean": 0.0,
+          "accept_std": 0.0,
+          "raw": [
+            0.641181653290598,
+            0.6315072231863571,
+            0.6434724362135246,
+            0.6391882155408584,
+            0.6465514339074022
+          ],
+          "raw_accept": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mutated_fitness_per_draw": [
+            0.6750080576728927,
+            0.6728690403175036,
+            0.7404269725593173,
+            0.7011678020311867,
+            0.724600619049337
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 0.9489572048187256,
+          "k": 5,
+          "model_key": "Flower",
+          "mean": 1.0,
+          "std": 0.0,
+          "accept_mean": 1.0,
+          "accept_std": 0.0,
+          "raw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "raw_accept": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mutated_fitness_per_draw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 0.359619807572252,
+            "sd": 0.005068311841296012,
+            "verdict": "holds"
+          },
+          "accept": {
+            "d": 1.0,
+            "sd": 0.0,
+            "verdict": "holds"
+          }
+        }
+      },
+      {
+        "m1": "Alpha",
+        "m2": "Flower",
+        "inclusion": "every model <= Flower (by construction)",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 1.2797610759735107,
+          "k": 5,
+          "model_key": "Alpha",
+          "mean": 0.25715432532133864,
+          "std": 0.005014395719353382,
+          "accept_mean": 0.0014,
+          "accept_std": 0.0012,
+          "raw": [
+            0.2542669093368627,
+            0.26477129467470595,
+            0.26115054593453485,
+            0.2511595553732125,
+            0.2544233212873773
+          ],
+          "raw_accept": [
+            0.002,
+            0.0,
+            0.002,
+            0.003,
+            0.0
+          ],
+          "mutated_fitness_per_draw": [
+            0.14435016163948222,
+            0.1274934979334342,
+            0.16426762595170064,
+            0.12829003352940774,
+            0.1098530943472024
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 0.9489572048187256,
+          "k": 5,
+          "model_key": "Flower",
+          "mean": 1.0,
+          "std": 0.0,
+          "accept_mean": 1.0,
+          "accept_std": 0.0,
+          "raw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "raw_accept": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mutated_fitness_per_draw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 0.7428456746786614,
+            "sd": 0.005014395719353405,
+            "verdict": "holds"
+          },
+          "accept": {
+            "d": 0.9986,
+            "sd": 0.001200000000000001,
+            "verdict": "holds"
+          }
+        }
+      },
+      {
+        "m1": "Alpha+",
+        "m2": "Flower",
+        "inclusion": "every model <= Flower (by construction)",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 1.089625597000122,
+          "k": 5,
+          "model_key": "Alpha+",
+          "mean": 0.6301101956581971,
+          "std": 0.007821157741973912,
+          "accept_mean": 0.0,
+          "accept_std": 0.0,
+          "raw": [
+            0.635259970816981,
+            0.6178800750930548,
+            0.6247066861705588,
+            0.6397162929589681,
+            0.6329879532514229
+          ],
+          "raw_accept": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mutated_fitness_per_draw": [
+            0.8793295861844247,
+            0.8547309131220157,
+            0.8299826817529823,
+            0.8738145247632243,
+            0.9066476830513976
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 0.9489572048187256,
+          "k": 5,
+          "model_key": "Flower",
+          "mean": 1.0,
+          "std": 0.0,
+          "accept_mean": 1.0,
+          "accept_std": 0.0,
+          "raw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "raw_accept": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mutated_fitness_per_draw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 0.36988980434180285,
+            "sd": 0.007821157741973912,
+            "verdict": "holds"
+          },
+          "accept": {
+            "d": 1.0,
+            "sd": 0.0,
+            "verdict": "holds"
+          }
+        }
+      },
+      {
+        "m1": "Heuristics",
+        "m2": "Flower",
+        "inclusion": "every model <= Flower (by construction)",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 2.1193673610687256,
+          "k": 5,
+          "model_key": "Heuristics",
+          "mean": 0.9935438029823809,
+          "std": 0.00028442461575152006,
+          "accept_mean": 0.836,
+          "accept_std": 0.006811754546370567,
+          "raw": [
+            0.9935868630802168,
+            0.9937839710164414,
+            0.993907013916993,
+            0.9931753726249749,
+            0.9932657942732785
+          ],
+          "raw_accept": [
+            0.837,
+            0.842,
+            0.841,
+            0.823,
+            0.837
+          ],
+          "mutated_fitness_per_draw": [
+            0.9699749962811304,
+            0.9634372119378608,
+            0.9664239884327572,
+            0.9671425553047261,
+            0.9755142548244079
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 0.9489572048187256,
+          "k": 5,
+          "model_key": "Flower",
+          "mean": 1.0,
+          "std": 0.0,
+          "accept_mean": 1.0,
+          "accept_std": 0.0,
+          "raw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "raw_accept": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mutated_fitness_per_draw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 0.006456197017619125,
+            "sd": 0.00028442461575152006,
+            "verdict": "holds"
+          },
+          "accept": {
+            "d": 0.16400000000000003,
+            "sd": 0.006811754546370567,
+            "verdict": "holds"
+          }
+        }
+      },
+      {
+        "m1": "Heuristics_Strict",
+        "m2": "Flower",
+        "inclusion": "every model <= Flower (by construction)",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 2.121746778488159,
+          "k": 5,
+          "model_key": "Heuristics_Strict",
+          "mean": 0.9977911098636436,
+          "std": 0.00032579287916112464,
+          "accept_mean": 0.9458,
+          "accept_std": 0.007440430095095276,
+          "raw": [
+            0.9980290825980507,
+            0.9971500842561783,
+            0.997989747491114,
+            0.9979308037869457,
+            0.99785583118593
+          ],
+          "raw_accept": [
+            0.95,
+            0.932,
+            0.952,
+            0.944,
+            0.951
+          ],
+          "mutated_fitness_per_draw": [
+            0.9926770060143066,
+            0.9809839595722204,
+            0.9817688835473892,
+            0.9860344398407338,
+            0.9898693269071892
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 0.9489572048187256,
+          "k": 5,
+          "model_key": "Flower",
+          "mean": 1.0,
+          "std": 0.0,
+          "accept_mean": 1.0,
+          "accept_std": 0.0,
+          "raw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "raw_accept": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mutated_fitness_per_draw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 0.0022088901363563895,
+            "sd": 0.00032579287916112464,
+            "verdict": "holds"
+          },
+          "accept": {
+            "d": 0.054200000000000026,
+            "sd": 0.007440430095095276,
+            "verdict": "holds"
+          }
+        }
+      },
+      {
+        "m1": "Inductive_Strict",
+        "m2": "Flower",
+        "inclusion": "every model <= Flower (by construction)",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 2.6291892528533936,
+          "k": 5,
+          "model_key": "Inductive_Strict",
+          "mean": 0.9999760209580957,
+          "std": 1.37506484013897e-05,
+          "accept_mean": 0.9984,
+          "accept_std": 0.0008000000000000007,
+          "raw": [
+            0.9999627586206896,
+            0.9999622507122506,
+            1.0,
+            0.9999772043010753,
+            0.9999778911564626
+          ],
+          "raw_accept": [
+            0.998,
+            0.998,
+            1.0,
+            0.998,
+            0.998
+          ],
+          "mutated_fitness_per_draw": [
+            0.9971352785145888,
+            0.9968542260208926,
+            1.0,
+            0.9986590765338393,
+            0.9986181972789117
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 0.9489572048187256,
+          "k": 5,
+          "model_key": "Flower",
+          "mean": 1.0,
+          "std": 0.0,
+          "accept_mean": 1.0,
+          "accept_std": 0.0,
+          "raw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "raw_accept": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mutated_fitness_per_draw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 2.3979041904320653e-05,
+            "sd": 1.37506484013897e-05,
+            "verdict": "inconclusive (within 2 sd)"
+          },
+          "accept": {
+            "d": 0.0016000000000000458,
+            "sd": 0.0008000000000000007,
+            "verdict": "holds"
+          }
+        }
+      },
+      {
+        "m1": "Inductive_Infrequent",
+        "m2": "Flower",
+        "inclusion": "every model <= Flower (by construction)",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 2.186890125274658,
+          "k": 5,
+          "model_key": "Inductive_Infrequent",
+          "mean": 0.990713284248954,
+          "std": 0.000705901801792226,
+          "accept_mean": 0.8378,
+          "accept_std": 0.008772684879784531,
+          "raw": [
+            0.9909859792448582,
+            0.991217938274448,
+            0.9911280127779718,
+            0.9893172691219878,
+            0.9909172218255046
+          ],
+          "raw_accept": [
+            0.836,
+            0.848,
+            0.842,
+            0.822,
+            0.841
+          ],
+          "mutated_fitness_per_draw": [
+            0.9593250067090628,
+            0.9546225744000295,
+            0.9457970343737107,
+            0.9583728270944889,
+            0.9699583775668799
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 0.9489572048187256,
+          "k": 5,
+          "model_key": "Flower",
+          "mean": 1.0,
+          "std": 0.0,
+          "accept_mean": 1.0,
+          "accept_std": 0.0,
+          "raw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "raw_accept": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "mutated_fitness_per_draw": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 0.009286715751046004,
+            "sd": 0.000705901801792226,
+            "verdict": "holds"
+          },
+          "accept": {
+            "d": 0.1622,
+            "sd": 0.008772684879784531,
+            "verdict": "holds"
+          }
+        }
+      },
+      {
+        "m1": "Trace_Filtered",
+        "m2": "Inductive_Strict",
+        "inclusion": "all 50 trace-net variants replay perfectly on Inductive_Strict",
+        "gen_m1": {
+          "timeout": false,
+          "runtime_s": 14.53285837173462,
+          "k": 5,
+          "model_key": "Trace_Filtered",
+          "mean": 0.640380192427748,
+          "std": 0.005068311841296012,
+          "accept_mean": 0.0,
+          "accept_std": 0.0,
+          "raw": [
+            0.641181653290598,
+            0.6315072231863571,
+            0.6434724362135246,
+            0.6391882155408584,
+            0.6465514339074022
+          ],
+          "raw_accept": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mutated_fitness_per_draw": [
+            0.6750080576728927,
+            0.6728690403175036,
+            0.7404269725593173,
+            0.7011678020311867,
+            0.724600619049337
+          ]
+        },
+        "gen_m2": {
+          "timeout": false,
+          "runtime_s": 2.6291892528533936,
+          "k": 5,
+          "model_key": "Inductive_Strict",
+          "mean": 0.9999760209580957,
+          "std": 1.37506484013897e-05,
+          "accept_mean": 0.9984,
+          "accept_std": 0.0008000000000000007,
+          "raw": [
+            0.9999627586206896,
+            0.9999622507122506,
+            1.0,
+            0.9999772043010753,
+            0.9999778911564626
+          ],
+          "raw_accept": [
+            0.998,
+            0.998,
+            1.0,
+            0.998,
+            0.998
+          ],
+          "mutated_fitness_per_draw": [
+            0.9971352785145888,
+            0.9968542260208926,
+            1.0,
+            0.9986590765338393,
+            0.9986181972789117
+          ]
+        },
+        "cmp": {
+          "graded": {
+            "d": 0.35959582853034766,
+            "sd": 0.005060596854417854,
+            "verdict": "holds"
+          },
+          "accept": {
+            "d": 0.9984,
+            "sd": 0.0008000000000000007,
+            "verdict": "holds"
+          }
+        }
+      }
+    ],
+    "inclusion_check_TF_in_IndS": {
+      "n_variants": 50,
+      "fit_share_on_Inductive_Strict": 1.0,
+      "unfit_variant_indices": [],
+      "unfit_variants": [],
+      "runtime_s": 0.024837493896484375
+    }
+  },
+  "T3": {
+    "a_trace_vs_trie": {
+      "variants_in_shipped_net": 50,
+      "shipped_variants_equal_top50_of_log": true,
+      "trie_size": {
+        "places": 115,
+        "transitions": 163,
+        "silent": 3,
+        "arcs": 326,
+        "end_paths": 50
+      },
+      "shipped_size": {
+        "places": 361,
+        "transitions": 409,
+        "silent": 0,
+        "arcs": 818
+      },
+      "variants_fit_on_shipped": 0.04,
+      "variants_fit_on_trie": 1.0,
+      "labels_absent_from_trace_net": [
+        "Unmatched"
+      ],
+      "shadow_traces_with_absent_label": 45,
+      "acceptance_identity_on_shadow": {
+        "n_traces": 5000,
+        "n_acceptance_differences": 0,
+        "identical": true,
+        "differences": []
+      },
+      "equivalence_check_passed": true,
+      "gen_shipped": {
+        "timeout": false,
+        "runtime_s": 14.53285837173462,
+        "k": 5,
+        "model_key": "Trace_Filtered",
+        "mean": 0.640380192427748,
+        "std": 0.005068311841296012,
+        "accept_mean": 0.0,
+        "accept_std": 0.0,
+        "raw": [
+          0.641181653290598,
+          0.6315072231863571,
+          0.6434724362135246,
+          0.6391882155408584,
+          0.6465514339074022
+        ],
+        "raw_accept": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mutated_fitness_per_draw": [
+          0.6750080576728927,
+          0.6728690403175036,
+          0.7404269725593173,
+          0.7011678020311867,
+          0.724600619049337
+        ]
+      },
+      "gen_trie": {
+        "timeout": false,
+        "runtime_s": 5.321336269378662,
+        "k": 5,
+        "model_key": "Trace_Trie",
+        "mean": 0.7855086809843662,
+        "std": 0.002798133243778335,
+        "accept_mean": 0.0,
+        "accept_std": 0.0,
+        "raw": [
+          0.7849623838392052,
+          0.785096144418557,
+          0.7873978835011445,
+          0.7808795295994885,
+          0.789207463563436
+        ],
+        "raw_accept": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mutated_fitness_per_draw": [
+          0.8000456177928705,
+          0.7157360341744711,
+          0.8348720228449712,
+          0.7584271396886406,
+          0.7566272755958705
+        ]
+      },
+      "cmp_trie_minus_shipped": {
+        "graded": {
+          "d": 0.1451284885566182,
+          "sd": 0.004307433169436764,
+          "verdict": "violated"
+        },
+        "accept": {
+          "d": 0.0,
+          "sd": 0.0,
+          "verdict": "holds"
+        }
+      },
+      "tie_break_drift": {
+        "shipped": {
+          "runs": 3,
+          "method": "shuffled object-creation order, fresh process per run",
+          "graded_means": [
+            0.6514725265370339,
+            0.635040626628907,
+            0.6137521214478887
+          ],
+          "graded_spread": 0.037720405089145204,
+          "accept_means": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "trie": {
+          "runs": 3,
+          "method": "shuffled object-creation order, fresh process per run",
+          "graded_means": [
+            0.7794112996511021,
+            0.7950062661818638,
+            0.7884121056749362
+          ],
+          "graded_spread": 0.015594966530761645,
+          "accept_means": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "b_inductive_vs_reduced": {
+      "original_size": {
+        "places": 17,
+        "transitions": 23,
+        "silent": 19,
+        "arcs": 50
+      },
+      "reduced_size": {
+        "places": 17,
+        "transitions": 23,
+        "silent": 19,
+        "arcs": 50
+      },
+      "reduction_changed_net": false,
+      "markings_preserved": true,
+      "log_fit_share_original": 1.0,
+      "log_fit_share_reduced": 1.0,
+      "log_acceptance_differences": 0,
+      "acceptance_identity_on_shadow": {
+        "n_traces": 5000,
+        "n_acceptance_differences": 0,
+        "identical": true,
+        "differences": []
+      },
+      "equivalence_check_passed": true,
+      "gen_original": {
+        "timeout": false,
+        "runtime_s": 2.6291892528533936,
+        "k": 5,
+        "model_key": "Inductive_Strict",
+        "mean": 0.9999760209580957,
+        "std": 1.37506484013897e-05,
+        "accept_mean": 0.9984,
+        "accept_std": 0.0008000000000000007,
+        "raw": [
+          0.9999627586206896,
+          0.9999622507122506,
+          1.0,
+          0.9999772043010753,
+          0.9999778911564626
+        ],
+        "raw_accept": [
+          0.998,
+          0.998,
+          1.0,
+          0.998,
+          0.998
+        ],
+        "mutated_fitness_per_draw": [
+          0.9971352785145888,
+          0.9968542260208926,
+          1.0,
+          0.9986590765338393,
+          0.9986181972789117
+        ]
+      },
+      "gen_reduced": {
+        "timeout": false,
+        "runtime_s": 2.5875871181488037,
+        "k": 5,
+        "model_key": "Inductive_Strict_reduced",
+        "mean": 0.9999760209580957,
+        "std": 1.37506484013897e-05,
+        "accept_mean": 0.9984,
+        "accept_std": 0.0008000000000000007,
+        "raw": [
+          0.9999627586206896,
+          0.9999622507122506,
+          1.0,
+          0.9999772043010753,
+          0.9999778911564626
+        ],
+        "raw_accept": [
+          0.998,
+          0.998,
+          1.0,
+          0.998,
+          0.998
+        ],
+        "mutated_fitness_per_draw": [
+          0.9971352785145888,
+          0.9968542260208926,
+          1.0,
+          0.9986590765338393,
+          0.9986181972789117
+        ]
+      },
+      "cmp_reduced_minus_original": {
+        "graded": {
+          "d": 0.0,
+          "sd": 0.0,
+          "verdict": "holds"
+        },
+        "accept": {
+          "d": 0.0,
+          "sd": 0.0,
+          "verdict": "holds"
+        }
+      }
+    }
+  },
+  "T4": {
+    "fit_share_of_log": {
+      "Trace_Filtered": 0.005692348424675669,
+      "Alpha": 0.00013238019592268997,
+      "Alpha+": 0.0,
+      "Heuristics": 0.927852793222134,
+      "Heuristics_Strict": 0.9813343923749007,
+      "Inductive_Strict": 1.0,
+      "Inductive_Infrequent": 0.9307651575324332,
+      "Flower": 1.0
+    },
+    "base_mutation_share_per_draw": [
+      0.013,
+      0.012,
+      0.016,
+      0.017,
+      0.016
+    ],
+    "k": {
+      "2": {
+        "n_traces": 15108,
+        "shadow": {
+          "k": 5,
+          "seed": 42,
+          "duplicates_kept": 0,
+          "truncated": 0,
+          "max_trace_length_used": 246,
+          "mutation_share_per_draw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gen_time_s": 0.8933467864990234
+        },
+        "cells": [
+          {
+            "model": "Trace_Filtered",
+            "fit_share": 0.005692348424675669,
+            "class": "majority non-fit",
+            "proposition": "GenPro7",
+            "relation": "gen(l^k) <= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 11.887628078460693,
+              "k": 5,
+              "model_key": "Trace_Filtered",
+              "mean": 0.6397026206271849,
+              "std": 0.0033473476567668064,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.6421222768492005,
+                0.6333961060186813,
+                0.6401169671947448,
+                0.6399904348409021,
+                0.642887318232396
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 14.53285837173462,
+              "k": 5,
+              "model_key": "Trace_Filtered",
+              "mean": 0.640380192427748,
+              "std": 0.005068311841296012,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.641181653290598,
+                0.6315072231863571,
+                0.6434724362135246,
+                0.6391882155408584,
+                0.6465514339074022
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                0.6750080576728927,
+                0.6728690403175036,
+                0.7404269725593173,
+                0.7011678020311867,
+                0.724600619049337
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0006775718005631592,
+                "sd": 0.006073921406791793,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Alpha",
+            "fit_share": 0.00013238019592268997,
+            "class": "majority non-fit",
+            "proposition": "GenPro7",
+            "relation": "gen(l^k) <= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 1.283158540725708,
+              "k": 5,
+              "model_key": "Alpha",
+              "mean": 0.25788584094926464,
+              "std": 0.003964936053443871,
+              "accept_mean": 0.0014,
+              "accept_std": 0.0012,
+              "raw": [
+                0.255417292094652,
+                0.26138644155715735,
+                0.26317123346348104,
+                0.2522406326995175,
+                0.2572136049315152
+              ],
+              "raw_accept": [
+                0.002,
+                0.0,
+                0.002,
+                0.003,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 1.2797610759735107,
+              "k": 5,
+              "model_key": "Alpha",
+              "mean": 0.25715432532133864,
+              "std": 0.005014395719353382,
+              "accept_mean": 0.0014,
+              "accept_std": 0.0012,
+              "raw": [
+                0.2542669093368627,
+                0.26477129467470595,
+                0.26115054593453485,
+                0.2511595553732125,
+                0.2544233212873773
+              ],
+              "raw_accept": [
+                0.002,
+                0.0,
+                0.002,
+                0.003,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                0.14435016163948222,
+                0.1274934979334342,
+                0.16426762595170064,
+                0.12829003352940774,
+                0.1098530943472024
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": -0.0007315156279260049,
+                "sd": 0.006392564613530988,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.001697056274847714,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Alpha+",
+            "fit_share": 0.0,
+            "class": "none fit",
+            "proposition": "GenPro5",
+            "relation": "gen(l^k) <= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 1.0983498096466064,
+              "k": 5,
+              "model_key": "Alpha+",
+              "mean": 0.6279674079367858,
+              "std": 0.006174942255531412,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.6323538386006587,
+                0.6217238989316795,
+                0.620836714103975,
+                0.636999496408364,
+                0.6279230916392522
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 1.089625597000122,
+              "k": 5,
+              "model_key": "Alpha+",
+              "mean": 0.6301101956581971,
+              "std": 0.007821157741973912,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.635259970816981,
+                0.6178800750930548,
+                0.6247066861705588,
+                0.6397162929589681,
+                0.6329879532514229
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                0.8793295861844247,
+                0.8547309131220157,
+                0.8299826817529823,
+                0.8738145247632243,
+                0.9066476830513976
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.002142787721411299,
+                "sd": 0.009964959622797566,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Heuristics",
+            "fit_share": 0.927852793222134,
+            "class": "majority fit",
+            "proposition": "GenPro6",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.1345181465148926,
+              "k": 5,
+              "model_key": "Heuristics",
+              "mean": 0.9937209890972396,
+              "std": 0.0004456848711220433,
+              "accept_mean": 0.8394,
+              "accept_std": 0.008452218643646182,
+              "raw": [
+                0.9937483698588867,
+                0.9935824468206816,
+                0.9943979758415075,
+                0.9930168632312083,
+                0.9938592897339135
+              ],
+              "raw_accept": [
+                0.843,
+                0.836,
+                0.85,
+                0.825,
+                0.843
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.1193673610687256,
+              "k": 5,
+              "model_key": "Heuristics",
+              "mean": 0.9935438029823809,
+              "std": 0.00028442461575152006,
+              "accept_mean": 0.836,
+              "accept_std": 0.006811754546370567,
+              "raw": [
+                0.9935868630802168,
+                0.9937839710164414,
+                0.993907013916993,
+                0.9931753726249749,
+                0.9932657942732785
+              ],
+              "raw_accept": [
+                0.837,
+                0.842,
+                0.841,
+                0.823,
+                0.837
+              ],
+              "mutated_fitness_per_draw": [
+                0.9699749962811304,
+                0.9634372119378608,
+                0.9664239884327572,
+                0.9671425553047261,
+                0.9755142548244079
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.00017718611485872948,
+                "sd": 0.0005287082053387031,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0034000000000000696,
+                "sd": 0.010855413396089537,
+                "verdict": "inconclusive (within 2 sd)"
+              }
+            }
+          },
+          {
+            "model": "Heuristics_Strict",
+            "fit_share": 0.9813343923749007,
+            "class": "majority fit",
+            "proposition": "GenPro6",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.1170647144317627,
+              "k": 5,
+              "model_key": "Heuristics_Strict",
+              "mean": 0.9979894447418405,
+              "std": 0.00043037257225539,
+              "accept_mean": 0.9492,
+              "accept_std": 0.01108873302050326,
+              "raw": [
+                0.9983556730312394,
+                0.9972064402776348,
+                0.9984119332842373,
+                0.9979729738638096,
+                0.9980002032522808
+              ],
+              "raw_accept": [
+                0.959,
+                0.93,
+                0.961,
+                0.946,
+                0.95
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.121746778488159,
+              "k": 5,
+              "model_key": "Heuristics_Strict",
+              "mean": 0.9977911098636436,
+              "std": 0.00032579287916112464,
+              "accept_mean": 0.9458,
+              "accept_std": 0.007440430095095276,
+              "raw": [
+                0.9980290825980507,
+                0.9971500842561783,
+                0.997989747491114,
+                0.9979308037869457,
+                0.99785583118593
+              ],
+              "raw_accept": [
+                0.95,
+                0.932,
+                0.952,
+                0.944,
+                0.951
+              ],
+              "mutated_fitness_per_draw": [
+                0.9926770060143066,
+                0.9809839595722204,
+                0.9817688835473892,
+                0.9860344398407338,
+                0.9898693269071892
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0001983348781968708,
+                "sd": 0.0005397791687920311,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0034000000000000696,
+                "sd": 0.013353651186098835,
+                "verdict": "inconclusive (within 2 sd)"
+              }
+            }
+          },
+          {
+            "model": "Inductive_Strict",
+            "fit_share": 1.0,
+            "class": "all fit",
+            "proposition": "GenPro4",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.5709035396575928,
+              "k": 5,
+              "model_key": "Inductive_Strict",
+              "mean": 1.0,
+              "std": 0.0,
+              "accept_mean": 1.0,
+              "accept_std": 0.0,
+              "raw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "raw_accept": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.6291892528533936,
+              "k": 5,
+              "model_key": "Inductive_Strict",
+              "mean": 0.9999760209580957,
+              "std": 1.37506484013897e-05,
+              "accept_mean": 0.9984,
+              "accept_std": 0.0008000000000000007,
+              "raw": [
+                0.9999627586206896,
+                0.9999622507122506,
+                1.0,
+                0.9999772043010753,
+                0.9999778911564626
+              ],
+              "raw_accept": [
+                0.998,
+                0.998,
+                1.0,
+                0.998,
+                0.998
+              ],
+              "mutated_fitness_per_draw": [
+                0.9971352785145888,
+                0.9968542260208926,
+                1.0,
+                0.9986590765338393,
+                0.9986181972789117
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 2.3979041904320653e-05,
+                "sd": 1.37506484013897e-05,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0016000000000000458,
+                "sd": 0.0008000000000000007,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Inductive_Infrequent",
+            "fit_share": 0.9307651575324332,
+            "class": "majority fit",
+            "proposition": "GenPro6",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.215308904647827,
+              "k": 5,
+              "model_key": "Inductive_Infrequent",
+              "mean": 0.9908726077322612,
+              "std": 0.0008009409662070381,
+              "accept_mean": 0.8395999999999999,
+              "accept_std": 0.00922171350671881,
+              "raw": [
+                0.9910482384531452,
+                0.9908810234072257,
+                0.9917114082451695,
+                0.9893737834010328,
+                0.9913485851547326
+              ],
+              "raw_accept": [
+                0.84,
+                0.84,
+                0.851,
+                0.823,
+                0.844
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.186890125274658,
+              "k": 5,
+              "model_key": "Inductive_Infrequent",
+              "mean": 0.990713284248954,
+              "std": 0.000705901801792226,
+              "accept_mean": 0.8378,
+              "accept_std": 0.008772684879784531,
+              "raw": [
+                0.9909859792448582,
+                0.991217938274448,
+                0.9911280127779718,
+                0.9893172691219878,
+                0.9909172218255046
+              ],
+              "raw_accept": [
+                0.836,
+                0.848,
+                0.842,
+                0.822,
+                0.841
+              ],
+              "mutated_fitness_per_draw": [
+                0.9593250067090628,
+                0.9546225744000295,
+                0.9457970343737107,
+                0.9583728270944889,
+                0.9699583775668799
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.00015932348330716106,
+                "sd": 0.0010676159352136774,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0017999999999999128,
+                "sd": 0.012727922061357866,
+                "verdict": "inconclusive (within 2 sd)"
+              }
+            }
+          },
+          {
+            "model": "Flower",
+            "fit_share": 1.0,
+            "class": "all fit",
+            "proposition": "GenPro4",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 1.0346705913543701,
+              "k": 5,
+              "model_key": "Flower",
+              "mean": 1.0,
+              "std": 0.0,
+              "accept_mean": 1.0,
+              "accept_std": 0.0,
+              "raw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "raw_accept": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 0.9489572048187256,
+              "k": 5,
+              "model_key": "Flower",
+              "mean": 1.0,
+              "std": 0.0,
+              "accept_mean": 1.0,
+              "accept_std": 0.0,
+              "raw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "raw_accept": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "mutated_fitness_per_draw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              }
+            }
+          }
+        ]
+      },
+      "5": {
+        "n_traces": 37770,
+        "shadow": {
+          "k": 5,
+          "seed": 42,
+          "duplicates_kept": 0,
+          "truncated": 0,
+          "max_trace_length_used": 246,
+          "mutation_share_per_draw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gen_time_s": 1.1870157718658447
+        },
+        "cells": [
+          {
+            "model": "Trace_Filtered",
+            "fit_share": 0.005692348424675669,
+            "class": "majority non-fit",
+            "proposition": "GenPro7",
+            "relation": "gen(l^k) <= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 11.936790704727173,
+              "k": 5,
+              "model_key": "Trace_Filtered",
+              "mean": 0.6391718588184283,
+              "std": 0.004097623301047046,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.6424370183047077,
+                0.6311524565694712,
+                0.6397941833285388,
+                0.6410692316668463,
+                0.6414064042225769
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 14.53285837173462,
+              "k": 5,
+              "model_key": "Trace_Filtered",
+              "mean": 0.640380192427748,
+              "std": 0.005068311841296012,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.641181653290598,
+                0.6315072231863571,
+                0.6434724362135246,
+                0.6391882155408584,
+                0.6465514339074022
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                0.6750080576728927,
+                0.6728690403175036,
+                0.7404269725593173,
+                0.7011678020311867,
+                0.724600619049337
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0012083336093197117,
+                "sd": 0.006517538004331471,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Alpha",
+            "fit_share": 0.00013238019592268997,
+            "class": "majority non-fit",
+            "proposition": "GenPro7",
+            "relation": "gen(l^k) <= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 1.2829763889312744,
+              "k": 5,
+              "model_key": "Alpha",
+              "mean": 0.2580300082442439,
+              "std": 0.004885292939479614,
+              "accept_mean": 0.0014,
+              "accept_std": 0.0012,
+              "raw": [
+                0.2533991387738672,
+                0.2636899121761087,
+                0.26203871777357557,
+                0.25120464193187697,
+                0.259817630565791
+              ],
+              "raw_accept": [
+                0.002,
+                0.0,
+                0.002,
+                0.003,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 1.2797610759735107,
+              "k": 5,
+              "model_key": "Alpha",
+              "mean": 0.25715432532133864,
+              "std": 0.005014395719353382,
+              "accept_mean": 0.0014,
+              "accept_std": 0.0012,
+              "raw": [
+                0.2542669093368627,
+                0.26477129467470595,
+                0.26115054593453485,
+                0.2511595553732125,
+                0.2544233212873773
+              ],
+              "raw_accept": [
+                0.002,
+                0.0,
+                0.002,
+                0.003,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                0.14435016163948222,
+                0.1274934979334342,
+                0.16426762595170064,
+                0.12829003352940774,
+                0.1098530943472024
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": -0.000875682922905241,
+                "sd": 0.007000732214190091,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.001697056274847714,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Alpha+",
+            "fit_share": 0.0,
+            "class": "none fit",
+            "proposition": "GenPro5",
+            "relation": "gen(l^k) <= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 1.1183481216430664,
+              "k": 5,
+              "model_key": "Alpha+",
+              "mean": 0.627940255255736,
+              "std": 0.007535120741282963,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.6351821800960016,
+                0.618869455195168,
+                0.6225117329712732,
+                0.6384012878090141,
+                0.624736620207224
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 1.089625597000122,
+              "k": 5,
+              "model_key": "Alpha+",
+              "mean": 0.6301101956581971,
+              "std": 0.007821157741973912,
+              "accept_mean": 0.0,
+              "accept_std": 0.0,
+              "raw": [
+                0.635259970816981,
+                0.6178800750930548,
+                0.6247066861705588,
+                0.6397162929589681,
+                0.6329879532514229
+              ],
+              "raw_accept": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "mutated_fitness_per_draw": [
+                0.8793295861844247,
+                0.8547309131220157,
+                0.8299826817529823,
+                0.8738145247632243,
+                0.9066476830513976
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0021699404024611013,
+                "sd": 0.010860412193399989,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Heuristics",
+            "fit_share": 0.927852793222134,
+            "class": "majority fit",
+            "proposition": "GenPro6",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.1140966415405273,
+              "k": 5,
+              "model_key": "Heuristics",
+              "mean": 0.9939019967956337,
+              "std": 0.0003406916577873084,
+              "accept_mean": 0.841,
+              "accept_std": 0.008944271909999166,
+              "raw": [
+                0.9940066599721344,
+                0.993932876156637,
+                0.9943102574553904,
+                0.9932737888765446,
+                0.9939864015174621
+              ],
+              "raw_accept": [
+                0.843,
+                0.842,
+                0.85,
+                0.824,
+                0.846
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.1193673610687256,
+              "k": 5,
+              "model_key": "Heuristics",
+              "mean": 0.9935438029823809,
+              "std": 0.00028442461575152006,
+              "accept_mean": 0.836,
+              "accept_std": 0.006811754546370567,
+              "raw": [
+                0.9935868630802168,
+                0.9937839710164414,
+                0.993907013916993,
+                0.9931753726249749,
+                0.9932657942732785
+              ],
+              "raw_accept": [
+                0.837,
+                0.842,
+                0.841,
+                0.823,
+                0.837
+              ],
+              "mutated_fitness_per_draw": [
+                0.9699749962811304,
+                0.9634372119378608,
+                0.9664239884327572,
+                0.9671425553047261,
+                0.9755142548244079
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0003581938132528606,
+                "sd": 0.00044381095945375694,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0050000000000000044,
+                "sd": 0.011242775458044167,
+                "verdict": "inconclusive (within 2 sd)"
+              }
+            }
+          },
+          {
+            "model": "Heuristics_Strict",
+            "fit_share": 0.9813343923749007,
+            "class": "majority fit",
+            "proposition": "GenPro6",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.0815460681915283,
+              "k": 5,
+              "model_key": "Heuristics_Strict",
+              "mean": 0.9980701660376081,
+              "std": 0.0003748420637997639,
+              "accept_mean": 0.9501999999999999,
+              "accept_std": 0.009744742172063838,
+              "raw": [
+                0.9984407037463259,
+                0.9973956672060245,
+                0.9983781124995441,
+                0.9981560569037783,
+                0.9979802898323675
+              ],
+              "raw_accept": [
+                0.96,
+                0.933,
+                0.959,
+                0.948,
+                0.951
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.121746778488159,
+              "k": 5,
+              "model_key": "Heuristics_Strict",
+              "mean": 0.9977911098636436,
+              "std": 0.00032579287916112464,
+              "accept_mean": 0.9458,
+              "accept_std": 0.007440430095095276,
+              "raw": [
+                0.9980290825980507,
+                0.9971500842561783,
+                0.997989747491114,
+                0.9979308037869457,
+                0.99785583118593
+              ],
+              "raw_accept": [
+                0.95,
+                0.932,
+                0.952,
+                0.944,
+                0.951
+              ],
+              "mutated_fitness_per_draw": [
+                0.9926770060143066,
+                0.9809839595722204,
+                0.9817688835473892,
+                0.9860344398407338,
+                0.9898693269071892
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0002790561739645092,
+                "sd": 0.0004966362581465045,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0043999999999999595,
+                "sd": 0.012260505699195238,
+                "verdict": "inconclusive (within 2 sd)"
+              }
+            }
+          },
+          {
+            "model": "Inductive_Strict",
+            "fit_share": 1.0,
+            "class": "all fit",
+            "proposition": "GenPro4",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.5643014907836914,
+              "k": 5,
+              "model_key": "Inductive_Strict",
+              "mean": 1.0,
+              "std": 0.0,
+              "accept_mean": 1.0,
+              "accept_std": 0.0,
+              "raw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "raw_accept": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.6291892528533936,
+              "k": 5,
+              "model_key": "Inductive_Strict",
+              "mean": 0.9999760209580957,
+              "std": 1.37506484013897e-05,
+              "accept_mean": 0.9984,
+              "accept_std": 0.0008000000000000007,
+              "raw": [
+                0.9999627586206896,
+                0.9999622507122506,
+                1.0,
+                0.9999772043010753,
+                0.9999778911564626
+              ],
+              "raw_accept": [
+                0.998,
+                0.998,
+                1.0,
+                0.998,
+                0.998
+              ],
+              "mutated_fitness_per_draw": [
+                0.9971352785145888,
+                0.9968542260208926,
+                1.0,
+                0.9986590765338393,
+                0.9986181972789117
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 2.3979041904320653e-05,
+                "sd": 1.37506484013897e-05,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0016000000000000458,
+                "sd": 0.0008000000000000007,
+                "verdict": "holds"
+              }
+            }
+          },
+          {
+            "model": "Inductive_Infrequent",
+            "fit_share": 0.9307651575324332,
+            "class": "majority fit",
+            "proposition": "GenPro6",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 2.214797258377075,
+              "k": 5,
+              "model_key": "Inductive_Infrequent",
+              "mean": 0.9908710665092688,
+              "std": 0.0007261579373106211,
+              "accept_mean": 0.8402,
+              "accept_std": 0.009907572861200677,
+              "raw": [
+                0.9909741963985877,
+                0.9908149634856839,
+                0.9917312455010949,
+                0.9895597560853904,
+                0.9912751710755862
+              ],
+              "raw_accept": [
+                0.839,
+                0.843,
+                0.851,
+                0.822,
+                0.846
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 2.186890125274658,
+              "k": 5,
+              "model_key": "Inductive_Infrequent",
+              "mean": 0.990713284248954,
+              "std": 0.000705901801792226,
+              "accept_mean": 0.8378,
+              "accept_std": 0.008772684879784531,
+              "raw": [
+                0.9909859792448582,
+                0.991217938274448,
+                0.9911280127779718,
+                0.9893172691219878,
+                0.9909172218255046
+              ],
+              "raw_accept": [
+                0.836,
+                0.848,
+                0.842,
+                0.822,
+                0.841
+              ],
+              "mutated_fitness_per_draw": [
+                0.9593250067090628,
+                0.9546225744000295,
+                0.9457970343737107,
+                0.9583728270944889,
+                0.9699583775668799
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.00015778226031482045,
+                "sd": 0.0010127204469609207,
+                "verdict": "inconclusive (within 2 sd)"
+              },
+              "accept": {
+                "d": 0.0023999999999999577,
+                "sd": 0.013233291351738626,
+                "verdict": "inconclusive (within 2 sd)"
+              }
+            }
+          },
+          {
+            "model": "Flower",
+            "fit_share": 1.0,
+            "class": "all fit",
+            "proposition": "GenPro4",
+            "relation": "gen(l^k) >= gen(l)",
+            "gen_lk": {
+              "timeout": false,
+              "runtime_s": 1.0094709396362305,
+              "k": 5,
+              "model_key": "Flower",
+              "mean": 1.0,
+              "std": 0.0,
+              "accept_mean": 1.0,
+              "accept_std": 0.0,
+              "raw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "raw_accept": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "mutated_fitness_per_draw": [
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "gen_l": {
+              "timeout": false,
+              "runtime_s": 0.9489572048187256,
+              "k": 5,
+              "model_key": "Flower",
+              "mean": 1.0,
+              "std": 0.0,
+              "accept_mean": 1.0,
+              "accept_std": 0.0,
+              "raw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "raw_accept": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "mutated_fitness_per_draw": [
+                1.0,
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "cmp": {
+              "graded": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              },
+              "accept": {
+                "d": 0.0,
+                "sd": 0.0,
+                "verdict": "holds"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "T5": {
+    "n_extension": 755,
+    "alphabet_size": 4,
+    "random_length": 9,
+    "playout_seed": 1042,
+    "random_seed": 2042,
+    "cells": [
+      {
+        "model": "Trace_Filtered",
+        "fit": {
+          "info": {
+            "generated": 15100,
+            "fit": 622,
+            "kept": 622,
+            "batches": 4,
+            "mean_len_kept": 9.630225080385852,
+            "verified_fit_share": 1.0,
+            "share_already_in_log": 1.0,
+            "distinct_sequences": 2
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.019,
+              0.009,
+              0.007,
+              0.012,
+              0.012
+            ],
+            "gen_time_s": 0.832312822341919
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 10.29020094871521,
+            "k": 5,
+            "model_key": "Trace_Filtered",
+            "mean": 0.6379124508343764,
+            "std": 0.0038184174557434913,
+            "accept_mean": 0.0,
+            "accept_std": 0.0,
+            "raw": [
+              0.6387868429970038,
+              0.6361642093029722,
+              0.6382955463200662,
+              0.6322921024419393,
+              0.6440235531099006
+            ],
+            "raw_accept": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.7043685803360726,
+              0.7209384011241596,
+              0.6552248677248678,
+              0.683590175256842,
+              0.7014676855402661
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 14.53285837173462,
+            "k": 5,
+            "model_key": "Trace_Filtered",
+            "mean": 0.640380192427748,
+            "std": 0.005068311841296012,
+            "accept_mean": 0.0,
+            "accept_std": 0.0,
+            "raw": [
+              0.641181653290598,
+              0.6315072231863571,
+              0.6434724362135246,
+              0.6391882155408584,
+              0.6465514339074022
+            ],
+            "raw_accept": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.6750080576728927,
+              0.6728690403175036,
+              0.7404269725593173,
+              0.7011678020311867,
+              0.724600619049337
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.0024677415933715974,
+              "sd": 0.006345714836560808,
+              "verdict": "inconclusive (within 2 sd)"
+            },
+            "accept": {
+              "d": 0.0,
+              "sd": 0.0,
+              "verdict": "holds"
+            }
+          }
+        },
+        "nonfit": {
+          "info": {
+            "generated": 755,
+            "kept": 755,
+            "length": 9,
+            "batches": 1,
+            "verified_fit_share": 0.0
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.031,
+              0.026,
+              0.026,
+              0.03,
+              0.024
+            ],
+            "gen_time_s": 1.0366246700286865
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 10.791822910308838,
+            "k": 5,
+            "model_key": "Trace_Filtered",
+            "mean": 0.6111452231619927,
+            "std": 0.0059267258523993714,
+            "accept_mean": 0.0,
+            "accept_std": 0.0,
+            "raw": [
+              0.6134314478973569,
+              0.6043560050814312,
+              0.6125425874716713,
+              0.6203640339651146,
+              0.6050320413943893
+            ],
+            "raw_accept": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.5875716374346784,
+              0.5934522666974359,
+              0.5963916822169822,
+              0.5674829218597678,
+              0.5977353258554884
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 14.53285837173462,
+            "k": 5,
+            "model_key": "Trace_Filtered",
+            "mean": 0.640380192427748,
+            "std": 0.005068311841296012,
+            "accept_mean": 0.0,
+            "accept_std": 0.0,
+            "raw": [
+              0.641181653290598,
+              0.6315072231863571,
+              0.6434724362135246,
+              0.6391882155408584,
+              0.6465514339074022
+            ],
+            "raw_accept": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.6750080576728927,
+              0.6728690403175036,
+              0.7404269725593173,
+              0.7011678020311867,
+              0.724600619049337
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": 0.029234969265755306,
+              "sd": 0.007798324451452403,
+              "verdict": "holds"
+            },
+            "accept": {
+              "d": 0.0,
+              "sd": 0.0,
+              "verdict": "holds"
+            }
+          }
+        }
+      },
+      {
+        "model": "Alpha",
+        "fit": {
+          "info": {
+            "generated": 3775,
+            "fit": 3775,
+            "kept": 755,
+            "batches": 1,
+            "mean_len_kept": 82.28874172185431,
+            "verified_fit_share": 1.0,
+            "share_already_in_log": 0.1576158940397351,
+            "distinct_sequences": 45
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 32,
+            "max_trace_length_used": 492,
+            "mutation_share_per_draw": [
+              0.018,
+              0.01,
+              0.018,
+              0.02,
+              0.018
+            ],
+            "gen_time_s": 1.0975847244262695
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 1.6459224224090576,
+            "k": 5,
+            "model_key": "Alpha",
+            "mean": 0.2521672287912689,
+            "std": 0.009796936160754324,
+            "accept_mean": 0.007000000000000001,
+            "accept_std": 0.0037416573867739412,
+            "raw": [
+              0.2433780936305573,
+              0.25807070675502736,
+              0.24223021223084232,
+              0.2489130325113237,
+              0.2682440988285939
+            ],
+            "raw_accept": [
+              0.006,
+              0.009,
+              0.002,
+              0.005,
+              0.013
+            ],
+            "mutated_fitness_per_draw": [
+              0.17560669231453696,
+              0.21454254526835173,
+              0.169300616624963,
+              0.1799547136985049,
+              0.15069643084280726
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 1.2797610759735107,
+            "k": 5,
+            "model_key": "Alpha",
+            "mean": 0.25715432532133864,
+            "std": 0.005014395719353382,
+            "accept_mean": 0.0014,
+            "accept_std": 0.0012,
+            "raw": [
+              0.2542669093368627,
+              0.26477129467470595,
+              0.26115054593453485,
+              0.2511595553732125,
+              0.2544233212873773
+            ],
+            "raw_accept": [
+              0.002,
+              0.0,
+              0.002,
+              0.003,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.14435016163948222,
+              0.1274934979334342,
+              0.16426762595170064,
+              0.12829003352940774,
+              0.1098530943472024
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.0049870965300697345,
+              "sd": 0.011005640488775071,
+              "verdict": "inconclusive (within 2 sd)"
+            },
+            "accept": {
+              "d": 0.005600000000000001,
+              "sd": 0.0039293765408776994,
+              "verdict": "inconclusive (within 2 sd)"
+            }
+          }
+        },
+        "nonfit": {
+          "info": {
+            "generated": 755,
+            "kept": 755,
+            "length": 9,
+            "batches": 1,
+            "verified_fit_share": 0.0
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.031,
+              0.026,
+              0.026,
+              0.03,
+              0.024
+            ],
+            "gen_time_s": 0.9934659004211426
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 1.1642396450042725,
+            "k": 5,
+            "model_key": "Alpha",
+            "mean": 0.31065653801371085,
+            "std": 0.004304651920532591,
+            "accept_mean": 0.04,
+            "accept_std": 0.0022803508501982764,
+            "raw": [
+              0.30972315064883776,
+              0.3164319782595602,
+              0.3097318682317276,
+              0.3037030862397094,
+              0.31369260668871907
+            ],
+            "raw_accept": [
+              0.042,
+              0.043,
+              0.038,
+              0.037,
+              0.04
+            ],
+            "mutated_fitness_per_draw": [
+              0.20570194254133495,
+              0.1871518929315658,
+              0.21286977050281206,
+              0.2175751815581849,
+              0.2336104773062837
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 1.2797610759735107,
+            "k": 5,
+            "model_key": "Alpha",
+            "mean": 0.25715432532133864,
+            "std": 0.005014395719353382,
+            "accept_mean": 0.0014,
+            "accept_std": 0.0012,
+            "raw": [
+              0.2542669093368627,
+              0.26477129467470595,
+              0.26115054593453485,
+              0.2511595553732125,
+              0.2544233212873773
+            ],
+            "raw_accept": [
+              0.002,
+              0.0,
+              0.002,
+              0.003,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.14435016163948222,
+              0.1274934979334342,
+              0.16426762595170064,
+              0.12829003352940774,
+              0.1098530943472024
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.05350221269237221,
+              "sd": 0.006608645291375113,
+              "verdict": "violated"
+            },
+            "accept": {
+              "d": -0.0386,
+              "sd": 0.0025768197453450254,
+              "verdict": "violated"
+            }
+          }
+        }
+      },
+      {
+        "model": "Alpha+",
+        "fit": {
+          "info": {
+            "generated": 3775,
+            "fit": 3775,
+            "kept": 755,
+            "batches": 1,
+            "mean_len_kept": 9.111258278145696,
+            "verified_fit_share": 1.0,
+            "share_already_in_log": 0.0,
+            "distinct_sequences": 628
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.017,
+              0.016,
+              0.017,
+              0.012,
+              0.016
+            ],
+            "gen_time_s": 1.0507152080535889
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 1.001939058303833,
+            "k": 5,
+            "model_key": "Alpha+",
+            "mean": 0.6183564903251583,
+            "std": 0.0075496757903626074,
+            "accept_mean": 0.0332,
+            "accept_std": 0.0036551333764994133,
+            "raw": [
+              0.6293427808854616,
+              0.6151137613867802,
+              0.607362615849207,
+              0.6236982721460762,
+              0.6162650213582667
+            ],
+            "raw_accept": [
+              0.032,
+              0.035,
+              0.027,
+              0.038,
+              0.034
+            ],
+            "mutated_fitness_per_draw": [
+              0.8114198194306553,
+              0.7959580893934441,
+              0.8804388980472572,
+              0.8257098293863,
+              0.8248487942978074
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 1.089625597000122,
+            "k": 5,
+            "model_key": "Alpha+",
+            "mean": 0.6301101956581971,
+            "std": 0.007821157741973912,
+            "accept_mean": 0.0,
+            "accept_std": 0.0,
+            "raw": [
+              0.635259970816981,
+              0.6178800750930548,
+              0.6247066861705588,
+              0.6397162929589681,
+              0.6329879532514229
+            ],
+            "raw_accept": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.8793295861844247,
+              0.8547309131220157,
+              0.8299826817529823,
+              0.8738145247632243,
+              0.9066476830513976
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.011753705333038877,
+              "sd": 0.010870515763496492,
+              "verdict": "inconclusive (within 2 sd)"
+            },
+            "accept": {
+              "d": 0.0332,
+              "sd": 0.0036551333764994133,
+              "verdict": "holds"
+            }
+          }
+        },
+        "nonfit": {
+          "info": {
+            "generated": 1510,
+            "kept": 755,
+            "length": 9,
+            "batches": 2,
+            "verified_fit_share": 0.0
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.024,
+              0.029,
+              0.029,
+              0.03,
+              0.026
+            ],
+            "gen_time_s": 0.9850399494171143
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 1.0182335376739502,
+            "k": 5,
+            "model_key": "Alpha+",
+            "mean": 0.6309874976475485,
+            "std": 0.004293305363713216,
+            "accept_mean": 0.013600000000000001,
+            "accept_std": 0.004363484845854286,
+            "raw": [
+              0.6313347950840598,
+              0.6256836090500624,
+              0.6285683454566087,
+              0.6386033085189942,
+              0.6307474301280175
+            ],
+            "raw_accept": [
+              0.013,
+              0.015,
+              0.008,
+              0.011,
+              0.021
+            ],
+            "mutated_fitness_per_draw": [
+              0.7963389782244734,
+              0.7767156770579738,
+              0.7408099757317758,
+              0.7604954781057723,
+              0.746637892377367
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 1.089625597000122,
+            "k": 5,
+            "model_key": "Alpha+",
+            "mean": 0.6301101956581971,
+            "std": 0.007821157741973912,
+            "accept_mean": 0.0,
+            "accept_std": 0.0,
+            "raw": [
+              0.635259970816981,
+              0.6178800750930548,
+              0.6247066861705588,
+              0.6397162929589681,
+              0.6329879532514229
+            ],
+            "raw_accept": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "mutated_fitness_per_draw": [
+              0.8793295861844247,
+              0.8547309131220157,
+              0.8299826817529823,
+              0.8738145247632243,
+              0.9066476830513976
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.0008773019893513201,
+              "sd": 0.008922050177561609,
+              "verdict": "inconclusive (within 2 sd)"
+            },
+            "accept": {
+              "d": -0.013600000000000001,
+              "sd": 0.004363484845854286,
+              "verdict": "violated"
+            }
+          }
+        }
+      },
+      {
+        "model": "Heuristics",
+        "fit": {
+          "info": {
+            "generated": 3775,
+            "fit": 3775,
+            "kept": 755,
+            "batches": 1,
+            "mean_len_kept": 5.785430463576159,
+            "verified_fit_share": 1.0,
+            "share_already_in_log": 0.19602649006622516,
+            "distinct_sequences": 324
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.013,
+              0.012,
+              0.014,
+              0.014,
+              0.018
+            ],
+            "gen_time_s": 1.0940842628479004
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 2.9534389972686768,
+            "k": 5,
+            "model_key": "Heuristics",
+            "mean": 0.9909853419982874,
+            "std": 0.00033798179635853175,
+            "accept_mean": 0.774,
+            "accept_std": 0.006633249580710806,
+            "raw": [
+              0.9913545839291983,
+              0.9908646249629643,
+              0.9904259339943462,
+              0.9909690500397393,
+              0.9913125170651887
+            ],
+            "raw_accept": [
+              0.785,
+              0.767,
+              0.771,
+              0.778,
+              0.769
+            ],
+            "mutated_fitness_per_draw": [
+              0.963161104546933,
+              0.9651286548301887,
+              0.9574227479289743,
+              0.9673547148720246,
+              0.9592615485007472
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.1193673610687256,
+            "k": 5,
+            "model_key": "Heuristics",
+            "mean": 0.9935438029823809,
+            "std": 0.00028442461575152006,
+            "accept_mean": 0.836,
+            "accept_std": 0.006811754546370567,
+            "raw": [
+              0.9935868630802168,
+              0.9937839710164414,
+              0.993907013916993,
+              0.9931753726249749,
+              0.9932657942732785
+            ],
+            "raw_accept": [
+              0.837,
+              0.842,
+              0.841,
+              0.823,
+              0.837
+            ],
+            "mutated_fitness_per_draw": [
+              0.9699749962811304,
+              0.9634372119378608,
+              0.9664239884327572,
+              0.9671425553047261,
+              0.9755142548244079
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.0025584609840935135,
+              "sd": 0.0004417341471011041,
+              "verdict": "violated"
+            },
+            "accept": {
+              "d": -0.061999999999999944,
+              "sd": 0.009507891459203778,
+              "verdict": "violated"
+            }
+          }
+        },
+        "nonfit": {
+          "info": {
+            "generated": 1510,
+            "kept": 755,
+            "length": 9,
+            "batches": 2,
+            "verified_fit_share": 0.0
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.023,
+              0.032,
+              0.024,
+              0.022,
+              0.032
+            ],
+            "gen_time_s": 1.0560808181762695
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 2.011030912399292,
+            "k": 5,
+            "model_key": "Heuristics",
+            "mean": 0.9610994264924928,
+            "std": 0.002956206456655629,
+            "accept_mean": 0.7335999999999999,
+            "accept_std": 0.007499333303701077,
+            "raw": [
+              0.9582017039853072,
+              0.9573669771463839,
+              0.9639627536556736,
+              0.9612400626603593,
+              0.9647256350147405
+            ],
+            "raw_accept": [
+              0.74,
+              0.72,
+              0.731,
+              0.738,
+              0.739
+            ],
+            "mutated_fitness_per_draw": [
+              0.8970606762552116,
+              0.8887407535079841,
+              0.887404303571033,
+              0.9239046651964735,
+              0.9001847269635755
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.1193673610687256,
+            "k": 5,
+            "model_key": "Heuristics",
+            "mean": 0.9935438029823809,
+            "std": 0.00028442461575152006,
+            "accept_mean": 0.836,
+            "accept_std": 0.006811754546370567,
+            "raw": [
+              0.9935868630802168,
+              0.9937839710164414,
+              0.993907013916993,
+              0.9931753726249749,
+              0.9932657942732785
+            ],
+            "raw_accept": [
+              0.837,
+              0.842,
+              0.841,
+              0.823,
+              0.837
+            ],
+            "mutated_fitness_per_draw": [
+              0.9699749962811304,
+              0.9634372119378608,
+              0.9664239884327572,
+              0.9671425553047261,
+              0.9755142548244079
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": 0.03244437648988807,
+              "sd": 0.0029698575683722328,
+              "verdict": "holds"
+            },
+            "accept": {
+              "d": 0.10240000000000005,
+              "sd": 0.010131140113531162,
+              "verdict": "holds"
+            }
+          }
+        }
+      },
+      {
+        "model": "Heuristics_Strict",
+        "fit": {
+          "info": {
+            "generated": 3775,
+            "fit": 3775,
+            "kept": 755,
+            "batches": 1,
+            "mean_len_kept": 5.4397350993377485,
+            "verified_fit_share": 1.0,
+            "share_already_in_log": 0.1880794701986755,
+            "distinct_sequences": 344
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.013,
+              0.013,
+              0.017,
+              0.02,
+              0.021
+            ],
+            "gen_time_s": 0.9668295383453369
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 2.800158977508545,
+            "k": 5,
+            "model_key": "Heuristics_Strict",
+            "mean": 0.9973009825642126,
+            "std": 0.00045489878809711135,
+            "accept_mean": 0.9326000000000001,
+            "accept_std": 0.008404760555780235,
+            "raw": [
+              0.9980820532202651,
+              0.9966906851538502,
+              0.9970926125395724,
+              0.9972565140106711,
+              0.997383047896705
+            ],
+            "raw_accept": [
+              0.944,
+              0.921,
+              0.927,
+              0.931,
+              0.94
+            ],
+            "mutated_fitness_per_draw": [
+              0.9846853721245583,
+              0.9808924019450337,
+              0.9909780977212518,
+              0.9836763743710311,
+              0.9862812219500199
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.121746778488159,
+            "k": 5,
+            "model_key": "Heuristics_Strict",
+            "mean": 0.9977911098636436,
+            "std": 0.00032579287916112464,
+            "accept_mean": 0.9458,
+            "accept_std": 0.007440430095095276,
+            "raw": [
+              0.9980290825980507,
+              0.9971500842561783,
+              0.997989747491114,
+              0.9979308037869457,
+              0.99785583118593
+            ],
+            "raw_accept": [
+              0.95,
+              0.932,
+              0.952,
+              0.944,
+              0.951
+            ],
+            "mutated_fitness_per_draw": [
+              0.9926770060143066,
+              0.9809839595722204,
+              0.9817688835473892,
+              0.9860344398407338,
+              0.9898693269071892
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.0004901272994309869,
+              "sd": 0.0005595300774081012,
+              "verdict": "inconclusive (within 2 sd)"
+            },
+            "accept": {
+              "d": -0.013199999999999878,
+              "sd": 0.01122497216032177,
+              "verdict": "inconclusive (within 2 sd)"
+            }
+          }
+        },
+        "nonfit": {
+          "info": {
+            "generated": 1510,
+            "kept": 755,
+            "length": 9,
+            "batches": 2,
+            "verified_fit_share": 0.0
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.031,
+              0.035,
+              0.029,
+              0.027,
+              0.031
+            ],
+            "gen_time_s": 1.068467617034912
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 1.929147481918335,
+            "k": 5,
+            "model_key": "Heuristics_Strict",
+            "mean": 0.9784647994270103,
+            "std": 0.004677415747626397,
+            "accept_mean": 0.8242,
+            "accept_std": 0.023215512055520093,
+            "raw": [
+              0.9717174394576155,
+              0.9759788990030731,
+              0.9843800807761779,
+              0.9771921105051095,
+              0.9830554673930753
+            ],
+            "raw_accept": [
+              0.79,
+              0.809,
+              0.852,
+              0.823,
+              0.847
+            ],
+            "mutated_fitness_per_draw": [
+              0.9593821806584173,
+              0.9582561938639754,
+              0.9619977631777924,
+              0.9492642647189973,
+              0.9502747160563224
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.121746778488159,
+            "k": 5,
+            "model_key": "Heuristics_Strict",
+            "mean": 0.9977911098636436,
+            "std": 0.00032579287916112464,
+            "accept_mean": 0.9458,
+            "accept_std": 0.007440430095095276,
+            "raw": [
+              0.9980290825980507,
+              0.9971500842561783,
+              0.997989747491114,
+              0.9979308037869457,
+              0.99785583118593
+            ],
+            "raw_accept": [
+              0.95,
+              0.932,
+              0.952,
+              0.944,
+              0.951
+            ],
+            "mutated_fitness_per_draw": [
+              0.9926770060143066,
+              0.9809839595722204,
+              0.9817688835473892,
+              0.9860344398407338,
+              0.9898693269071892
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": 0.019326310436633354,
+              "sd": 0.00468874813529747,
+              "verdict": "holds"
+            },
+            "accept": {
+              "d": 0.12159999999999993,
+              "sd": 0.024378679209505965,
+              "verdict": "holds"
+            }
+          }
+        }
+      },
+      {
+        "model": "Inductive_Strict",
+        "fit": {
+          "info": {
+            "generated": 2655,
+            "fit": 2655,
+            "kept": 755,
+            "batches": 1,
+            "mean_len_kept": 2.855629139072848,
+            "verified_fit_share": 1.0,
+            "share_already_in_log": 0.295364238410596,
+            "distinct_sequences": 189
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.01,
+              0.021,
+              0.017,
+              0.018,
+              0.016
+            ],
+            "gen_time_s": 0.9229762554168701
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 3.4803473949432373,
+            "k": 5,
+            "model_key": "Inductive_Strict",
+            "mean": 0.9999269256932785,
+            "std": 4.822802118081485e-05,
+            "accept_mean": 0.9968,
+            "accept_std": 0.0016000000000000014,
+            "raw": [
+              0.9999650793650794,
+              0.9998370222007723,
+              0.9999168979094801,
+              0.9999642401021711,
+              0.9999513888888889
+            ],
+            "raw_accept": [
+              0.998,
+              0.994,
+              0.996,
+              0.998,
+              0.998
+            ],
+            "mutated_fitness_per_draw": [
+              0.9988888888888889,
+              0.995858843537415,
+              0.9962009663528603,
+              0.9990421455938697,
+              0.9982638888888888
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.6291892528533936,
+            "k": 5,
+            "model_key": "Inductive_Strict",
+            "mean": 0.9999760209580957,
+            "std": 1.37506484013897e-05,
+            "accept_mean": 0.9984,
+            "accept_std": 0.0008000000000000007,
+            "raw": [
+              0.9999627586206896,
+              0.9999622507122506,
+              1.0,
+              0.9999772043010753,
+              0.9999778911564626
+            ],
+            "raw_accept": [
+              0.998,
+              0.998,
+              1.0,
+              0.998,
+              0.998
+            ],
+            "mutated_fitness_per_draw": [
+              0.9971352785145888,
+              0.9968542260208926,
+              1.0,
+              0.9986590765338393,
+              0.9986181972789117
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -4.9095264817222706e-05,
+              "sd": 5.014999858899068e-05,
+              "verdict": "inconclusive (within 2 sd)"
+            },
+            "accept": {
+              "d": -0.0015999999999999348,
+              "sd": 0.0017888543819998333,
+              "verdict": "inconclusive (within 2 sd)"
+            }
+          }
+        },
+        "nonfit": {
+          "info": {
+            "generated": 1510,
+            "kept": 755,
+            "length": 9,
+            "batches": 2,
+            "verified_fit_share": 0.0
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.033,
+              0.03,
+              0.034,
+              0.035,
+              0.034
+            ],
+            "gen_time_s": 1.0520319938659668
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 2.4132437705993652,
+            "k": 5,
+            "model_key": "Inductive_Strict",
+            "mean": 0.9916453262636773,
+            "std": 0.000528211235990848,
+            "accept_mean": 0.8954000000000001,
+            "accept_std": 0.008522910301065013,
+            "raw": [
+              0.9915898048100512,
+              0.991375086578061,
+              0.9923225649858365,
+              0.9908377239991483,
+              0.9921014509452896
+            ],
+            "raw_accept": [
+              0.908,
+              0.886,
+              0.902,
+              0.887,
+              0.894
+            ],
+            "mutated_fitness_per_draw": [
+              0.9495368048415327,
+              0.9527278688666453,
+              0.9320343216951947,
+              0.9343059327885919,
+              0.9486780008693695
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.6291892528533936,
+            "k": 5,
+            "model_key": "Inductive_Strict",
+            "mean": 0.9999760209580957,
+            "std": 1.37506484013897e-05,
+            "accept_mean": 0.9984,
+            "accept_std": 0.0008000000000000007,
+            "raw": [
+              0.9999627586206896,
+              0.9999622507122506,
+              1.0,
+              0.9999772043010753,
+              0.9999778911564626
+            ],
+            "raw_accept": [
+              0.998,
+              0.998,
+              1.0,
+              0.998,
+              0.998
+            ],
+            "mutated_fitness_per_draw": [
+              0.9971352785145888,
+              0.9968542260208926,
+              1.0,
+              0.9986590765338393,
+              0.9986181972789117
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": 0.008330694694418384,
+              "sd": 0.0005283901874168728,
+              "verdict": "holds"
+            },
+            "accept": {
+              "d": 0.10299999999999987,
+              "sd": 0.008560373823613085,
+              "verdict": "holds"
+            }
+          }
+        }
+      },
+      {
+        "model": "Inductive_Infrequent",
+        "fit": {
+          "info": {
+            "generated": 3775,
+            "fit": 3775,
+            "kept": 755,
+            "batches": 1,
+            "mean_len_kept": 5.774834437086093,
+            "verified_fit_share": 1.0,
+            "share_already_in_log": 0.5390728476821192,
+            "distinct_sequences": 244
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.027,
+              0.017,
+              0.028,
+              0.023,
+              0.022
+            ],
+            "gen_time_s": 1.1163179874420166
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 3.325498342514038,
+            "k": 5,
+            "model_key": "Inductive_Infrequent",
+            "mean": 0.9859779385381575,
+            "std": 0.0003227199461438816,
+            "accept_mean": 0.7578000000000001,
+            "accept_std": 0.008611620056644401,
+            "raw": [
+              0.9856975169712298,
+              0.9865269656611997,
+              0.986026132714077,
+              0.9860295030351415,
+              0.9856095743091401
+            ],
+            "raw_accept": [
+              0.752,
+              0.771,
+              0.752,
+              0.765,
+              0.749
+            ],
+            "mutated_fitness_per_draw": [
+              0.9513087064938918,
+              0.9431757566807003,
+              0.9576238031678103,
+              0.9545710847711508,
+              0.956928380703241
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.186890125274658,
+            "k": 5,
+            "model_key": "Inductive_Infrequent",
+            "mean": 0.990713284248954,
+            "std": 0.000705901801792226,
+            "accept_mean": 0.8378,
+            "accept_std": 0.008772684879784531,
+            "raw": [
+              0.9909859792448582,
+              0.991217938274448,
+              0.9911280127779718,
+              0.9893172691219878,
+              0.9909172218255046
+            ],
+            "raw_accept": [
+              0.836,
+              0.848,
+              0.842,
+              0.822,
+              0.841
+            ],
+            "mutated_fitness_per_draw": [
+              0.9593250067090628,
+              0.9546225744000295,
+              0.9457970343737107,
+              0.9583728270944889,
+              0.9699583775668799
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": -0.004735345710796479,
+              "sd": 0.0007761736386998859,
+              "verdict": "violated"
+            },
+            "accept": {
+              "d": -0.07999999999999985,
+              "sd": 0.012293087488503458,
+              "verdict": "violated"
+            }
+          }
+        },
+        "nonfit": {
+          "info": {
+            "generated": 1510,
+            "kept": 755,
+            "length": 9,
+            "batches": 2,
+            "verified_fit_share": 0.0
+          },
+          "shadow": {
+            "k": 5,
+            "seed": 42,
+            "duplicates_kept": 0,
+            "truncated": 0,
+            "max_trace_length_used": 246,
+            "mutation_share_per_draw": [
+              0.024,
+              0.02,
+              0.028,
+              0.037,
+              0.03
+            ],
+            "gen_time_s": 1.063744068145752
+          },
+          "gen_ext": {
+            "timeout": false,
+            "runtime_s": 2.098320722579956,
+            "k": 5,
+            "model_key": "Inductive_Infrequent",
+            "mean": 0.9542097617978975,
+            "std": 0.005389070029728031,
+            "accept_mean": 0.6888,
+            "accept_std": 0.02191255347968371,
+            "raw": [
+              0.9573965092116044,
+              0.9533674792505581,
+              0.9593883323668678,
+              0.9567422871266242,
+              0.9441542010338329
+            ],
+            "raw_accept": [
+              0.707,
+              0.696,
+              0.711,
+              0.679,
+              0.651
+            ],
+            "mutated_fitness_per_draw": [
+              0.9217948725799512,
+              0.9322590076026641,
+              0.9198654770210116,
+              0.9155542302133015,
+              0.9371968451623712
+            ]
+          },
+          "gen_l": {
+            "timeout": false,
+            "runtime_s": 2.186890125274658,
+            "k": 5,
+            "model_key": "Inductive_Infrequent",
+            "mean": 0.990713284248954,
+            "std": 0.000705901801792226,
+            "accept_mean": 0.8378,
+            "accept_std": 0.008772684879784531,
+            "raw": [
+              0.9909859792448582,
+              0.991217938274448,
+              0.9911280127779718,
+              0.9893172691219878,
+              0.9909172218255046
+            ],
+            "raw_accept": [
+              0.836,
+              0.848,
+              0.842,
+              0.822,
+              0.841
+            ],
+            "mutated_fitness_per_draw": [
+              0.9593250067090628,
+              0.9546225744000295,
+              0.9457970343737107,
+              0.9583728270944889,
+              0.9699583775668799
+            ]
+          },
+          "cmp": {
+            "graded": {
+              "d": 0.03650352245105648,
+              "sd": 0.005435105623544624,
+              "verdict": "holds"
+            },
+            "accept": {
+              "d": 0.14900000000000002,
+              "sd": 0.023603389587091062,
+              "verdict": "holds"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "worker_restarts": 0,
+  "base_scores": {
+    "Trace_Filtered": {
+      "timeout": false,
+      "runtime_s": 14.53285837173462,
+      "k": 5,
+      "model_key": "Trace_Filtered",
+      "mean": 0.640380192427748,
+      "std": 0.005068311841296012,
+      "accept_mean": 0.0,
+      "accept_std": 0.0,
+      "raw": [
+        0.641181653290598,
+        0.6315072231863571,
+        0.6434724362135246,
+        0.6391882155408584,
+        0.6465514339074022
+      ],
+      "raw_accept": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mutated_fitness_per_draw": [
+        0.6750080576728927,
+        0.6728690403175036,
+        0.7404269725593173,
+        0.7011678020311867,
+        0.724600619049337
+      ]
+    },
+    "Alpha": {
+      "timeout": false,
+      "runtime_s": 1.2797610759735107,
+      "k": 5,
+      "model_key": "Alpha",
+      "mean": 0.25715432532133864,
+      "std": 0.005014395719353382,
+      "accept_mean": 0.0014,
+      "accept_std": 0.0012,
+      "raw": [
+        0.2542669093368627,
+        0.26477129467470595,
+        0.26115054593453485,
+        0.2511595553732125,
+        0.2544233212873773
+      ],
+      "raw_accept": [
+        0.002,
+        0.0,
+        0.002,
+        0.003,
+        0.0
+      ],
+      "mutated_fitness_per_draw": [
+        0.14435016163948222,
+        0.1274934979334342,
+        0.16426762595170064,
+        0.12829003352940774,
+        0.1098530943472024
+      ]
+    },
+    "Alpha+": {
+      "timeout": false,
+      "runtime_s": 1.089625597000122,
+      "k": 5,
+      "model_key": "Alpha+",
+      "mean": 0.6301101956581971,
+      "std": 0.007821157741973912,
+      "accept_mean": 0.0,
+      "accept_std": 0.0,
+      "raw": [
+        0.635259970816981,
+        0.6178800750930548,
+        0.6247066861705588,
+        0.6397162929589681,
+        0.6329879532514229
+      ],
+      "raw_accept": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mutated_fitness_per_draw": [
+        0.8793295861844247,
+        0.8547309131220157,
+        0.8299826817529823,
+        0.8738145247632243,
+        0.9066476830513976
+      ]
+    },
+    "Heuristics": {
+      "timeout": false,
+      "runtime_s": 2.1193673610687256,
+      "k": 5,
+      "model_key": "Heuristics",
+      "mean": 0.9935438029823809,
+      "std": 0.00028442461575152006,
+      "accept_mean": 0.836,
+      "accept_std": 0.006811754546370567,
+      "raw": [
+        0.9935868630802168,
+        0.9937839710164414,
+        0.993907013916993,
+        0.9931753726249749,
+        0.9932657942732785
+      ],
+      "raw_accept": [
+        0.837,
+        0.842,
+        0.841,
+        0.823,
+        0.837
+      ],
+      "mutated_fitness_per_draw": [
+        0.9699749962811304,
+        0.9634372119378608,
+        0.9664239884327572,
+        0.9671425553047261,
+        0.9755142548244079
+      ]
+    },
+    "Heuristics_Strict": {
+      "timeout": false,
+      "runtime_s": 2.121746778488159,
+      "k": 5,
+      "model_key": "Heuristics_Strict",
+      "mean": 0.9977911098636436,
+      "std": 0.00032579287916112464,
+      "accept_mean": 0.9458,
+      "accept_std": 0.007440430095095276,
+      "raw": [
+        0.9980290825980507,
+        0.9971500842561783,
+        0.997989747491114,
+        0.9979308037869457,
+        0.99785583118593
+      ],
+      "raw_accept": [
+        0.95,
+        0.932,
+        0.952,
+        0.944,
+        0.951
+      ],
+      "mutated_fitness_per_draw": [
+        0.9926770060143066,
+        0.9809839595722204,
+        0.9817688835473892,
+        0.9860344398407338,
+        0.9898693269071892
+      ]
+    },
+    "Inductive_Strict": {
+      "timeout": false,
+      "runtime_s": 2.6291892528533936,
+      "k": 5,
+      "model_key": "Inductive_Strict",
+      "mean": 0.9999760209580957,
+      "std": 1.37506484013897e-05,
+      "accept_mean": 0.9984,
+      "accept_std": 0.0008000000000000007,
+      "raw": [
+        0.9999627586206896,
+        0.9999622507122506,
+        1.0,
+        0.9999772043010753,
+        0.9999778911564626
+      ],
+      "raw_accept": [
+        0.998,
+        0.998,
+        1.0,
+        0.998,
+        0.998
+      ],
+      "mutated_fitness_per_draw": [
+        0.9971352785145888,
+        0.9968542260208926,
+        1.0,
+        0.9986590765338393,
+        0.9986181972789117
+      ]
+    },
+    "Inductive_Infrequent": {
+      "timeout": false,
+      "runtime_s": 2.186890125274658,
+      "k": 5,
+      "model_key": "Inductive_Infrequent",
+      "mean": 0.990713284248954,
+      "std": 0.000705901801792226,
+      "accept_mean": 0.8378,
+      "accept_std": 0.008772684879784531,
+      "raw": [
+        0.9909859792448582,
+        0.991217938274448,
+        0.9911280127779718,
+        0.9893172691219878,
+        0.9909172218255046
+      ],
+      "raw_accept": [
+        0.836,
+        0.848,
+        0.842,
+        0.822,
+        0.841
+      ],
+      "mutated_fitness_per_draw": [
+        0.9593250067090628,
+        0.9546225744000295,
+        0.9457970343737107,
+        0.9583728270944889,
+        0.9699583775668799
+      ]
+    },
+    "Flower": {
+      "timeout": false,
+      "runtime_s": 0.9489572048187256,
+      "k": 5,
+      "model_key": "Flower",
+      "mean": 1.0,
+      "std": 0.0,
+      "accept_mean": 1.0,
+      "accept_std": 0.0,
+      "raw": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "raw_accept": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mutated_fitness_per_draw": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  }
+}

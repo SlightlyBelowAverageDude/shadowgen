@@ -1,0 +1,158 @@
+{
+ "log": "L3",
+ "split": "random",
+ "budget_s": 1200,
+ "node_cap": 2000000,
+ "sample": 300,
+ "models": {
+  "A_1": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 26,
+   "ref": 0.9999470899470899,
+   "shadowgen": 1.0,
+   "shadowgen_bounded": 1.0,
+   "singleton": 1.0,
+   "seconds": 0.5349218845367432,
+   "strict_ref": 0.998162609095085,
+   "strict_shadowgen": 1.0,
+   "strict_ref_sample": 0.9966666666666667,
+   "strict_shadowgen_sample": 1.0
+  },
+  "A_2": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 171,
+   "ref": 0.9999107352595725,
+   "shadowgen": 0.9999358974358974,
+   "shadowgen_bounded": 0.9999358974358974,
+   "singleton": 1.0,
+   "seconds": 0.500922441482544,
+   "strict_ref": 0.9924207625172256,
+   "strict_shadowgen": 0.996,
+   "strict_ref_sample": 0.9933333333333333,
+   "strict_shadowgen_sample": 0.9966666666666667
+  },
+  "A_3": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 496,
+   "ref": 0.9994789812122599,
+   "shadowgen": 0.9998151077631303,
+   "shadowgen_bounded": 0.9998151077631303,
+   "singleton": 1.0,
+   "seconds": 0.48952221870422363,
+   "strict_ref": 0.9836931557188792,
+   "strict_shadowgen": 0.989,
+   "strict_ref_sample": 0.9833333333333333,
+   "strict_shadowgen_sample": 0.99
+  },
+  "A_4": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 1021,
+   "ref": 0.9991382831622252,
+   "shadowgen": 0.9995535470846149,
+   "shadowgen_bounded": 0.9995535470846149,
+   "singleton": 1.0,
+   "seconds": 0.4972848892211914,
+   "strict_ref": 0.970831419384474,
+   "strict_shadowgen": 0.979,
+   "strict_ref_sample": 0.9766666666666667,
+   "strict_shadowgen_sample": 0.9833333333333333
+  },
+  "A_6": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 2866,
+   "ref": 0.9976470550019978,
+   "shadowgen": 0.9992134693505773,
+   "shadowgen_bounded": 0.9992344337111642,
+   "singleton": 1.0,
+   "seconds": 0.5650875568389893,
+   "strict_ref": 0.9377583830960037,
+   "strict_shadowgen": 0.959,
+   "strict_ref_sample": 0.9433333333333334,
+   "strict_shadowgen_sample": 0.97
+  },
+  "A_10": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 10545,
+   "ref": 0.9949874842533092,
+   "shadowgen": 0.9911723607304136,
+   "shadowgen_bounded": 0.9923355187973387,
+   "singleton": 1.0,
+   "seconds": 1.6185328960418701,
+   "strict_ref": 0.8541570969223702,
+   "strict_shadowgen": 0.794,
+   "strict_ref_sample": 0.8766666666666667,
+   "strict_shadowgen_sample": 0.8066666666666666
+  },
+  "A_inf": {
+   "completed": true,
+   "method": "closed form (trace model of all training variants)",
+   "n_states": 206372,
+   "ref": 0.9249764818033428,
+   "shadowgen": 0.9154479807807536,
+   "shadowgen_bounded": 0.9187110893313257,
+   "singleton": 1.0,
+   "seconds": 64.27924251556396,
+   "strict_ref": 0.0,
+   "strict_shadowgen": 0.0,
+   "strict_ref_sample": 0.0,
+   "strict_shadowgen_sample": 0.0
+  }
+ },
+ "criteria_automata": {
+  "shadowgen": {
+   "mae": 0.0022485002280799066,
+   "max_abs_dev": 0.009528501022589175,
+   "spearman": 1.0
+  },
+  "shadowgen_bounded": {
+   "mae": 0.0016191713342355665,
+   "max_abs_dev": 0.006265392472017073,
+   "spearman": 1.0
+  },
+  "singleton": {
+   "mae": 0.01198769848002896,
+   "max_abs_dev": 0.0750235181966572,
+   "spearman": null
+  }
+ },
+ "criteria_extended": {
+  "n_models": 13,
+  "shadowgen": {
+   "pearson": 0.9997740821197182,
+   "spearman": 0.967032967032967,
+   "spearman_ties": 0.967032967032967,
+   "kendall_b": 0.9230769230769229,
+   "mae": 0.002320844528197974,
+   "spread": 0.5781698378963118,
+   "spread_ref": 0.5769387870687899,
+   "max_abs_dev": 0.009528501022589175
+  },
+  "shadowgen_bounded": {
+   "pearson": 0.9998364695750868,
+   "spearman": 0.9945054945054945,
+   "spearman_ties": 0.998625428903524,
+   "kendall_b": 0.99356906512808,
+   "mae": 0.001999117114576219,
+   "spread": 0.5762623074149098,
+   "spread_ref": 0.5769387870687899,
+   "max_abs_dev": 0.006265392472017073
+  },
+  "singleton": {
+   "pearson": 0.9915944475589406,
+   "spearman": 0.39010989010989006,
+   "spearman_ties": 0.773690467031558,
+   "kendall_b": 0.7045638767423833,
+   "mae": 0.0066707831108955415,
+   "spread": 0.576361389719203,
+   "spread_ref": 0.5769387870687899,
+   "max_abs_dev": 0.0750235181966572
+  }
+ },
+ "seconds": 109.38602924346924
+}

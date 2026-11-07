@@ -1,0 +1,134 @@
+{
+ "log": "L4",
+ "split": "random",
+ "n_train_cases": 30666,
+ "n_train_variants": 20468,
+ "n_singletons": 19189,
+ "n_nonsingleton_variants": 1279,
+ "n_unseen_cases": 8102,
+ "n_unseen_variants": 7989,
+ "shadow_in_training": 0,
+ "mutated_share": 0.298,
+ "models": {
+  "A_1": {
+   "ref": 0.9958035053073315,
+   "shadowgen": 1.0,
+   "shadowgen_bounded": 1.0,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 1.0,
+   "shadowgen_mutated": 1.0,
+   "n_states": 42
+  },
+  "A_2": {
+   "ref": 0.9729696371266354,
+   "shadowgen": 0.964,
+   "shadowgen_bounded": 0.981,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.9829059829059829,
+   "shadowgen_mutated": 0.9194630872483222,
+   "n_states": 568
+  },
+  "A_3": {
+   "ref": 0.9219945692421624,
+   "shadowgen": 0.892,
+   "shadowgen_bounded": 0.935,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.9544159544159544,
+   "shadowgen_mutated": 0.7449664429530202,
+   "n_states": 2882
+  },
+  "A_4": {
+   "ref": 0.8386818069612442,
+   "shadowgen": 0.737,
+   "shadowgen_bounded": 0.848,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.8675213675213675,
+   "shadowgen_mutated": 0.42953020134228187,
+   "n_states": 9189
+  },
+  "A_6": {
+   "ref": 0.599481609479141,
+   "shadowgen": 0.519,
+   "shadowgen_bounded": 0.662,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.7393162393162394,
+   "shadowgen_mutated": 0.0,
+   "n_states": 46038
+  },
+  "A_10": {
+   "ref": 0.30288817575907184,
+   "shadowgen": 0.11,
+   "shadowgen_bounded": 0.145,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.15669515669515668,
+   "shadowgen_mutated": 0.0,
+   "n_states": 235577
+  },
+  "A_inf": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_states": 843674
+  },
+  "T_top50": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 0.0,
+   "train_cases": 0.20886323615730776,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 50
+  },
+  "T_nonsingleton": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 0.0,
+   "train_cases": 0.3742581360464358,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 1279
+  },
+  "T_half": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 0.49997394340507584,
+   "train_cases": 0.6871127633209417,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 10873
+  },
+  "T_all": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 20468
+  }
+ },
+ "generation": {
+  "drawn": 2000,
+  "kept_per_log": [
+   1000
+  ],
+  "consumed": 1422,
+  "acceptance": 0.7032348804500703
+ },
+ "seconds": 206.9672145843506,
+ "protocol": "training split; seed 42; {'num_traces': 1000, 'safe_threshold': 5, 'max_n': 6, 'successor_weighting': 'mle'}; strict = exact membership; graded = closed-form alignment on trace models"
+}

@@ -1,0 +1,117 @@
+{
+ "log": "L4",
+ "split": "random",
+ "budget_s": 1200,
+ "node_cap": 8000000,
+ "sample": 300,
+ "models": {
+  "A_1": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 42,
+   "ref": 1.0,
+   "shadowgen": 1.0,
+   "shadowgen_bounded": 1.0,
+   "singleton": 1.0,
+   "seconds": 2.0965330600738525,
+   "strict_ref": 0.9958035053073315,
+   "strict_shadowgen": 1.0,
+   "strict_ref_sample": 1.0,
+   "strict_shadowgen_sample": 1.0
+  },
+  "A_2": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 568,
+   "ref": 0.9993794709220345,
+   "shadowgen": 0.9989189810350215,
+   "shadowgen_bounded": 0.9996819733532099,
+   "singleton": 1.0,
+   "seconds": 2.3583168983459473,
+   "strict_ref": 0.9729696371266354,
+   "strict_shadowgen": 0.964,
+   "strict_ref_sample": 0.9433333333333334,
+   "strict_shadowgen_sample": 0.96
+  },
+  "A_3": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 2882,
+   "ref": 0.9986108561183678,
+   "shadowgen": 0.9970017190754422,
+   "shadowgen_bounded": 0.9989831536942549,
+   "singleton": 1.0,
+   "seconds": 4.61532187461853,
+   "strict_ref": 0.9219945692421624,
+   "strict_shadowgen": 0.892,
+   "strict_ref_sample": 0.91,
+   "strict_shadowgen_sample": 0.8866666666666667
+  },
+  "A_4": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 9189,
+   "ref": 0.99706638342883,
+   "shadowgen": 0.993102402877751,
+   "shadowgen_bounded": 0.996806017083201,
+   "singleton": 1.0,
+   "seconds": 16.64041495323181,
+   "strict_ref": 0.8386818069612442,
+   "strict_shadowgen": 0.737,
+   "strict_ref_sample": 0.84,
+   "strict_shadowgen_sample": 0.7233333333333334
+  },
+  "A_6": {
+   "completed": true,
+   "method": "A*",
+   "n_states": 46038,
+   "ref": 0.9879516216818028,
+   "shadowgen": 0.9817981469330804,
+   "shadowgen_bounded": 0.9895811827040988,
+   "singleton": 1.0,
+   "seconds": 189.5639955997467,
+   "strict_ref": 0.599481609479141,
+   "strict_shadowgen": 0.519,
+   "strict_ref_sample": 0.59,
+   "strict_shadowgen_sample": 0.5333333333333333
+  },
+  "A_10": {
+   "completed": false,
+   "reason": "node cap",
+   "seconds": 68.56240677833557,
+   "n_states": 235577
+  },
+  "A_inf": {
+   "completed": true,
+   "method": "closed form (trace model of all training variants)",
+   "n_states": 843674,
+   "ref": 0.8814458017262634,
+   "shadowgen": 0.7708317701785118,
+   "shadowgen_bounded": 0.8041001323659532,
+   "singleton": 1.0,
+   "seconds": 213.22688341140747,
+   "strict_ref": 0.0,
+   "strict_shadowgen": 0.0,
+   "strict_ref_sample": 0.0,
+   "strict_shadowgen_sample": 0.0
+  }
+ },
+ "criteria_automata": {
+  "shadowgen": {
+   "mae": 0.0204668522962486,
+   "max_abs_dev": 0.11061403154775162,
+   "spearman": 1.0
+  },
+  "shadowgen_bounded": {
+   "mae": 0.013318399455882942,
+   "max_abs_dev": 0.07734566936031018,
+   "spearman": 1.0
+  },
+  "singleton": {
+   "mae": 0.022590977687116914,
+   "max_abs_dev": 0.11855419827373659,
+   "spearman": null
+  }
+ },
+ "seconds": 695.2236821651459
+}

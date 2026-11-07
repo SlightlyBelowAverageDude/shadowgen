@@ -1,0 +1,232 @@
+{
+ "log": "L5",
+ "split": "random",
+ "n_train_cases": 176213,
+ "n_train_variants": 9233,
+ "n_singletons": 6927,
+ "n_nonsingleton_variants": 2306,
+ "n_unseen_cases": 2875,
+ "n_unseen_variants": 2740,
+ "shadow_in_training": 0,
+ "mutated_share": 0.232,
+ "models": {
+  "A_1": {
+   "ref": 0.9885217391304347,
+   "shadowgen": 0.999,
+   "shadowgen_bounded": 1.0,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 1.0,
+   "shadowgen_mutated": 0.9956896551724138,
+   "n_states": 43
+  },
+  "A_2": {
+   "ref": 0.9415652173913044,
+   "shadowgen": 0.776,
+   "shadowgen_bounded": 0.953,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.7395833333333334,
+   "shadowgen_mutated": 0.896551724137931,
+   "n_states": 478
+  },
+  "A_3": {
+   "ref": 0.807304347826087,
+   "shadowgen": 0.696,
+   "shadowgen_bounded": 0.868,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.6901041666666666,
+   "shadowgen_mutated": 0.7155172413793104,
+   "n_states": 2352
+  },
+  "A_4": {
+   "ref": 0.6518260869565218,
+   "shadowgen": 0.477,
+   "shadowgen_bounded": 0.594,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.4856770833333333,
+   "shadowgen_mutated": 0.4482758620689655,
+   "n_states": 6762
+  },
+  "A_6": {
+   "ref": 0.4142608695652174,
+   "shadowgen": 0.249,
+   "shadowgen_bounded": 0.31,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.32421875,
+   "shadowgen_mutated": 0.0,
+   "n_states": 21981
+  },
+  "A_10": {
+   "ref": 0.21356521739130435,
+   "shadowgen": 0.081,
+   "shadowgen_bounded": 0.101,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.10546875,
+   "shadowgen_mutated": 0.0,
+   "n_states": 43866
+  },
+  "A_inf": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_states": 157030
+  },
+  "T_top50": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 0.0,
+   "train_cases": 0.8096281205132425,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 50
+  },
+  "T_nonsingleton": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 0.0,
+   "train_cases": 0.9606896199485849,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 2306
+  },
+  "T_half": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 0.4999278186805255,
+   "train_cases": 0.9803419724991913,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 5769
+  },
+  "T_all": {
+   "ref": 0.0,
+   "shadowgen": 0.0,
+   "shadowgen_bounded": 0.0,
+   "singleton": 1.0,
+   "train_cases": 1.0,
+   "shadowgen_regular": 0.0,
+   "shadowgen_mutated": 0.0,
+   "n_variants": 9233
+  }
+ },
+ "criteria_strict": {
+  "six nets": {
+   "shadowgen": {
+    "pearson": 0.9994479486375099,
+    "spearman": 0.942857142857143,
+    "spearman_ties": 0.9411239481143202,
+    "kendall_b": 0.894427190999916,
+    "mae": 0.07178260869565217,
+    "spread": 0.775,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 0.22465217391304348
+   },
+   "shadowgen_bounded": {
+    "pearson": 0.9998724213905105,
+    "spearman": 1.0,
+    "spearman_ties": 0.954863710632231,
+    "kendall_b": 0.9258200997725515,
+    "mae": 0.0036739130434782466,
+    "spread": 1.0,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 0.01886956521739125
+   },
+   "singleton": {
+    "pearson": 0.9999900831201838,
+    "spearman": 1.0,
+    "spearman_ties": 1.0,
+    "kendall_b": 1.0,
+    "mae": 0.0009284484363852264,
+    "spread": 1.0,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 0.005150206187508166
+   }
+  },
+  "six nets + A_k": {
+   "shadowgen": {
+    "pearson": 0.9815575252749071,
+    "spearman": 0.9560439560439561,
+    "spearman_ties": 0.9707877788745957,
+    "kendall_b": 0.913266025895431,
+    "mae": 0.09159197324414717,
+    "spread": 0.999,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 0.22465217391304348
+   },
+   "shadowgen_bounded": {
+    "pearson": 0.993996266123639,
+    "spearman": 0.989010989010989,
+    "spearman_ties": 0.9902066761262548,
+    "kendall_b": 0.9726940082233639,
+    "mae": 0.029254180602006685,
+    "spread": 1.0,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 0.11256521739130435
+   },
+   "singleton": {
+    "pearson": 0.7030266610099661,
+    "spearman": 0.34615384615384615,
+    "spearman_ties": 0.6606385068363605,
+    "kendall_b": 0.5844720395466496,
+    "mae": 0.22988670864288013,
+    "spread": 1.0,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 1.0
+   }
+  },
+  "six nets + A_k + T_*": {
+   "shadowgen": {
+    "pearson": 0.9848055375209921,
+    "spearman": 0.8725490196078433,
+    "spearman_ties": 0.9601864284462841,
+    "kendall_b": 0.9097640605412285,
+    "mae": 0.07004092071611254,
+    "spread": 0.999,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 0.22465217391304348
+   },
+   "shadowgen_bounded": {
+    "pearson": 0.9948893146185517,
+    "spearman": 0.948529411764706,
+    "spearman_ties": 0.9807107785947571,
+    "kendall_b": 0.964316225610644,
+    "mae": 0.02237084398976982,
+    "spread": 1.0,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 0.11256521739130435
+   },
+   "singleton": {
+    "pearson": 0.6594675005887969,
+    "spearman": 0.5171568627450981,
+    "spearman_ties": 0.6596128263902342,
+    "kendall_b": 0.5781515884776753,
+    "mae": 0.26402676653164514,
+    "spread": 1.0,
+    "spread_ref": 0.9996521739130435,
+    "max_abs_dev": 1.0
+   }
+  }
+ },
+ "generation": {
+  "drawn": 2000,
+  "kept_per_log": [
+   1000
+  ],
+  "consumed": 1293,
+  "acceptance": 0.7733952049497294
+ },
+ "seconds": 70.5199830532074,
+ "protocol": "training split; seed 42; {'num_traces': 1000, 'safe_threshold': 5, 'max_n': 6, 'successor_weighting': 'mle'}; strict = exact membership; graded = closed-form alignment on trace models"
+}
