@@ -1,0 +1,173 @@
+{
+ "log": "L1",
+ "split": "random",
+ "n_unseen_cases": 246,
+ "binding_bounds": {
+  "Admission IC": [
+   0,
+   2
+  ],
+  "Admission NC": [
+   0,
+   5
+  ],
+  "ER Registration": [
+   1,
+   1
+  ],
+  "ER Sepsis Triage": [
+   0,
+   1
+  ],
+  "ER Triage": [
+   1,
+   2
+  ],
+  "IV Antibiotics": [
+   0,
+   1
+  ],
+  "IV Liquid": [
+   0,
+   1
+  ],
+  "Release A": [
+   0,
+   1
+  ],
+  "Release B": [
+   0,
+   1
+  ],
+  "Release C": [
+   0,
+   1
+  ],
+  "Release D": [
+   0,
+   1
+  ],
+  "Release E": [
+   0,
+   1
+  ],
+  "Return ER": [
+   0,
+   1
+  ]
+ },
+ "unseen_breaking": {
+  "any": 0.0,
+  "over_max": 0.0,
+  "under_min": 0.0
+ },
+ "shadow_breaking": 0.28700000000000003,
+ "generation": {
+  "drawn": 2000,
+  "kept_per_log": [
+   1000
+  ],
+  "consumed": 1370,
+  "acceptance": 0.7299270072992701
+ },
+ "len_mean": {
+  "shadow": 16.562,
+  "bounded": 15.936,
+  "unseen": 16.203252032520325
+ },
+ "miners": {
+  "Alpha": {
+   "ref": 0.2720468192474128,
+   "ref_strict": 0.0,
+   "score": 0.26636312045871696,
+   "score_bounded": 0.26612117755544007,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Alpha+": {
+   "ref": 0.8227904669996293,
+   "ref_strict": 0.0,
+   "score": 0.7467913530501396,
+   "score_bounded": 0.8095190268759672,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Heuristics": {
+   "ref": 0.9185461463871768,
+   "ref_strict": 0.0,
+   "score": 0.9141053970354882,
+   "score_bounded": 0.9161538862335732,
+   "accept": 0.003,
+   "accept_bounded": 0.0
+  },
+  "Heuristics_Strict": {
+   "ref": 0.9318085307478912,
+   "ref_strict": 0.04065040650406504,
+   "score": 0.9219547724182917,
+   "score_bounded": 0.9272919962237827,
+   "accept": 0.041,
+   "accept_bounded": 0.041
+  },
+  "Inductive_Strict": {
+   "ref": 0.9999589389833292,
+   "ref_strict": 0.9959349593495935,
+   "score": 0.9820223414061575,
+   "score_bounded": 0.9994954588698868,
+   "accept": 0.704,
+   "accept_bounded": 0.978
+  },
+  "Inductive_Infrequent": {
+   "ref": 0.9901887285229294,
+   "ref_strict": 0.8821138211382114,
+   "score": 0.9685631493068156,
+   "score_bounded": 0.9847134791780799,
+   "accept": 0.606,
+   "accept_bounded": 0.834
+  }
+ },
+ "criteria": {
+  "score": {
+   "pearson": 0.9952383158168816,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.022589916202126515,
+   "spread": 0.7156592209474406,
+   "spread_ref": 0.7279121197359164,
+   "max_abs_dev": 0.07599911394948977
+  },
+  "score_bounded": {
+   "pearson": 0.9998833505518457,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.005340767658606471,
+   "spread": 0.7333742813144467,
+   "spread_ref": 0.7279121197359164,
+   "max_abs_dev": 0.013271440123662104
+  }
+ },
+ "criteria_strict": {
+  "accept": {
+   "pearson": 0.9997396432543102,
+   "spearman": 1.0,
+   "spearman_ties": 0.954863710632231,
+   "kendall_b": 0.9258200997725515,
+   "mae": 0.0952330623306233,
+   "spread": 0.704,
+   "spread_ref": 0.9959349593495935,
+   "max_abs_dev": 0.29193495934959357
+  },
+  "accept_bounded": {
+   "pearson": 0.9997294827172325,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 1.0,
+   "mae": 0.011066395663956652,
+   "spread": 0.978,
+   "spread_ref": 0.9959349593495935,
+   "max_abs_dev": 0.04811382113821139
+  }
+ },
+ "seconds": 16.437927961349487
+}

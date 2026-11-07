@@ -1,0 +1,527 @@
+{
+ "log": "L3",
+ "split": "random",
+ "n_train": 22056,
+ "n_unseen_cases": 4354,
+ "n_unseen_variants": 4244,
+ "shadow": {
+  "n": 1000,
+  "mutated": 26,
+  "duplicates_kept": 0,
+  "truncated": 0,
+  "cap": 360,
+  "seen_in_train": 0
+ },
+ "len_train": {
+  "mean": 38.143498367791075
+ },
+ "miners": {
+  "Alpha": {
+   "score": 0.4218301621036882,
+   "reference": 0.42306121293121024,
+   "gap": -0.0012310508275220622,
+   "len_shadow": {
+    "mean": 45.435,
+    "0.1": 26.0,
+    "0.25": 33.0,
+    "0.5": 41.0,
+    "0.75": 54.0,
+    "0.9": 70.0
+   },
+   "len_unseen": {
+    "mean": 49.84795590261828,
+    "0.1": 31.0,
+    "0.25": 38.0,
+    "0.5": 48.0,
+    "0.75": 58.0,
+    "0.9": 72.0
+   },
+   "miss_term": {
+    "shadow": 0.17571289913359095,
+    "unseen": 0.16779716589386287
+   },
+   "rem_term": {
+    "shadow": 0.40245693876272093,
+    "unseen": 0.4091416211749269
+   },
+   "len_bins": [
+    {
+     "lo": 10.0,
+     "hi": 31.0,
+     "n_shadow": 190,
+     "w_unseen": 397,
+     "fit_shadow": 0.4244468274994097,
+     "fit_unseen": 0.4339948179918436
+    },
+    {
+     "lo": 31.0,
+     "hi": 36.0,
+     "n_shadow": 128,
+     "w_unseen": 413,
+     "fit_shadow": 0.434209981527185,
+     "fit_unseen": 0.43225469629839575
+    },
+    {
+     "lo": 36.0,
+     "hi": 40.0,
+     "n_shadow": 125,
+     "w_unseen": 416,
+     "fit_shadow": 0.4340622987529561,
+     "fit_unseen": 0.43333692771601273
+    },
+    {
+     "lo": 40.0,
+     "hi": 44.0,
+     "n_shadow": 111,
+     "w_unseen": 471,
+     "fit_shadow": 0.4296146355245452,
+     "fit_unseen": 0.4391349096351315
+    },
+    {
+     "lo": 44.0,
+     "hi": 48.0,
+     "n_shadow": 83,
+     "w_unseen": 478,
+     "fit_shadow": 0.43044371689192185,
+     "fit_unseen": 0.4325835365545935
+    },
+    {
+     "lo": 48.0,
+     "hi": 51.0,
+     "n_shadow": 56,
+     "w_unseen": 368,
+     "fit_shadow": 0.421524461844471,
+     "fit_unseen": 0.4227024738389855
+    },
+    {
+     "lo": 51.0,
+     "hi": 56.0,
+     "n_shadow": 69,
+     "w_unseen": 496,
+     "fit_shadow": 0.4155331179300917,
+     "fit_unseen": 0.41859345718029883
+    },
+    {
+     "lo": 56.0,
+     "hi": 61.0,
+     "n_shadow": 61,
+     "w_unseen": 403,
+     "fit_shadow": 0.404265852677049,
+     "fit_unseen": 0.4137434907207207
+    },
+    {
+     "lo": 61.0,
+     "hi": 72.0,
+     "n_shadow": 84,
+     "w_unseen": 469,
+     "fit_shadow": 0.40454315735411983,
+     "fit_unseen": 0.4056153304040103
+    },
+    {
+     "lo": 72.0,
+     "hi": 160.0,
+     "n_shadow": 93,
+     "w_unseen": 443,
+     "fit_shadow": 0.3980166626068207,
+     "fit_unseen": 0.3999247677049208
+    }
+   ],
+   "reweighted_score": 0.41954554630006147,
+   "reference_on_covered": 0.42306121293121024,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": -0.0035156666311487728,
+   "score_regular": 0.4223739385254162,
+   "score_mutated": 0.4014594607666434,
+   "n_transitions": 25,
+   "n_silent": 0,
+   "n_places": 13,
+   "labels_missing_from_net": [],
+   "isolated_transitions": [
+    "A_Cancelled",
+    "A_Complete",
+    "A_Incomplete",
+    "A_Pending",
+    "A_Submitted",
+    "A_Validating",
+    "O_Cancelled",
+    "O_Create Offer",
+    "O_Created",
+    "O_Refused",
+    "O_Returned",
+    "O_Sent (mail and online)",
+    "O_Sent (online only)",
+    "W_Assess potential fraud",
+    "W_Call after offers",
+    "W_Call incomplete files",
+    "W_Complete application",
+    "W_Handle leads",
+    "W_Shortened completion ",
+    "W_Validate application"
+   ],
+   "problem_activities": [
+    {
+     "activity": "A_Cancelled",
+     "shadow": {
+      "contain": 0.192,
+      "problem": 0.8489583333333334
+     },
+     "unseen": {
+      "contain": 0.15135507579237484,
+      "problem": 0.7025796661608498
+     }
+    },
+    {
+     "activity": "O_Accepted",
+     "shadow": {
+      "contain": 0.673,
+      "problem": 0.23179791976225855
+     },
+     "unseen": {
+      "contain": 0.691548001837391,
+      "problem": 0.1667220192627034
+     }
+    },
+    {
+     "activity": "A_Concept",
+     "shadow": {
+      "contain": 1.0,
+      "problem": 0.665
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.6380339917317409
+     }
+    },
+    {
+     "activity": "A_Accepted",
+     "shadow": {
+      "contain": 0.987,
+      "problem": 0.011144883485309016
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "A_Denied",
+     "shadow": {
+      "contain": 0.13,
+      "problem": 0.6
+     },
+     "unseen": {
+      "contain": 0.1515847496554892,
+      "problem": 0.5651515151515152
+     }
+    },
+    {
+     "activity": "O_Create Offer",
+     "shadow": {
+      "contain": 0.997,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "A_Submitted",
+     "shadow": {
+      "contain": 0.665,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.6380339917317409,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "W_Shortened completion ",
+     "shadow": {
+      "contain": 0.006,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.005512172714745062,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "W_Call incomplete files",
+     "shadow": {
+      "contain": 0.658,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.7563160312356454,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "W_Call after offers",
+     "shadow": {
+      "contain": 0.995,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.9928801102434544,
+      "problem": 0.0
+     }
+    }
+   ]
+  },
+  "Alpha+": {
+   "score": 0.8613026408367866,
+   "reference": 0.8586447565937275,
+   "gap": 0.0026578842430591276,
+   "len_shadow": {
+    "mean": 45.435,
+    "0.1": 26.0,
+    "0.25": 33.0,
+    "0.5": 41.0,
+    "0.75": 54.0,
+    "0.9": 70.0
+   },
+   "len_unseen": {
+    "mean": 49.84795590261828,
+    "0.1": 31.0,
+    "0.25": 38.0,
+    "0.5": 48.0,
+    "0.75": 58.0,
+    "0.9": 72.0
+   },
+   "miss_term": {
+    "shadow": 0.04131808643942394,
+    "unseen": 0.0407546545589197
+   },
+   "rem_term": {
+    "shadow": 0.09737927272378945,
+    "unseen": 0.10060058884735287
+   },
+   "len_bins": [
+    {
+     "lo": 10.0,
+     "hi": 31.0,
+     "n_shadow": 190,
+     "w_unseen": 397,
+     "fit_shadow": 0.8718639273016934,
+     "fit_unseen": 0.8571152671913113
+    },
+    {
+     "lo": 31.0,
+     "hi": 36.0,
+     "n_shadow": 128,
+     "w_unseen": 413,
+     "fit_shadow": 0.8484558216583409,
+     "fit_unseen": 0.8451992026506322
+    },
+    {
+     "lo": 36.0,
+     "hi": 40.0,
+     "n_shadow": 125,
+     "w_unseen": 416,
+     "fit_shadow": 0.8508001075644667,
+     "fit_unseen": 0.8488057430747447
+    },
+    {
+     "lo": 40.0,
+     "hi": 44.0,
+     "n_shadow": 111,
+     "w_unseen": 471,
+     "fit_shadow": 0.8546123932914323,
+     "fit_unseen": 0.845159510523883
+    },
+    {
+     "lo": 44.0,
+     "hi": 48.0,
+     "n_shadow": 83,
+     "w_unseen": 478,
+     "fit_shadow": 0.858736599688589,
+     "fit_unseen": 0.8575585399087461
+    },
+    {
+     "lo": 48.0,
+     "hi": 51.0,
+     "n_shadow": 56,
+     "w_unseen": 368,
+     "fit_shadow": 0.8592342783683157,
+     "fit_unseen": 0.8643814298164415
+    },
+    {
+     "lo": 51.0,
+     "hi": 56.0,
+     "n_shadow": 69,
+     "w_unseen": 496,
+     "fit_shadow": 0.8677216942801872,
+     "fit_unseen": 0.8636056943894774
+    },
+    {
+     "lo": 56.0,
+     "hi": 61.0,
+     "n_shadow": 61,
+     "w_unseen": 403,
+     "fit_shadow": 0.8703414169890425,
+     "fit_unseen": 0.8697311721090659
+    },
+    {
+     "lo": 61.0,
+     "hi": 72.0,
+     "n_shadow": 84,
+     "w_unseen": 469,
+     "fit_shadow": 0.8627823040482527,
+     "fit_unseen": 0.8697482046939574
+    },
+    {
+     "lo": 72.0,
+     "hi": 160.0,
+     "n_shadow": 93,
+     "w_unseen": 443,
+     "fit_shadow": 0.8710168401268134,
+     "fit_unseen": 0.8651389996301431
+    }
+   ],
+   "reweighted_score": 0.8615789473463026,
+   "reference_on_covered": 0.8586447565937275,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": 0.002934190752575061,
+   "score_regular": 0.8622306514455359,
+   "score_mutated": 0.8265379357244094,
+   "n_transitions": 26,
+   "n_silent": 1,
+   "n_places": 14,
+   "labels_missing_from_net": [],
+   "isolated_transitions": [
+    "A_Denied",
+    "A_Incomplete",
+    "A_Validating",
+    "O_Cancelled",
+    "O_Refused",
+    "O_Returned",
+    "O_Sent (mail and online)",
+    "O_Sent (online only)",
+    "W_Assess potential fraud",
+    "W_Call after offers",
+    "W_Call incomplete files",
+    "W_Complete application",
+    "W_Handle leads",
+    "W_Shortened completion ",
+    "W_Validate application"
+   ],
+   "problem_activities": [
+    {
+     "activity": "A_Concept",
+     "shadow": {
+      "contain": 1.0,
+      "problem": 0.335
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.3619660082682591
+     }
+    },
+    {
+     "activity": "O_Create Offer",
+     "shadow": {
+      "contain": 0.997,
+      "problem": 0.2567703109327984
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.22921451538814883
+     }
+    },
+    {
+     "activity": "O_Accepted",
+     "shadow": {
+      "contain": 0.673,
+      "problem": 0.6047548291233283
+     },
+     "unseen": {
+      "contain": 0.691548001837391,
+      "problem": 0.5526403188309532
+     }
+    },
+    {
+     "activity": "A_Accepted",
+     "shadow": {
+      "contain": 0.987,
+      "problem": 0.011144883485309016
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "A_Complete",
+     "shadow": {
+      "contain": 0.979,
+      "problem": 0.0030643513789581204
+     },
+     "unseen": {
+      "contain": 0.9928801102434544,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "A_Cancelled",
+     "shadow": {
+      "contain": 0.192,
+      "problem": 0.3125
+     },
+     "unseen": {
+      "contain": 0.15135507579237484,
+      "problem": 0.4006069802731411
+     }
+    },
+    {
+     "activity": "A_Submitted",
+     "shadow": {
+      "contain": 0.665,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.6380339917317409,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "W_Shortened completion ",
+     "shadow": {
+      "contain": 0.006,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.005512172714745062,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "W_Call incomplete files",
+     "shadow": {
+      "contain": 0.658,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.7563160312356454,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "W_Call after offers",
+     "shadow": {
+      "contain": 0.995,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.9928801102434544,
+      "problem": 0.0
+     }
+    }
+   ]
+  }
+ },
+ "seconds": 60.46165347099304,
+ "protocol": "v2.6 generate_shadow_log, seed 42, {'num_traces': 1000, 'safe_threshold': 5, 'max_n': 6, 'successor_weighting': 'mle'}; pm4py 2.7.22.2"
+}

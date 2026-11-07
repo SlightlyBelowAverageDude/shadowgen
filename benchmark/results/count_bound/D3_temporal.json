@@ -1,0 +1,209 @@
+{
+ "log": "L3",
+ "split": "temporal",
+ "n_unseen_cases": 4372,
+ "binding_bounds": {
+  "A_Accepted": [
+   1,
+   1
+  ],
+  "A_Cancelled": [
+   0,
+   1
+  ],
+  "A_Complete": [
+   0,
+   1
+  ],
+  "A_Concept": [
+   1,
+   1
+  ],
+  "A_Create Application": [
+   1,
+   1
+  ],
+  "A_Denied": [
+   0,
+   1
+  ],
+  "A_Incomplete": [
+   0,
+   7
+  ],
+  "A_Pending": [
+   0,
+   1
+  ],
+  "A_Submitted": [
+   0,
+   1
+  ],
+  "A_Validating": [
+   0,
+   8
+  ],
+  "O_Accepted": [
+   0,
+   1
+  ],
+  "O_Cancelled": [
+   0,
+   9
+  ],
+  "O_Create Offer": [
+   1,
+   10
+  ],
+  "O_Created": [
+   1,
+   10
+  ],
+  "O_Refused": [
+   0,
+   8
+  ],
+  "O_Returned": [
+   0,
+   3
+  ],
+  "O_Sent (mail and online)": [
+   0,
+   8
+  ],
+  "O_Sent (online only)": [
+   0,
+   8
+  ],
+  "W_Complete application": [
+   2,
+   123
+  ],
+  "W_Handle leads": [
+   0,
+   47
+  ],
+  "W_Personal Loan collection": [
+   0,
+   12
+  ],
+  "W_Shortened completion ": [
+   0,
+   7
+  ]
+ },
+ "unseen_breaking": {
+  "any": 0.0004574565416285453,
+  "over_max": 0.0004574565416285453,
+  "under_min": 0.0
+ },
+ "shadow_breaking": 0.04800000000000004,
+ "generation": {
+  "drawn": 2000,
+  "kept_per_log": [
+   1000
+  ],
+  "consumed": 1051,
+  "acceptance": 0.9514747859181731
+ },
+ "len_mean": {
+  "shadow": 44.71,
+  "bounded": 44.635,
+  "unseen": 49.304666056724614
+ },
+ "miners": {
+  "Alpha": {
+   "ref": 0.3916663727497673,
+   "ref_strict": 0.0,
+   "score": 0.3941321242228346,
+   "score_bounded": 0.39711727847891953,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Alpha+": {
+   "ref": 0.855393014854753,
+   "ref_strict": 0.0,
+   "score": 0.8534490802916928,
+   "score_bounded": 0.8573045280255907,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Heuristics": {
+   "ref": 0.9487239914862006,
+   "ref_strict": 0.0,
+   "score": 0.9455231328637282,
+   "score_bounded": 0.9460215946120548,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Heuristics_Strict": {
+   "ref": 0.952161367110475,
+   "ref_strict": 0.0,
+   "score": 0.9499577165418678,
+   "score_bounded": 0.950200760181702,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Inductive_Strict": {
+   "ref": 1.0,
+   "ref_strict": 1.0,
+   "score": 0.9995858458184586,
+   "score_bounded": 1.0,
+   "accept": 0.965,
+   "accept_bounded": 1.0
+  },
+  "Inductive_Infrequent": {
+   "ref": 0.983815025816747,
+   "ref_strict": 0.12351326623970722,
+   "score": 0.9868462766306086,
+   "score_bounded": 0.9873406521887903,
+   "accept": 0.247,
+   "accept_bounded": 0.259
+  }
+ },
+ "criteria": {
+  "score": {
+   "pearson": 0.9999496764822529,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.0022099333704350597,
+   "spread": 0.6054537215956239,
+   "spread_ref": 0.6083336272502327,
+   "max_abs_dev": 0.0032008586224723246
+  },
+  "score_bounded": {
+   "pearson": 0.9999490095684227,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.0025918415124920047,
+   "spread": 0.6028827215210805,
+   "spread_ref": 0.6083336272502327,
+   "max_abs_dev": 0.0054509057291522445
+  }
+ },
+ "criteria_strict": {
+  "accept": {
+   "pearson": 0.9909071945006774,
+   "spearman": 1.0,
+   "spearman_ties": 0.9999999999999999,
+   "kendall_b": 1.0,
+   "mae": 0.02641445562671547,
+   "spread": 0.965,
+   "spread_ref": 1.0,
+   "max_abs_dev": 0.12348673376029277
+  },
+  "accept_bounded": {
+   "pearson": 0.9904862296492573,
+   "spearman": 1.0,
+   "spearman_ties": 0.9999999999999999,
+   "kendall_b": 1.0,
+   "mae": 0.022581122293382133,
+   "spread": 1.0,
+   "spread_ref": 1.0,
+   "max_abs_dev": 0.1354867337602928
+  }
+ },
+ "seconds": 283.289470911026
+}

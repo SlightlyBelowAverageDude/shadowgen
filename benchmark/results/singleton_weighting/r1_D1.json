@@ -1,0 +1,178 @@
+{
+ "log": "L1",
+ "dataset": "Sepsis",
+ "n_cases": 1050,
+ "n_variants": 846,
+ "n_singletons": 784,
+ "len_mean": {
+  "cases": 14.48952380952381,
+  "variants": 16.282505910165483,
+  "singletons": 16.806122448979593,
+  "cases_token_weighted": 23.57000131457868,
+  "shadow": 16.8734,
+  "shadow_weighted": 15.987944801316909
+ },
+ "ess": [
+  949.0959444495882,
+  940.5310310255292,
+  952.9600781874599,
+  931.8128553622212,
+  972.610510628314
+ ],
+ "miners": {
+  "Alpha": {
+   "r1": 0.27482607308076923,
+   "r1_accept": 0.0,
+   "m1g_stored": 0.2723690380000451,
+   "accept_stored": 0.0002,
+   "score": 0.2723690380000451,
+   "score_weighted": 0.2793160938770221,
+   "score_k1": 0.27230315040064723,
+   "score_weighted_k1": 0.27749466460301886,
+   "accept": 0.0002,
+   "accept_weighted": 0.0001674107142857143,
+   "n_transitions": 16
+  },
+  "Alpha+": {
+   "r1": 0.8292793973530698,
+   "r1_accept": 0.0,
+   "m1g_stored": 0.7591123412816672,
+   "accept_stored": 0.0,
+   "score": 0.7591123412816672,
+   "score_weighted": 0.7652866206223736,
+   "score_k1": 0.7643063970686409,
+   "score_weighted_k1": 0.7742594048476196,
+   "accept": 0.0,
+   "accept_weighted": 0.0,
+   "n_transitions": 18
+  },
+  "Heuristics": {
+   "r1": 0.9023046864955729,
+   "r1_accept": 0.028237875781083433,
+   "m1g_stored": 0.8787036233857289,
+   "accept_stored": 0.001,
+   "score": 0.8786502224288746,
+   "score_weighted": 0.8761722597142978,
+   "score_k1": 0.8771959506578034,
+   "score_weighted_k1": 0.8763604981295493,
+   "accept": 0.001,
+   "accept_weighted": 0.0008478542626728111,
+   "n_transitions": 74
+  },
+  "Heuristics_Strict": {
+   "r1": 0.9328705727450898,
+   "r1_accept": 0.04268464275911179,
+   "m1g_stored": 0.9173911701766503,
+   "accept_stored": 0.0078,
+   "score": 0.9173911701766503,
+   "score_weighted": 0.9162415934842405,
+   "score_k1": 0.9181606865362972,
+   "score_weighted_k1": 0.917964250634242,
+   "accept": 0.0078,
+   "accept_weighted": 0.0074624267259329035,
+   "n_transitions": 54
+  },
+  "Inductive_Strict": {
+   "r1": 0.9998820771938076,
+   "r1_accept": 0.9959054276770593,
+   "m1g_stored": 0.983849163589927,
+   "accept_stored": 0.7444,
+   "score": 0.983849163589927,
+   "score_weighted": 0.9849329846374717,
+   "score_k1": 0.9862860073308115,
+   "score_weighted_k1": 0.9876786646059582,
+   "accept": 0.7444,
+   "accept_weighted": 0.7634790058178155,
+   "n_transitions": 50
+  },
+  "Inductive_Infrequent": {
+   "r1": 0.9845565485703897,
+   "r1_accept": 0.7833062471179728,
+   "m1g_stored": 0.9723248730499077,
+   "accept_stored": 0.6436,
+   "score": 0.9723248730499077,
+   "score_weighted": 0.9738874380765992,
+   "score_k1": 0.974124665020069,
+   "score_weighted_k1": 0.9767620509207817,
+   "accept": 0.6436,
+   "accept_weighted": 0.6643990230484857,
+   "n_transitions": 35
+  }
+ },
+ "criteria": {
+  "m1g_stored": {
+   "pearson": 0.9962717390159933,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.02332819099246214,
+   "spread": 0.7114801255898819,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.07016705607140261
+  },
+  "score": {
+   "pearson": 0.9962718563173737,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.023337091151937866,
+   "spread": 0.7114801255898819,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.07016705607140261
+  },
+  "score_weighted": {
+   "pearson": 0.9967103714056226,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.022810401103199974,
+   "spread": 0.7056168907604496,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.06399277673069614
+  },
+  "score_k1": {
+   "pearson": 0.9967566574993869,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.021890416404071616,
+   "spread": 0.7139828569301643,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.06497300028442887
+  },
+  "score_weighted_k1": {
+   "pearson": 0.9975250938857144,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.01975616745700476,
+   "spread": 0.7101840000029394,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.0550199925054502
+  }
+ },
+ "criteria_accept": {
+  "accept": {
+   "pearson": 0.9978056233977651,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.9856107606091623,
+   "kendall_b": 0.9660917830792959,
+   "mae": 0.07558903222253789,
+   "spread": 0.7444,
+   "spread_ref": 0.9959054276770593,
+   "max_abs_dev": 0.2515054276770593
+  },
+  "accept_weighted": {
+   "pearson": 0.9975491874906095,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.9856107606091623,
+   "kendall_b": 0.9660917830792959,
+   "mae": 0.06901888236576768,
+   "spread": 0.7634790058178155,
+   "spread_ref": 0.9959054276770593,
+   "max_abs_dev": 0.23242642185924378
+  }
+ },
+ "seconds": 40.653401374816895,
+ "protocol": "cached nets benchmark/models/D1; seed 42; 5 draws; {'num_traces': 1000, 'safe_threshold': 5, 'max_n': 6, 'successor_weighting': 'mle'}; singleton weights per draw, deciles; pm4py 2.7.22.2"
+}

@@ -1,0 +1,138 @@
+{
+ "log": "L2",
+ "dataset": "BPI2013_Incidents",
+ "generation": {
+  "drawn": 5000,
+  "kept_per_log": [
+   1000,
+   1000,
+   1000,
+   1000,
+   1000
+  ],
+  "consumed": 5000,
+  "acceptance": 1.0
+ },
+ "shadow_breaking": 0.0,
+ "len_mean": {
+  "shadow": 12.1408,
+  "bounded": 12.1408
+ },
+ "miners": {
+  "Alpha": {
+   "r1": 0.21504953712123168,
+   "r1_accept": 0.00014190904685125333,
+   "m1g_stored": 0.25715432532133864,
+   "score": 0.25715432532133864,
+   "score_bounded": 0.25715432532133864,
+   "accept": 0.0014,
+   "accept_bounded": 0.0014,
+   "net_source": "cached PNML"
+  },
+  "Alpha+": {
+   "r1": 0.69786877292678,
+   "r1_accept": 0.0,
+   "m1g_stored": 0.6301101956581971,
+   "score": 0.6301101956581971,
+   "score_bounded": 0.6301101956581971,
+   "accept": 0.0,
+   "accept_bounded": 0.0,
+   "net_source": "in-memory discovery"
+  },
+  "Heuristics": {
+   "r1": 0.9956413235896532,
+   "r1_accept": 0.9108646820526317,
+   "m1g_stored": 0.9935438029823809,
+   "score": 0.9935438029823809,
+   "score_bounded": 0.9935438029823809,
+   "accept": 0.836,
+   "accept_bounded": 0.836,
+   "net_source": "cached PNML"
+  },
+  "Heuristics_Strict": {
+   "r1": 0.9983330887922949,
+   "r1_accept": 0.9631672600594561,
+   "m1g_stored": 0.9977911098636438,
+   "score": 0.9977911098636436,
+   "score_bounded": 0.9977911098636436,
+   "accept": 0.9458,
+   "accept_bounded": 0.9458,
+   "net_source": "cached PNML"
+  },
+  "Inductive_Strict": {
+   "r1": 0.99998725209007,
+   "r1_accept": 0.9993603764557036,
+   "m1g_stored": 0.9999760209580957,
+   "score": 0.9999760209580957,
+   "score_bounded": 0.9999760209580957,
+   "accept": 0.9984,
+   "accept_bounded": 0.9984,
+   "net_source": "cached PNML"
+  },
+  "Inductive_Infrequent": {
+   "r1": 0.9881431505375206,
+   "r1_accept": 0.8070588574742779,
+   "m1g_stored": 0.990713284248954,
+   "score": 0.990713284248954,
+   "score_bounded": 0.990713284248954,
+   "accept": 0.8378,
+   "accept_bounded": 0.8378,
+   "net_source": "cached PNML"
+  }
+ },
+ "criteria": {
+  "m1g_stored": {
+   "pearson": 0.9940237628099731,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.019180704974670146,
+   "spread": 0.742821695636757,
+   "spread_ref": 0.7849377149688384,
+   "max_abs_dev": 0.06775857726858281
+  },
+  "score": {
+   "pearson": 0.9940237628099731,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.019180704974670185,
+   "spread": 0.742821695636757,
+   "spread_ref": 0.7849377149688384,
+   "max_abs_dev": 0.06775857726858281
+  },
+  "score_bounded": {
+   "pearson": 0.9940237628099731,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.019180704974670185,
+   "spread": 0.742821695636757,
+   "spread_ref": 0.7849377149688384,
+   "max_abs_dev": 0.06775857726858281
+  }
+ },
+ "criteria_accept": {
+  "accept": {
+   "pearson": 0.9974045930830112,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.942857142857143,
+   "kendall_b": 0.8666666666666666,
+   "mae": 0.020865258674443735,
+   "spread": 0.9984,
+   "spread_ref": 0.9993603764557036,
+   "max_abs_dev": 0.07486468205263175
+  },
+  "accept_bounded": {
+   "pearson": 0.9974045930830112,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.942857142857143,
+   "kendall_b": 0.8666666666666666,
+   "mae": 0.020865258674443735,
+   "spread": 0.9984,
+   "spread_ref": 0.9993603764557036,
+   "max_abs_dev": 0.07486468205263175
+  }
+ },
+ "seconds": 36.10799551010132
+}

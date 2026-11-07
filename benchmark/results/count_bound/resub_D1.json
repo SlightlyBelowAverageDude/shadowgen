@@ -1,0 +1,131 @@
+{
+ "log": "L1",
+ "dataset": "Sepsis",
+ "n_variants": 846,
+ "miners": {
+  "Alpha": {
+   "resub_case": 0.2940004314960976,
+   "resub_variant": 0.28406035882223296,
+   "resub_singleton": 0.2809828236010262,
+   "resub_token": 0.26588961197193384,
+   "r1": 0.27482607308076923,
+   "score": 0.2723690380000451,
+   "score_bounded": 0.2749302604453559,
+   "net_source": "cached PNML"
+  },
+  "Alpha+": {
+   "resub_case": 0.7882684318178466,
+   "resub_variant": 0.823541006847019,
+   "resub_singleton": 0.8304992792580627,
+   "resub_token": 0.8264319138562153,
+   "r1": 0.8292793973530698,
+   "score": 0.7591123412816672,
+   "score_bounded": 0.809808134131608,
+   "net_source": "cached PNML"
+  },
+  "Heuristics": {
+   "resub_case": 0.8827088717243238,
+   "resub_variant": 0.8821384493611337,
+   "resub_singleton": 0.8832397965095874,
+   "resub_token": 0.8941883128747489,
+   "r1": 0.9023046864955729,
+   "score": 0.8786502224288746,
+   "score_bounded": 0.8791692969822638,
+   "net_source": "cached PNML"
+  },
+  "Heuristics_Strict": {
+   "resub_case": 0.9253024777291234,
+   "resub_variant": 0.9225831545027351,
+   "resub_singleton": 0.9229698440910005,
+   "resub_token": 0.9331911764691081,
+   "r1": 0.9328705727450898,
+   "score": 0.9173911701766503,
+   "score_bounded": 0.9224266522586497,
+   "net_source": "cached PNML"
+  },
+  "Inductive_Strict": {
+   "resub_case": 1.0,
+   "resub_variant": 1.0,
+   "resub_singleton": 1.0,
+   "resub_token": 1.0,
+   "r1": 0.9998820771938076,
+   "score": 0.983849163589927,
+   "score_bounded": 0.9994742425835232,
+   "net_source": "cached PNML"
+  },
+  "Inductive_Infrequent": {
+   "resub_case": 0.9796445380366894,
+   "resub_variant": 0.9890983101605374,
+   "resub_singleton": 0.9898993788292576,
+   "resub_token": 0.987238567573399,
+   "r1": 0.9845565485703897,
+   "score": 0.9723248730499077,
+   "score_bounded": 0.9858191626122392,
+   "net_source": "cached PNML"
+  }
+ },
+ "criteria": {
+  "resub_case": {
+   "pearson": 0.9978449522493696,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.015396527846276625,
+   "spread": 0.7059995685039024,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.04101096553522321
+  },
+  "resub_variant": {
+   "pearson": 0.9994019728366713,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.008347669336774749,
+   "spread": 0.715939641177767,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.020166237134439213
+  },
+  "resub_singleton": {
+   "pearson": 0.999431772454578,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.006967167355064178,
+   "spread": 0.7190171763989738,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.019064889985985545
+  },
+  "resub_token": {
+   "pearson": 0.9999276039977466,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.0038368106266223334,
+   "spread": 0.7341103880280662,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.008936461108835392
+  },
+  "score": {
+   "pearson": 0.9962718563173737,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.023337091151937866,
+   "spread": 0.7114801255898819,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.07016705607140261
+  },
+  "score_bounded": {
+   "pearson": 0.9992621954089851,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.0091375348729886,
+   "spread": 0.7245439821381674,
+   "spread_ref": 0.7250560041130384,
+   "max_abs_dev": 0.02313538951330918
+  }
+ },
+ "seconds": 5.841251611709595,
+ "protocol": "one representative per variant, cached nets benchmark/models/D1; pm4py 2.7.22.2"
+}

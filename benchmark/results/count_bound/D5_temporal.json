@@ -1,0 +1,265 @@
+{
+ "log": "L5",
+ "split": "temporal",
+ "n_unseen_cases": 15618,
+ "binding_bounds": {
+  "Block Purchase Order Item": [
+   0,
+   3
+  ],
+  "Cancel Goods Receipt": [
+   0,
+   17
+  ],
+  "Cancel Invoice Receipt": [
+   0,
+   27
+  ],
+  "Cancel Subsequent Invoice": [
+   0,
+   3
+  ],
+  "Change Approval for Purchase Order": [
+   0,
+   17
+  ],
+  "Change Currency": [
+   0,
+   1
+  ],
+  "Change Delivery Indicator": [
+   0,
+   4
+  ],
+  "Change Final Invoice Indicator": [
+   0,
+   1
+  ],
+  "Change Price": [
+   0,
+   16
+  ],
+  "Change Quantity": [
+   0,
+   25
+  ],
+  "Change Rejection Indicator": [
+   0,
+   2
+  ],
+  "Change Storage Location": [
+   0,
+   4
+  ],
+  "Change payment term": [
+   0,
+   1
+  ],
+  "Create Purchase Order Item": [
+   1,
+   1
+  ],
+  "Create Purchase Requisition Item": [
+   0,
+   1
+  ],
+  "Delete Purchase Order Item": [
+   0,
+   2
+  ],
+  "Reactivate Purchase Order Item": [
+   0,
+   3
+  ],
+  "Receive Order Confirmation": [
+   0,
+   2
+  ],
+  "Record Subsequent Invoice": [
+   0,
+   3
+  ],
+  "Release Purchase Order": [
+   0,
+   5
+  ],
+  "Remove Payment Block": [
+   0,
+   18
+  ],
+  "SRM: Awaiting Approval": [
+   0,
+   6
+  ],
+  "SRM: Change was Transmitted": [
+   0,
+   1
+  ],
+  "SRM: Complete": [
+   0,
+   6
+  ],
+  "SRM: Created": [
+   0,
+   6
+  ],
+  "SRM: Deleted": [
+   0,
+   5
+  ],
+  "SRM: Document Completed": [
+   0,
+   6
+  ],
+  "SRM: Held": [
+   0,
+   1
+  ],
+  "SRM: In Transfer to Execution Syst.": [
+   0,
+   6
+  ],
+  "SRM: Incomplete": [
+   0,
+   1
+  ],
+  "SRM: Ordered": [
+   0,
+   6
+  ],
+  "SRM: Transaction Completed": [
+   0,
+   1
+  ],
+  "SRM: Transfer Failed (E.Sys.)": [
+   0,
+   1
+  ],
+  "Set Payment Block": [
+   0,
+   2
+  ],
+  "Update Order Confirmation": [
+   0,
+   3
+  ],
+  "Vendor creates debit memo": [
+   0,
+   18
+  ]
+ },
+ "unseen_breaking": {
+  "any": 0.029965424510180562,
+  "over_max": 0.029965424510180562,
+  "under_min": 0.0
+ },
+ "shadow_breaking": 0.21099999999999997,
+ "generation": {
+  "drawn": 2000,
+  "kept_per_log": [
+   1000
+  ],
+  "consumed": 1274,
+  "acceptance": 0.7849293563579278
+ },
+ "len_mean": {
+  "shadow": 19.352,
+  "bounded": 21.547,
+  "unseen": 10.347675758739916
+ },
+ "miners": {
+  "Alpha": {
+   "ref": 0.4866156205690983,
+   "ref_strict": 0.0,
+   "score": 0.39029955638814756,
+   "score_bounded": 0.3299678392372455,
+   "accept": 0.001,
+   "accept_bounded": 0.0
+  },
+  "Alpha+": {
+   "ref": 0.5802358278607531,
+   "ref_strict": 0.0,
+   "score": 0.28625222216711904,
+   "score_bounded": 0.34626776377758656,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Heuristics": {
+   "ref": 0.8305242620435052,
+   "ref_strict": 0.019464720194647202,
+   "score": 0.8403310827978963,
+   "score_bounded": 0.8428255676413439,
+   "accept": 0.004,
+   "accept_bounded": 0.0
+  },
+  "Heuristics_Strict": {
+   "ref": 0.9025547535133329,
+   "ref_strict": 0.05986682033551031,
+   "score": 0.8947754636783529,
+   "score_bounded": 0.8994264519131625,
+   "accept": 0.02,
+   "accept_bounded": 0.019
+  },
+  "Inductive_Strict": {
+   "ref": 0.9999954454157938,
+   "ref_strict": 0.9998719426302983,
+   "score": 0.995299251294053,
+   "score_bounded": 1.0,
+   "accept": 0.791,
+   "accept_bounded": 1.0
+  },
+  "Inductive_Infrequent": {
+   "ref": 0.9669023340638425,
+   "ref_strict": 0.1678191829939813,
+   "score": 0.9958436753455544,
+   "score_bounded": 0.9979201103399441,
+   "accept": 0.957,
+   "accept_bounded": 0.967
+  }
+ },
+ "criteria": {
+  "score": {
+   "pearson": 0.9652494825538698,
+   "spearman": 0.8857142857142858,
+   "spearman_ties": 0.8857142857142858,
+   "kendall_b": 0.7333333333333333,
+   "mae": 0.07358721931123477,
+   "spread": 0.7095914531784353,
+   "spread_ref": 0.5133798248466954,
+   "max_abs_dev": 0.2939836056936341
+  },
+  "score_bounded": {
+   "pearson": 0.9875741822265015,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.07284463057888939,
+   "spread": 0.6700321607627545,
+   "spread_ref": 0.5133798248466954,
+   "max_abs_dev": 0.23396806408316656
+  }
+ },
+ "criteria_strict": {
+  "accept": {
+   "pearson": 0.6587787449828358,
+   "spearman": 0.8857142857142858,
+   "spearman_ties": 0.9276336570439175,
+   "kendall_b": 0.8280786712108251,
+   "mae": 0.17573071669441243,
+   "spread": 0.957,
+   "spread_ref": 0.9998719426302983,
+   "max_abs_dev": 0.7891808170060186
+  },
+  "accept_bounded": {
+   "pearson": 0.7552360776503602,
+   "spearman": 1.0,
+   "spearman_ties": 0.9548637106322311,
+   "kendall_b": 0.9258200997725515,
+   "mae": 0.14327340248431297,
+   "spread": 1.0,
+   "spread_ref": 0.9998719426302983,
+   "max_abs_dev": 0.7991808170060186
+  }
+ },
+ "seconds": 280.1699104309082
+}

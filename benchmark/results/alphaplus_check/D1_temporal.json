@@ -1,0 +1,1002 @@
+{
+ "log": "L1",
+ "split": "temporal",
+ "n_train": 735,
+ "n_unseen_cases": 239,
+ "n_unseen_variants": 233,
+ "shadow": {
+  "n": 1000,
+  "mutated": 580,
+  "duplicates_kept": 0,
+  "truncated": 0,
+  "cap": 370,
+  "seen_in_train": 0
+ },
+ "len_train": {
+  "mean": 14.718367346938775
+ },
+ "miners": {
+  "Alpha": {
+   "score": 0.22842791790100012,
+   "reference": 0.2206965733295335,
+   "gap": 0.007731344571466625,
+   "len_shadow": {
+    "mean": 17.709,
+    "0.1": 9.0,
+    "0.25": 12.0,
+    "0.5": 15.0,
+    "0.75": 22.0,
+    "0.9": 30.0
+   },
+   "len_unseen": {
+    "mean": 16.13807531380753,
+    "0.1": 9.0,
+    "0.25": 11.0,
+    "0.5": 14.0,
+    "0.75": 17.0,
+    "0.9": 23.0
+   },
+   "miss_term": {
+    "shadow": 0.36723089429406164,
+    "unseen": 0.3722515675558419
+   },
+   "rem_term": {
+    "shadow": 0.40434118780493833,
+    "unseen": 0.40705185911462466
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 9.0,
+     "n_shadow": 97,
+     "w_unseen": 15,
+     "fit_shadow": 0.3922317802472442,
+     "fit_unseen": 0.3004978354978355
+    },
+    {
+     "lo": 9.0,
+     "hi": 11.0,
+     "n_shadow": 78,
+     "w_unseen": 25,
+     "fit_shadow": 0.2693537676710754,
+     "fit_unseen": 0.2705155955155955
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 39,
+     "w_unseen": 21,
+     "fit_shadow": 0.27188313822929217,
+     "fit_unseen": 0.25723350723350724
+    },
+    {
+     "lo": 12.0,
+     "hi": 13.0,
+     "n_shadow": 67,
+     "w_unseen": 21,
+     "fit_shadow": 0.2571431233141066,
+     "fit_unseen": 0.24301264211978496
+    },
+    {
+     "lo": 13.0,
+     "hi": 14.0,
+     "n_shadow": 83,
+     "w_unseen": 28,
+     "fit_shadow": 0.24283242792721885,
+     "fit_unseen": 0.24052194741532978
+    },
+    {
+     "lo": 14.0,
+     "hi": 15.0,
+     "n_shadow": 96,
+     "w_unseen": 18,
+     "fit_shadow": 0.22681644324869463,
+     "fit_unseen": 0.2239271485595015
+    },
+    {
+     "lo": 15.0,
+     "hi": 17.0,
+     "n_shadow": 118,
+     "w_unseen": 37,
+     "fit_shadow": 0.22304238940366736,
+     "fit_unseen": 0.2015745083276043
+    },
+    {
+     "lo": 17.0,
+     "hi": 19.0,
+     "n_shadow": 80,
+     "w_unseen": 24,
+     "fit_shadow": 0.20871556605294952,
+     "fit_unseen": 0.20439350032277667
+    },
+    {
+     "lo": 19.0,
+     "hi": 23.0,
+     "n_shadow": 122,
+     "w_unseen": 22,
+     "fit_shadow": 0.1853820228240235,
+     "fit_unseen": 0.18190913115289636
+    },
+    {
+     "lo": 23.0,
+     "hi": 128.0,
+     "n_shadow": 220,
+     "w_unseen": 28,
+     "fit_shadow": 0.1544431163520572,
+     "fit_unseen": 0.13714105593035605
+    }
+   ],
+   "reweighted_score": 0.2354536824331722,
+   "reference_on_covered": 0.2206965733295335,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": 0.0147571091036387,
+   "score_regular": 0.25901037916350816,
+   "score_mutated": 0.20628199767642524,
+   "n_transitions": 16,
+   "n_silent": 0,
+   "n_places": 6,
+   "labels_missing_from_net": [],
+   "isolated_transitions": [
+    "Admission IC",
+    "Admission NC",
+    "ER Registration",
+    "LacticAcid",
+    "Release A",
+    "Release B",
+    "Release C",
+    "Release D",
+    "Release E"
+   ],
+   "problem_activities": [
+    {
+     "activity": "IV Antibiotics",
+     "shadow": {
+      "contain": 0.838,
+      "problem": 0.20405727923627684
+     },
+     "unseen": {
+      "contain": 0.8661087866108786,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "ER Triage",
+     "shadow": {
+      "contain": 0.903,
+      "problem": 0.9833887043189369
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.99581589958159
+     }
+    },
+    {
+     "activity": "ER Sepsis Triage",
+     "shadow": {
+      "contain": 0.908,
+      "problem": 0.9900881057268722
+     },
+     "unseen": {
+      "contain": 0.99581589958159,
+      "problem": 0.9957983193277311
+     }
+    },
+    {
+     "activity": "ER Registration",
+     "shadow": {
+      "contain": 0.924,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "IV Liquid",
+     "shadow": {
+      "contain": 0.73,
+      "problem": 0.9849315068493151
+     },
+     "unseen": {
+      "contain": 0.7907949790794979,
+      "problem": 0.9682539682539683
+     }
+    },
+    {
+     "activity": "Admission IC",
+     "shadow": {
+      "contain": 0.214,
+      "problem": 0.2803738317757009
+     },
+     "unseen": {
+      "contain": 0.12133891213389121,
+      "problem": 0.1724137931034483
+     }
+    },
+    {
+     "activity": "CRP",
+     "shadow": {
+      "contain": 0.973,
+      "problem": 0.9979445015416238
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "Leucocytes",
+     "shadow": {
+      "contain": 0.977,
+      "problem": 0.9897645854657113
+     },
+     "unseen": {
+      "contain": 0.99581589958159,
+      "problem": 0.9957983193277311
+     }
+    },
+    {
+     "activity": "Return ER",
+     "shadow": {
+      "contain": 0.347,
+      "problem": 0.005763688760806916
+     },
+     "unseen": {
+      "contain": 0.25523012552301255,
+      "problem": 0.01639344262295082
+     }
+    },
+    {
+     "activity": "Release D",
+     "shadow": {
+      "contain": 0.039,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.0502092050209205,
+      "problem": 0.0
+     }
+    }
+   ]
+  },
+  "Alpha+": {
+   "score": 0.756211461749309,
+   "reference": 0.8445109765009072,
+   "gap": -0.08829951475159825,
+   "len_shadow": {
+    "mean": 17.709,
+    "0.1": 9.0,
+    "0.25": 12.0,
+    "0.5": 15.0,
+    "0.75": 22.0,
+    "0.9": 30.0
+   },
+   "len_unseen": {
+    "mean": 16.13807531380753,
+    "0.1": 9.0,
+    "0.25": 11.0,
+    "0.5": 14.0,
+    "0.75": 17.0,
+    "0.9": 23.0
+   },
+   "miss_term": {
+    "shadow": 0.07141849117753815,
+    "unseen": 0.03418869481354098
+   },
+   "rem_term": {
+    "shadow": 0.17237004707315284,
+    "unseen": 0.12130032868555175
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 9.0,
+     "n_shadow": 97,
+     "w_unseen": 15,
+     "fit_shadow": 0.4938154041432344,
+     "fit_unseen": 0.595735979706568
+    },
+    {
+     "lo": 9.0,
+     "hi": 11.0,
+     "n_shadow": 78,
+     "w_unseen": 25,
+     "fit_shadow": 0.6906058581918904,
+     "fit_unseen": 0.7422909942654524
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 39,
+     "w_unseen": 21,
+     "fit_shadow": 0.7466232411019345,
+     "fit_unseen": 0.8312442030734727
+    },
+    {
+     "lo": 12.0,
+     "hi": 13.0,
+     "n_shadow": 67,
+     "w_unseen": 21,
+     "fit_shadow": 0.7492379021368881,
+     "fit_unseen": 0.8652014510648869
+    },
+    {
+     "lo": 13.0,
+     "hi": 14.0,
+     "n_shadow": 83,
+     "w_unseen": 28,
+     "fit_shadow": 0.7964515990638262,
+     "fit_unseen": 0.8727546753527227
+    },
+    {
+     "lo": 14.0,
+     "hi": 15.0,
+     "n_shadow": 96,
+     "w_unseen": 18,
+     "fit_shadow": 0.8331216076772904,
+     "fit_unseen": 0.8952407740365407
+    },
+    {
+     "lo": 15.0,
+     "hi": 17.0,
+     "n_shadow": 118,
+     "w_unseen": 37,
+     "fit_shadow": 0.8345391173529374,
+     "fit_unseen": 0.9027018390004661
+    },
+    {
+     "lo": 17.0,
+     "hi": 19.0,
+     "n_shadow": 80,
+     "w_unseen": 24,
+     "fit_shadow": 0.7635522231320102,
+     "fit_unseen": 0.8603431531255348
+    },
+    {
+     "lo": 19.0,
+     "hi": 23.0,
+     "n_shadow": 122,
+     "w_unseen": 22,
+     "fit_shadow": 0.7991646846831142,
+     "fit_unseen": 0.8793723462845316
+    },
+    {
+     "lo": 23.0,
+     "hi": 128.0,
+     "n_shadow": 220,
+     "w_unseen": 28,
+     "fit_shadow": 0.7817446476065274,
+     "fit_unseen": 0.8847710684197401
+    }
+   ],
+   "reweighted_score": 0.7617404566116217,
+   "reference_on_covered": 0.8445109765009072,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": -0.08277051988928552,
+   "score_regular": 0.7536625010577287,
+   "score_mutated": 0.7580572608707982,
+   "n_transitions": 18,
+   "n_silent": 2,
+   "n_places": 18,
+   "labels_missing_from_net": [],
+   "isolated_transitions": [
+    "Admission IC",
+    "Admission NC",
+    "CRP",
+    "ER Registration",
+    "LacticAcid",
+    "Leucocytes"
+   ],
+   "problem_activities": [
+    {
+     "activity": "IV Antibiotics",
+     "shadow": {
+      "contain": 0.838,
+      "problem": 0.20405727923627684
+     },
+     "unseen": {
+      "contain": 0.8661087866108786,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "IV Liquid",
+     "shadow": {
+      "contain": 0.73,
+      "problem": 0.2095890410958904
+     },
+     "unseen": {
+      "contain": 0.7907949790794979,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "Release A",
+     "shadow": {
+      "contain": 0.681,
+      "problem": 0.3406754772393539
+     },
+     "unseen": {
+      "contain": 0.7489539748953975,
+      "problem": 0.2011173184357542
+     }
+    },
+    {
+     "activity": "ER Sepsis Triage",
+     "shadow": {
+      "contain": 0.908,
+      "problem": 0.08370044052863436
+     },
+     "unseen": {
+      "contain": 0.99581589958159,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "ER Triage",
+     "shadow": {
+      "contain": 0.903,
+      "problem": 0.04540420819490587
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "Release C",
+     "shadow": {
+      "contain": 0.056,
+      "problem": 0.375
+     },
+     "unseen": {
+      "contain": 0.02092050209205021,
+      "problem": 0.4
+     }
+    },
+    {
+     "activity": "Release B",
+     "shadow": {
+      "contain": 0.105,
+      "problem": 0.2571428571428571
+     },
+     "unseen": {
+      "contain": 0.07112970711297072,
+      "problem": 0.23529411764705882
+     }
+    },
+    {
+     "activity": "ER Registration",
+     "shadow": {
+      "contain": 0.924,
+      "problem": 0.003246753246753247
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "Release D",
+     "shadow": {
+      "contain": 0.039,
+      "problem": 0.15384615384615385
+     },
+     "unseen": {
+      "contain": 0.0502092050209205,
+      "problem": 0.16666666666666666
+     }
+    },
+    {
+     "activity": "Return ER",
+     "shadow": {
+      "contain": 0.347,
+      "problem": 0.005763688760806916
+     },
+     "unseen": {
+      "contain": 0.25523012552301255,
+      "problem": 0.01639344262295082
+     }
+    }
+   ]
+  },
+  "Heuristics": {
+   "score": 0.8772179785751101,
+   "reference": 0.8744356739363716,
+   "gap": 0.0027823046387385197,
+   "len_shadow": {
+    "mean": 17.709,
+    "0.1": 9.0,
+    "0.25": 12.0,
+    "0.5": 15.0,
+    "0.75": 22.0,
+    "0.9": 30.0
+   },
+   "len_unseen": {
+    "mean": 16.13807531380753,
+    "0.1": 9.0,
+    "0.25": 11.0,
+    "0.5": 14.0,
+    "0.75": 17.0,
+    "0.9": 23.0
+   },
+   "miss_term": {
+    "shadow": 0.05740273295772129,
+    "unseen": 0.058069247003207904
+   },
+   "rem_term": {
+    "shadow": 0.06537928846716856,
+    "unseen": 0.06749507906042052
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 9.0,
+     "n_shadow": 97,
+     "w_unseen": 15,
+     "fit_shadow": 0.8319641757628496,
+     "fit_unseen": 0.8498785473785474
+    },
+    {
+     "lo": 9.0,
+     "hi": 11.0,
+     "n_shadow": 78,
+     "w_unseen": 25,
+     "fit_shadow": 0.8319881334869893,
+     "fit_unseen": 0.8195599389565131
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 39,
+     "w_unseen": 21,
+     "fit_shadow": 0.828855555237941,
+     "fit_unseen": 0.8465505003393202
+    },
+    {
+     "lo": 12.0,
+     "hi": 13.0,
+     "n_shadow": 67,
+     "w_unseen": 21,
+     "fit_shadow": 0.835704392716689,
+     "fit_unseen": 0.846501993910254
+    },
+    {
+     "lo": 13.0,
+     "hi": 14.0,
+     "n_shadow": 83,
+     "w_unseen": 28,
+     "fit_shadow": 0.864998671594695,
+     "fit_unseen": 0.8674631646199261
+    },
+    {
+     "lo": 14.0,
+     "hi": 15.0,
+     "n_shadow": 96,
+     "w_unseen": 18,
+     "fit_shadow": 0.8737139268808597,
+     "fit_unseen": 0.877989670055314
+    },
+    {
+     "lo": 15.0,
+     "hi": 17.0,
+     "n_shadow": 118,
+     "w_unseen": 37,
+     "fit_shadow": 0.8831945098254034,
+     "fit_unseen": 0.8862890423675924
+    },
+    {
+     "lo": 17.0,
+     "hi": 19.0,
+     "n_shadow": 80,
+     "w_unseen": 24,
+     "fit_shadow": 0.8891680882087076,
+     "fit_unseen": 0.893731583213733
+    },
+    {
+     "lo": 19.0,
+     "hi": 23.0,
+     "n_shadow": 122,
+     "w_unseen": 22,
+     "fit_shadow": 0.9001222787540597,
+     "fit_unseen": 0.9010458713684556
+    },
+    {
+     "lo": 23.0,
+     "hi": 128.0,
+     "n_shadow": 220,
+     "w_unseen": 28,
+     "fit_shadow": 0.9203094281855411,
+     "fit_unseen": 0.9300286643489498
+    }
+   ],
+   "reweighted_score": 0.8693360814707323,
+   "reference_on_covered": 0.8744356739363716,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": -0.005099592465639291,
+   "score_regular": 0.8727656502228759,
+   "score_mutated": 0.8804420784163833,
+   "n_transitions": 74,
+   "n_silent": 58,
+   "n_places": 35,
+   "labels_missing_from_net": [],
+   "isolated_transitions": []
+  },
+  "Heuristics_Strict": {
+   "score": 0.9258060968488674,
+   "reference": 0.9288372605266217,
+   "gap": -0.003031163677754356,
+   "len_shadow": {
+    "mean": 17.709,
+    "0.1": 9.0,
+    "0.25": 12.0,
+    "0.5": 15.0,
+    "0.75": 22.0,
+    "0.9": 30.0
+   },
+   "len_unseen": {
+    "mean": 16.13807531380753,
+    "0.1": 9.0,
+    "0.25": 11.0,
+    "0.5": 14.0,
+    "0.75": 17.0,
+    "0.9": 23.0
+   },
+   "miss_term": {
+    "shadow": 0.03876277972759107,
+    "unseen": 0.03750001815507364
+   },
+   "rem_term": {
+    "shadow": 0.0354311234235416,
+    "unseen": 0.03366272131830468
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 9.0,
+     "n_shadow": 97,
+     "w_unseen": 15,
+     "fit_shadow": 0.8705719109069624,
+     "fit_unseen": 0.891950826950827
+    },
+    {
+     "lo": 9.0,
+     "hi": 11.0,
+     "n_shadow": 78,
+     "w_unseen": 25,
+     "fit_shadow": 0.8914713038663681,
+     "fit_unseen": 0.8764178593164661
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 39,
+     "w_unseen": 21,
+     "fit_shadow": 0.8928664466556512,
+     "fit_unseen": 0.9138003739507499
+    },
+    {
+     "lo": 12.0,
+     "hi": 13.0,
+     "n_shadow": 67,
+     "w_unseen": 21,
+     "fit_shadow": 0.9085642288424146,
+     "fit_unseen": 0.9225925485650887
+    },
+    {
+     "lo": 13.0,
+     "hi": 14.0,
+     "n_shadow": 83,
+     "w_unseen": 28,
+     "fit_shadow": 0.9238030770521602,
+     "fit_unseen": 0.9306150619022473
+    },
+    {
+     "lo": 14.0,
+     "hi": 15.0,
+     "n_shadow": 96,
+     "w_unseen": 18,
+     "fit_shadow": 0.9297224996069325,
+     "fit_unseen": 0.9337268041495095
+    },
+    {
+     "lo": 15.0,
+     "hi": 17.0,
+     "n_shadow": 118,
+     "w_unseen": 37,
+     "fit_shadow": 0.9379657044856606,
+     "fit_unseen": 0.9446803848917308
+    },
+    {
+     "lo": 17.0,
+     "hi": 19.0,
+     "n_shadow": 80,
+     "w_unseen": 24,
+     "fit_shadow": 0.9321752822274669,
+     "fit_unseen": 0.945946383349283
+    },
+    {
+     "lo": 19.0,
+     "hi": 23.0,
+     "n_shadow": 122,
+     "w_unseen": 22,
+     "fit_shadow": 0.9421328641800042,
+     "fit_unseen": 0.9445268473575882
+    },
+    {
+     "lo": 23.0,
+     "hi": 128.0,
+     "n_shadow": 220,
+     "w_unseen": 28,
+     "fit_shadow": 0.954577566101102,
+     "fit_unseen": 0.9585129540949303
+    }
+   ],
+   "reweighted_score": 0.921794683256602,
+   "reference_on_covered": 0.9288372605266217,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": -0.007042577270019779,
+   "score_regular": 0.9253293527641688,
+   "score_mutated": 0.9261513253239939,
+   "n_transitions": 54,
+   "n_silent": 42,
+   "n_places": 21,
+   "labels_missing_from_net": [
+    "Release B",
+    "Release C",
+    "Release D",
+    "Release E"
+   ],
+   "isolated_transitions": []
+  },
+  "Inductive_Strict": {
+   "score": 0.9761695285739406,
+   "reference": 0.9997101619904968,
+   "gap": -0.02354063341655621,
+   "len_shadow": {
+    "mean": 17.709,
+    "0.1": 9.0,
+    "0.25": 12.0,
+    "0.5": 15.0,
+    "0.75": 22.0,
+    "0.9": 30.0
+   },
+   "len_unseen": {
+    "mean": 16.13807531380753,
+    "0.1": 9.0,
+    "0.25": 11.0,
+    "0.5": 14.0,
+    "0.75": 17.0,
+    "0.9": 23.0
+   },
+   "miss_term": {
+    "shadow": 0.007257255586535455,
+    "unseen": 0.00010620249113972963
+   },
+   "rem_term": {
+    "shadow": 0.016573215839523904,
+    "unseen": 0.00018363551836355182
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 9.0,
+     "n_shadow": 97,
+     "w_unseen": 15,
+     "fit_shadow": 0.8989374404491034,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 9.0,
+     "hi": 11.0,
+     "n_shadow": 78,
+     "w_unseen": 25,
+     "fit_shadow": 0.9680247713116105,
+     "fit_unseen": 0.9988888888888888
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 39,
+     "w_unseen": 21,
+     "fit_shadow": 0.9915130442115554,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 12.0,
+     "hi": 13.0,
+     "n_shadow": 67,
+     "w_unseen": 21,
+     "fit_shadow": 0.9849826087013264,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 13.0,
+     "hi": 14.0,
+     "n_shadow": 83,
+     "w_unseen": 28,
+     "fit_shadow": 0.988352286273838,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 14.0,
+     "hi": 15.0,
+     "n_shadow": 96,
+     "w_unseen": 18,
+     "fit_shadow": 0.9918374743058817,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 15.0,
+     "hi": 17.0,
+     "n_shadow": 118,
+     "w_unseen": 37,
+     "fit_shadow": 0.991360081623131,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 17.0,
+     "hi": 19.0,
+     "n_shadow": 80,
+     "w_unseen": 24,
+     "fit_shadow": 0.981960570550838,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 19.0,
+     "hi": 23.0,
+     "n_shadow": 122,
+     "w_unseen": 22,
+     "fit_shadow": 0.9857054839511096,
+     "fit_unseen": 1.0
+    },
+    {
+     "lo": 23.0,
+     "hi": 128.0,
+     "n_shadow": 220,
+     "w_unseen": 28,
+     "fit_shadow": 0.9807308162232157,
+     "fit_unseen": 0.9985180890538033
+    }
+   ],
+   "reweighted_score": 0.9795455580264479,
+   "reference_on_covered": 0.9997101619904968,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": -0.020164603964048844,
+   "score_regular": 0.9706324000362936,
+   "score_mutated": 0.9801791733770642,
+   "n_transitions": 51,
+   "n_silent": 35,
+   "n_places": 41,
+   "labels_missing_from_net": [],
+   "isolated_transitions": []
+  },
+  "Inductive_Infrequent": {
+   "score": 0.9655402492707568,
+   "reference": 0.9908053944373146,
+   "gap": -0.025265145166557867,
+   "len_shadow": {
+    "mean": 17.709,
+    "0.1": 9.0,
+    "0.25": 12.0,
+    "0.5": 15.0,
+    "0.75": 22.0,
+    "0.9": 30.0
+   },
+   "len_unseen": {
+    "mean": 16.13807531380753,
+    "0.1": 9.0,
+    "0.25": 11.0,
+    "0.5": 14.0,
+    "0.75": 17.0,
+    "0.9": 23.0
+   },
+   "miss_term": {
+    "shadow": 0.010961438817817852,
+    "unseen": 0.002318075686920658
+   },
+   "rem_term": {
+    "shadow": 0.02349831191142531,
+    "unseen": 0.006876529875764685
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 9.0,
+     "n_shadow": 97,
+     "w_unseen": 15,
+     "fit_shadow": 0.8429711537818247,
+     "fit_unseen": 0.9632390545089203
+    },
+    {
+     "lo": 9.0,
+     "hi": 11.0,
+     "n_shadow": 78,
+     "w_unseen": 25,
+     "fit_shadow": 0.9491704046126522,
+     "fit_unseen": 0.9750164544159968
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 39,
+     "w_unseen": 21,
+     "fit_shadow": 0.967974996706885,
+     "fit_unseen": 0.9906035992992515
+    },
+    {
+     "lo": 12.0,
+     "hi": 13.0,
+     "n_shadow": 67,
+     "w_unseen": 21,
+     "fit_shadow": 0.975350455221419,
+     "fit_unseen": 0.9962027914614121
+    },
+    {
+     "lo": 13.0,
+     "hi": 14.0,
+     "n_shadow": 83,
+     "w_unseen": 28,
+     "fit_shadow": 0.9823040743019138,
+     "fit_unseen": 0.994280794755178
+    },
+    {
+     "lo": 14.0,
+     "hi": 15.0,
+     "n_shadow": 96,
+     "w_unseen": 18,
+     "fit_shadow": 0.9893321975882626,
+     "fit_unseen": 0.9948955365622033
+    },
+    {
+     "lo": 15.0,
+     "hi": 17.0,
+     "n_shadow": 118,
+     "w_unseen": 37,
+     "fit_shadow": 0.9871694935639436,
+     "fit_unseen": 0.9948008327219374
+    },
+    {
+     "lo": 17.0,
+     "hi": 19.0,
+     "n_shadow": 80,
+     "w_unseen": 24,
+     "fit_shadow": 0.9812261250006934,
+     "fit_unseen": 0.99496336996337
+    },
+    {
+     "lo": 19.0,
+     "hi": 23.0,
+     "n_shadow": 122,
+     "w_unseen": 22,
+     "fit_shadow": 0.9830380652488709,
+     "fit_unseen": 0.9945514677304627
+    },
+    {
+     "lo": 23.0,
+     "hi": 128.0,
+     "n_shadow": 220,
+     "w_unseen": 28,
+     "fit_shadow": 0.978251759482883,
+     "fit_unseen": 0.9978818569765414
+    }
+   ],
+   "reweighted_score": 0.9689905460772335,
+   "reference_on_covered": 0.9908053944373146,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": -0.021814848360081185,
+   "score_regular": 0.9553239233909467,
+   "score_mutated": 0.9729382783561366,
+   "n_transitions": 35,
+   "n_silent": 20,
+   "n_places": 27,
+   "labels_missing_from_net": [
+    "Admission IC"
+   ],
+   "isolated_transitions": []
+  }
+ },
+ "seconds": 8.647262811660767,
+ "protocol": "v2.6 generate_shadow_log, seed 42, {'num_traces': 1000, 'safe_threshold': 5, 'max_n': 6, 'successor_weighting': 'mle'}; pm4py 2.7.22.2"
+}

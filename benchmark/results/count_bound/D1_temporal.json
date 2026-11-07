@@ -1,0 +1,173 @@
+{
+ "log": "L1",
+ "split": "temporal",
+ "n_unseen_cases": 239,
+ "binding_bounds": {
+  "Admission IC": [
+   0,
+   2
+  ],
+  "Admission NC": [
+   0,
+   5
+  ],
+  "ER Registration": [
+   1,
+   1
+  ],
+  "ER Sepsis Triage": [
+   1,
+   1
+  ],
+  "ER Triage": [
+   1,
+   2
+  ],
+  "IV Antibiotics": [
+   0,
+   1
+  ],
+  "IV Liquid": [
+   0,
+   1
+  ],
+  "Release A": [
+   0,
+   1
+  ],
+  "Release B": [
+   0,
+   1
+  ],
+  "Release C": [
+   0,
+   1
+  ],
+  "Release D": [
+   0,
+   1
+  ],
+  "Release E": [
+   0,
+   1
+  ],
+  "Return ER": [
+   0,
+   1
+  ]
+ },
+ "unseen_breaking": {
+  "any": 0.0041841004184100415,
+  "over_max": 0.0,
+  "under_min": 0.0041841004184100415
+ },
+ "shadow_breaking": 0.36,
+ "generation": {
+  "drawn": 2000,
+  "kept_per_log": [
+   1000
+  ],
+  "consumed": 1543,
+  "acceptance": 0.6480881399870383
+ },
+ "len_mean": {
+  "shadow": 17.709,
+  "bounded": 16.292,
+  "unseen": 16.13807531380753
+ },
+ "miners": {
+  "Alpha": {
+   "ref": 0.22069657332953352,
+   "ref_strict": 0.0,
+   "score": 0.22842791790100012,
+   "score_bounded": 0.22648361840280853,
+   "accept": 0.001,
+   "accept_bounded": 0.0
+  },
+  "Alpha+": {
+   "ref": 0.8445109765009072,
+   "ref_strict": 0.0,
+   "score": 0.7562114617493089,
+   "score_bounded": 0.8270892648704002,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Heuristics": {
+   "ref": 0.8744356739363717,
+   "ref_strict": 0.0,
+   "score": 0.8772179785751102,
+   "score_bounded": 0.8765815946563549,
+   "accept": 0.002,
+   "accept_bounded": 0.0
+  },
+  "Heuristics_Strict": {
+   "ref": 0.9288372605266219,
+   "ref_strict": 0.0502092050209205,
+   "score": 0.9258060968488674,
+   "score_bounded": 0.9339379107687541,
+   "accept": 0.045,
+   "accept_bounded": 0.056
+  },
+  "Inductive_Strict": {
+   "ref": 0.9997101619904968,
+   "ref_strict": 0.9874476987447699,
+   "score": 0.9761695285739406,
+   "score_bounded": 0.999987012987013,
+   "accept": 0.639,
+   "accept_bounded": 0.999
+  },
+  "Inductive_Infrequent": {
+   "ref": 0.9908053944373146,
+   "ref_strict": 0.8828451882845189,
+   "score": 0.9655402492707568,
+   "score_bounded": 0.9867854650135472,
+   "accept": 0.551,
+   "accept_bounded": 0.842
+  }
+ },
+ "criteria": {
+  "score": {
+   "pearson": 0.9930959839358332,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.025108351037112005,
+   "spread": 0.7477416106729404,
+   "spread_ref": 0.7790135886609633,
+   "max_abs_dev": 0.08829951475159836
+  },
+  "score_bounded": {
+   "pearson": 0.9996059831448011,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.005792018014363506,
+   "spread": 0.7735033945842045,
+   "spread_ref": 0.7790135886609633,
+   "max_abs_dev": 0.017421711630506986
+  }
+ },
+ "criteria_strict": {
+  "accept": {
+   "pearson": 0.9996155286864793,
+   "spearman": 0.942857142857143,
+   "spearman_ties": 0.9411239481143202,
+   "kendall_b": 0.894427190999916,
+   "mae": 0.11475034867503486,
+   "spread": 0.639,
+   "spread_ref": 0.9874476987447699,
+   "max_abs_dev": 0.3484476987447699
+  },
+  "accept_bounded": {
+   "pearson": 0.9993265446024332,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 1.0,
+   "mae": 0.009698047419804748,
+   "spread": 0.999,
+   "spread_ref": 0.9874476987447699,
+   "max_abs_dev": 0.040845188284518885
+  }
+ },
+ "seconds": 17.16339635848999
+}

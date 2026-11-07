@@ -1,0 +1,98 @@
+{
+ "L1 temporal": {
+  "case_mean": 14.718367346938775,
+  "variant_mean": 16.30179445350734,
+  "singleton_mean": 16.844405594405593,
+  "singleton_share_of_cases": 0.7782312925170068,
+  "unseen_mean": 16.13807531380753,
+  "shadow_mean": 17.709,
+  "shadow_median": 15.0,
+  "unseen_median": 14.0,
+  "singleton_median": 14.0,
+  "case_median": 13.0
+ },
+ "L1 random": {
+  "case_mean": 14.614965986394559,
+  "variant_mean": 16.270315091210612,
+  "singleton_mean": 16.79749103942652,
+  "singleton_share_of_cases": 0.7591836734693878,
+  "unseen_mean": 16.203252032520325,
+  "shadow_mean": 16.562,
+  "shadow_median": 15.0,
+  "unseen_median": 14.0,
+  "singleton_median": 15.0,
+  "case_median": 13.0
+ },
+ "L2 temporal": {
+  "case_mean": 9.822394552676377,
+  "variant_mean": 19.58240946045824,
+  "singleton_mean": 21.526842584167426,
+  "singleton_share_of_cases": 0.20786835634575374,
+  "unseen_mean": 15.50909090909091,
+  "shadow_mean": 14.024,
+  "shadow_median": 13.0,
+  "unseen_median": 15.0,
+  "singleton_median": 19.0,
+  "case_median": 7.0
+ },
+ "L2 random": {
+  "case_mean": 8.735010402874977,
+  "variant_mean": 18.931398416886545,
+  "singleton_mean": 21.042998897464166,
+  "singleton_share_of_cases": 0.17155286551919804,
+  "unseen_mean": 19.6448362720403,
+  "shadow_mean": 12.056,
+  "shadow_median": 11.0,
+  "unseen_median": 17.0,
+  "singleton_median": 19.0,
+  "case_median": 6.0
+ },
+ "L3 temporal": {
+  "case_mean": 38.33460282916213,
+  "variant_mean": 47.88701287626844,
+  "singleton_mean": 49.889127464376344,
+  "singleton_share_of_cases": 0.46454479506710195,
+  "unseen_mean": 49.304666056724614,
+  "shadow_mean": 44.71,
+  "shadow_median": 42.0,
+  "unseen_median": 47.0,
+  "singleton_median": 47.0,
+  "case_median": 35.0
+ },
+ "L3 random": {
+  "case_mean": 38.143498367791075,
+  "variant_mean": 47.759027896628446,
+  "singleton_mean": 49.744986794483026,
+  "singleton_share_of_cases": 0.46350199492201666,
+  "unseen_mean": 49.84795590261828,
+  "shadow_mean": 45.435,
+  "shadow_median": 41.0,
+  "unseen_median": 48.0,
+  "singleton_median": 47.0,
+  "case_median": 35.0
+ },
+ "L5 temporal": {
+  "case_mean": 6.51656801711565,
+  "variant_mean": 29.043187485830877,
+  "singleton_mean": 35.093222846996156,
+  "singleton_share_of_cases": 0.03835131346722433,
+  "unseen_mean": 10.347675758739916,
+  "shadow_mean": 19.352,
+  "shadow_median": 9.0,
+  "unseen_median": 7.0,
+  "singleton_median": 12.0,
+  "case_median": 5.0
+ },
+ "L5 random": {
+  "case_mean": 6.361000607219672,
+  "variant_mean": 26.7878262753168,
+  "singleton_mean": 32.76223473365093,
+  "singleton_share_of_cases": 0.03931038005141505,
+  "unseen_mean": 32.096,
+  "shadow_mean": 18.816,
+  "shadow_median": 9.0,
+  "unseen_median": 12.0,
+  "singleton_median": 12.0,
+  "case_median": 5.0
+ }
+}

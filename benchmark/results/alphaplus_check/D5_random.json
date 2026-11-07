@@ -1,0 +1,528 @@
+{
+ "log": "L5",
+ "split": "random",
+ "n_train": 176213,
+ "n_unseen_cases": 2875,
+ "n_unseen_variants": 2740,
+ "shadow": {
+  "n": 1000,
+  "mutated": 232,
+  "duplicates_kept": 0,
+  "truncated": 0,
+  "cap": 1000,
+  "seen_in_train": 0
+ },
+ "len_train": {
+  "mean": 6.361000607219672
+ },
+ "miners": {
+  "Alpha": {
+   "score": 0.36654499177053196,
+   "reference": 0.2742445093875026,
+   "gap": 0.09230048238302935,
+   "len_shadow": {
+    "mean": 18.816,
+    "0.1": 4.0,
+    "0.25": 4.0,
+    "0.5": 9.0,
+    "0.75": 14.0,
+    "0.9": 44.0
+   },
+   "len_unseen": {
+    "mean": 32.096,
+    "0.1": 8.0,
+    "0.25": 9.0,
+    "0.5": 12.0,
+    "0.75": 24.0,
+    "0.9": 67.0
+   },
+   "miss_term": {
+    "shadow": 0.23911843583444753,
+    "unseen": 0.2938331194677194
+   },
+   "rem_term": {
+    "shadow": 0.3943365723950205,
+    "unseen": 0.43192237114477805
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 8.0,
+     "n_shadow": 390,
+     "w_unseen": 249,
+     "fit_shadow": 0.509138350965274,
+     "fit_unseen": 0.34970583020281815
+    },
+    {
+     "lo": 8.0,
+     "hi": 9.0,
+     "n_shadow": 81,
+     "w_unseen": 254,
+     "fit_shadow": 0.3010614828969949,
+     "fit_unseen": 0.32286095630091693
+    },
+    {
+     "lo": 9.0,
+     "hi": 10.0,
+     "n_shadow": 79,
+     "w_unseen": 296,
+     "fit_shadow": 0.31485871774870283,
+     "fit_unseen": 0.2951004352199205
+    },
+    {
+     "lo": 10.0,
+     "hi": 11.0,
+     "n_shadow": 54,
+     "w_unseen": 301,
+     "fit_shadow": 0.29860159130992464,
+     "fit_unseen": 0.2855130442387316
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 54,
+     "w_unseen": 258,
+     "fit_shadow": 0.28834595566621707,
+     "fit_unseen": 0.2681692996339479
+    },
+    {
+     "lo": 12.0,
+     "hi": 14.0,
+     "n_shadow": 78,
+     "w_unseen": 313,
+     "fit_shadow": 0.2722092535726735,
+     "fit_unseen": 0.26928050836744294
+    },
+    {
+     "lo": 14.0,
+     "hi": 19.0,
+     "n_shadow": 62,
+     "w_unseen": 337,
+     "fit_shadow": 0.28493027217133976,
+     "fit_unseen": 0.26113531112855537
+    },
+    {
+     "lo": 19.0,
+     "hi": 31.0,
+     "n_shadow": 63,
+     "w_unseen": 285,
+     "fit_shadow": 0.24908210532147967,
+     "fit_unseen": 0.2491156632383668
+    },
+    {
+     "lo": 31.0,
+     "hi": 66.59999999999991,
+     "n_shadow": 80,
+     "w_unseen": 294,
+     "fit_shadow": 0.23861954966630625,
+     "fit_unseen": 0.2437139017551754
+    },
+    {
+     "lo": 66.59999999999991,
+     "hi": 991.0,
+     "n_shadow": 59,
+     "w_unseen": 288,
+     "fit_shadow": 0.22620869963915233,
+     "fit_unseen": 0.21512307400462904
+    }
+   ],
+   "reweighted_score": 0.29503625504367204,
+   "reference_on_covered": 0.2742445093875026,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": 0.020791745656169425,
+   "score_regular": 0.3961474362529116,
+   "score_mutated": 0.26855069279437854,
+   "n_transitions": 42,
+   "n_silent": 0,
+   "n_places": 20,
+   "labels_missing_from_net": [],
+   "isolated_transitions": [
+    "Cancel Goods Receipt",
+    "Cancel Invoice Receipt",
+    "Cancel Subsequent Invoice",
+    "Change Delivery Indicator",
+    "Change Price",
+    "Change Quantity",
+    "Change Rejection Indicator",
+    "Change Storage Location",
+    "Change payment term",
+    "Clear Invoice",
+    "Reactivate Purchase Order Item",
+    "Record Goods Receipt",
+    "Record Invoice Receipt",
+    "Record Service Entry Sheet",
+    "Record Subsequent Invoice",
+    "Release Purchase Order",
+    "Remove Payment Block",
+    "SRM: Created",
+    "SRM: In Transfer to Execution Syst.",
+    "SRM: Incomplete",
+    "SRM: Transfer Failed (E.Sys.)",
+    "Set Payment Block",
+    "Update Order Confirmation"
+   ],
+   "problem_activities": [
+    {
+     "activity": "Create Purchase Order Item",
+     "shadow": {
+      "contain": 0.802,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "Vendor creates invoice",
+     "shadow": {
+      "contain": 0.726,
+      "problem": 0.7796143250688705
+     },
+     "unseen": {
+      "contain": 0.7819130434782608,
+      "problem": 0.9653024911032029
+     }
+    },
+    {
+     "activity": "Vendor creates debit memo",
+     "shadow": {
+      "contain": 0.132,
+      "problem": 0.9924242424242424
+     },
+     "unseen": {
+      "contain": 0.2111304347826087,
+      "problem": 0.9835255354200988
+     }
+    },
+    {
+     "activity": "Change Approval for Purchase Order",
+     "shadow": {
+      "contain": 0.086,
+      "problem": 0.7790697674418605
+     },
+     "unseen": {
+      "contain": 0.04417391304347826,
+      "problem": 0.968503937007874
+     }
+    },
+    {
+     "activity": "SRM: Change was Transmitted",
+     "shadow": {
+      "contain": 0.056,
+      "problem": 0.42857142857142855
+     },
+     "unseen": {
+      "contain": 0.03165217391304348,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "SRM: Created",
+     "shadow": {
+      "contain": 0.042,
+      "problem": 0.6190476190476191
+     },
+     "unseen": {
+      "contain": 0.03165217391304348,
+      "problem": 0.3956043956043956
+     }
+    },
+    {
+     "activity": "SRM: Complete",
+     "shadow": {
+      "contain": 0.042,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 0.03165217391304348,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "Receive Order Confirmation",
+     "shadow": {
+      "contain": 0.084,
+      "problem": 0.03571428571428571
+     },
+     "unseen": {
+      "contain": 0.0928695652173913,
+      "problem": 0.003745318352059925
+     }
+    },
+    {
+     "activity": "Delete Purchase Order Item",
+     "shadow": {
+      "contain": 0.019,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 0.02052173913043478,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "Create Purchase Requisition Item",
+     "shadow": {
+      "contain": 0.096,
+      "problem": 0.0
+     },
+     "unseen": {
+      "contain": 0.13634782608695653,
+      "problem": 0.01020408163265306
+     }
+    }
+   ]
+  },
+  "Alpha+": {
+   "score": 0.29137110088096835,
+   "reference": 0.36072313097510633,
+   "gap": -0.06935203009413798,
+   "len_shadow": {
+    "mean": 18.816,
+    "0.1": 4.0,
+    "0.25": 4.0,
+    "0.5": 9.0,
+    "0.75": 14.0,
+    "0.9": 44.0
+   },
+   "len_unseen": {
+    "mean": 32.096,
+    "0.1": 8.0,
+    "0.25": 9.0,
+    "0.5": 12.0,
+    "0.75": 24.0,
+    "0.9": 67.0
+   },
+   "miss_term": {
+    "shadow": 0.2731638648343609,
+    "unseen": 0.21796914927289554
+   },
+   "rem_term": {
+    "shadow": 0.43546503428467076,
+    "unseen": 0.4213077197519981
+   },
+   "len_bins": [
+    {
+     "lo": 1.0,
+     "hi": 8.0,
+     "n_shadow": 390,
+     "w_unseen": 249,
+     "fit_shadow": 0.1655499132832802,
+     "fit_unseen": 0.4001686853040634
+    },
+    {
+     "lo": 8.0,
+     "hi": 9.0,
+     "n_shadow": 81,
+     "w_unseen": 254,
+     "fit_shadow": 0.33782906142468844,
+     "fit_unseen": 0.39071619930332996
+    },
+    {
+     "lo": 9.0,
+     "hi": 10.0,
+     "n_shadow": 79,
+     "w_unseen": 296,
+     "fit_shadow": 0.3734015276861714,
+     "fit_unseen": 0.3554695373598099
+    },
+    {
+     "lo": 10.0,
+     "hi": 11.0,
+     "n_shadow": 54,
+     "w_unseen": 301,
+     "fit_shadow": 0.39077918913445253,
+     "fit_unseen": 0.3719351717820766
+    },
+    {
+     "lo": 11.0,
+     "hi": 12.0,
+     "n_shadow": 54,
+     "w_unseen": 258,
+     "fit_shadow": 0.3752030539311243,
+     "fit_unseen": 0.37023540490711326
+    },
+    {
+     "lo": 12.0,
+     "hi": 14.0,
+     "n_shadow": 78,
+     "w_unseen": 313,
+     "fit_shadow": 0.3769193425046421,
+     "fit_unseen": 0.37637048266789574
+    },
+    {
+     "lo": 14.0,
+     "hi": 19.0,
+     "n_shadow": 62,
+     "w_unseen": 337,
+     "fit_shadow": 0.4294572991453739,
+     "fit_unseen": 0.3752068797703915
+    },
+    {
+     "lo": 19.0,
+     "hi": 31.0,
+     "n_shadow": 63,
+     "w_unseen": 285,
+     "fit_shadow": 0.39073014867511313,
+     "fit_unseen": 0.33948762239229524
+    },
+    {
+     "lo": 31.0,
+     "hi": 66.59999999999991,
+     "n_shadow": 80,
+     "w_unseen": 294,
+     "fit_shadow": 0.3470346205452296,
+     "fit_unseen": 0.32435983642838134
+    },
+    {
+     "lo": 66.59999999999991,
+     "hi": 991.0,
+     "n_shadow": 59,
+     "w_unseen": 288,
+     "fit_shadow": 0.3419642142341517,
+     "fit_unseen": 0.3095084590600955
+    }
+   ],
+   "reweighted_score": 0.3570640398526258,
+   "reference_on_covered": 0.36072313097510633,
+   "covered_unseen_mass": 1.0,
+   "within_bin_gap": -0.003659091122480529,
+   "score_regular": 0.26425340801497826,
+   "score_mutated": 0.38114001519597024,
+   "n_transitions": 44,
+   "n_silent": 2,
+   "n_places": 47,
+   "labels_missing_from_net": [],
+   "isolated_transitions": [
+    "Cancel Goods Receipt",
+    "Cancel Invoice Receipt",
+    "Cancel Subsequent Invoice",
+    "Change Approval for Purchase Order",
+    "Change Delivery Indicator",
+    "Change Price",
+    "Change Quantity",
+    "Change Storage Location",
+    "Clear Invoice",
+    "Receive Order Confirmation",
+    "Record Goods Receipt",
+    "Record Invoice Receipt",
+    "Record Service Entry Sheet",
+    "Record Subsequent Invoice",
+    "Release Purchase Order",
+    "Remove Payment Block",
+    "SRM: Created",
+    "SRM: In Transfer to Execution Syst.",
+    "Set Payment Block",
+    "Update Order Confirmation",
+    "Vendor creates debit memo",
+    "Vendor creates invoice"
+   ],
+   "problem_activities": [
+    {
+     "activity": "Create Purchase Order Item",
+     "shadow": {
+      "contain": 0.802,
+      "problem": 0.8566084788029925
+     },
+     "unseen": {
+      "contain": 1.0,
+      "problem": 0.8323478260869566
+     }
+    },
+    {
+     "activity": "SRM: Change was Transmitted",
+     "shadow": {
+      "contain": 0.056,
+      "problem": 0.42857142857142855
+     },
+     "unseen": {
+      "contain": 0.03165217391304348,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "SRM: Complete",
+     "shadow": {
+      "contain": 0.042,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 0.03165217391304348,
+      "problem": 0.978021978021978
+     }
+    },
+    {
+     "activity": "SRM: Transfer Failed (E.Sys.)",
+     "shadow": null,
+     "unseen": {
+      "contain": 0.0041739130434782605,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "Reactivate Purchase Order Item",
+     "shadow": {
+      "contain": 0.015,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 0.013565217391304348,
+      "problem": 0.9487179487179487
+     }
+    },
+    {
+     "activity": "Change payment term",
+     "shadow": null,
+     "unseen": {
+      "contain": 0.001391304347826087,
+      "problem": 0.75
+     }
+    },
+    {
+     "activity": "Block Purchase Order Item",
+     "shadow": {
+      "contain": 0.006,
+      "problem": 0.16666666666666666
+     },
+     "unseen": {
+      "contain": 0.006260869565217392,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "SRM: Ordered",
+     "shadow": {
+      "contain": 0.04,
+      "problem": 0.025
+     },
+     "unseen": {
+      "contain": 0.03165217391304348,
+      "problem": 0.0
+     }
+    },
+    {
+     "activity": "Change Final Invoice Indicator",
+     "shadow": null,
+     "unseen": {
+      "contain": 0.0006956521739130435,
+      "problem": 1.0
+     }
+    },
+    {
+     "activity": "SRM: Transaction Completed",
+     "shadow": {
+      "contain": 0.001,
+      "problem": 1.0
+     },
+     "unseen": {
+      "contain": 0.00034782608695652176,
+      "problem": 1.0
+     }
+    }
+   ]
+  }
+ },
+ "seconds": 95.41907501220703,
+ "protocol": "v2.6 generate_shadow_log, seed 42, {'num_traces': 1000, 'safe_threshold': 5, 'max_n': 6, 'successor_weighting': 'mle'}; pm4py 2.7.22.2"
+}

@@ -1,0 +1,205 @@
+{
+ "log": "L3",
+ "split": "random",
+ "n_unseen_cases": 4354,
+ "binding_bounds": {
+  "A_Accepted": [
+   1,
+   1
+  ],
+  "A_Cancelled": [
+   0,
+   1
+  ],
+  "A_Complete": [
+   0,
+   1
+  ],
+  "A_Concept": [
+   1,
+   1
+  ],
+  "A_Create Application": [
+   1,
+   1
+  ],
+  "A_Denied": [
+   0,
+   2
+  ],
+  "A_Incomplete": [
+   0,
+   7
+  ],
+  "A_Pending": [
+   0,
+   1
+  ],
+  "A_Submitted": [
+   0,
+   1
+  ],
+  "A_Validating": [
+   0,
+   8
+  ],
+  "O_Accepted": [
+   0,
+   1
+  ],
+  "O_Cancelled": [
+   0,
+   10
+  ],
+  "O_Create Offer": [
+   1,
+   10
+  ],
+  "O_Created": [
+   1,
+   10
+  ],
+  "O_Refused": [
+   0,
+   8
+  ],
+  "O_Returned": [
+   0,
+   3
+  ],
+  "O_Sent (mail and online)": [
+   0,
+   10
+  ],
+  "O_Sent (online only)": [
+   0,
+   8
+  ],
+  "W_Complete application": [
+   2,
+   123
+  ],
+  "W_Handle leads": [
+   0,
+   39
+  ],
+  "W_Shortened completion ": [
+   0,
+   7
+  ]
+ },
+ "unseen_breaking": {
+  "any": 0.0009186954524575103,
+  "over_max": 0.0009186954524575103,
+  "under_min": 0.0
+ },
+ "shadow_breaking": 0.041000000000000036,
+ "generation": {
+  "drawn": 2000,
+  "kept_per_log": [
+   1000
+  ],
+  "consumed": 1046,
+  "acceptance": 0.9560229445506692
+ },
+ "len_mean": {
+  "shadow": 45.435,
+  "bounded": 45.14,
+  "unseen": 49.84795590261828
+ },
+ "miners": {
+  "Alpha": {
+   "ref": 0.4230612129312102,
+   "ref_strict": 0.0,
+   "score": 0.4218301621036882,
+   "score_bounded": 0.4237376925850902,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Alpha+": {
+   "ref": 0.8586447565937271,
+   "ref_strict": 0.04317868626550299,
+   "score": 0.8613026408367866,
+   "score_bounded": 0.8632841577568543,
+   "accept": 0.053,
+   "accept_bounded": 0.056
+  },
+  "Heuristics": {
+   "ref": 0.9535755569718138,
+   "ref_strict": 0.0,
+   "score": 0.9489197508048687,
+   "score_bounded": 0.9495318071045574,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Heuristics_Strict": {
+   "ref": 0.9559390332011088,
+   "ref_strict": 0.0,
+   "score": 0.952439260641218,
+   "score_bounded": 0.9528880279878191,
+   "accept": 0.0,
+   "accept_bounded": 0.0
+  },
+  "Inductive_Strict": {
+   "ref": 1.0,
+   "ref_strict": 1.0,
+   "score": 0.9996819631074751,
+   "score_bounded": 1.0,
+   "accept": 0.976,
+   "accept_bounded": 1.0
+  },
+  "Inductive_Infrequent": {
+   "ref": 0.9773008568600984,
+   "ref_strict": 0.09095084979329353,
+   "score": 0.9793697834401702,
+   "score_bounded": 0.9795445441123869,
+   "accept": 0.118,
+   "accept_bounded": 0.121
+  }
+ },
+ "criteria": {
+  "score": {
+   "pearson": 0.9999117393622186,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.0024052462116690523,
+   "spread": 0.577851801003787,
+   "spread_ref": 0.5769387870687899,
+   "max_abs_dev": 0.0046558061669451645
+  },
+  "score_bounded": {
+   "pearson": 0.9998950430934896,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 0.9999999999999999,
+   "mae": 0.002442387191640314,
+   "spread": 0.5762623074149098,
+   "spread_ref": 0.5769387870687899,
+   "max_abs_dev": 0.004639401163127221
+  }
+ },
+ "criteria_strict": {
+  "accept": {
+   "pearson": 0.9995468253567343,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 1.0,
+   "mae": 0.010145077323533916,
+   "spread": 0.976,
+   "spread_ref": 1.0,
+   "max_abs_dev": 0.027049150206706465
+  },
+  "accept_bounded": {
+   "pearson": 0.9995348529270707,
+   "spearman": 1.0,
+   "spearman_ties": 1.0,
+   "kendall_b": 1.0,
+   "mae": 0.007145077323533914,
+   "spread": 1.0,
+   "spread_ref": 1.0,
+   "max_abs_dev": 0.030049150206706468
+  }
+ },
+ "seconds": 282.97804522514343
+}
