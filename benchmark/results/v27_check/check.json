@@ -1,0 +1,1685 @@
+{
+ "pm4py": "2.7.22.2",
+ "known": [
+  {
+   "mode": 6,
+   "seed": 1000,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 552,
+   "scored_v27": 552,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 448,
+    "scored": 552,
+    "broken_rules": {
+     "mandatory": 416,
+     "implies": 424,
+     "balance": 443,
+     "ef": 22,
+     "count": 13,
+     "df": 4
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.6760593748820908,
+     "ref_g": 0.6760593748820909,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.7590698975761704,
+     "ref_g": 0.7590698975761703,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.6484314148803544,
+     "ref_g": 0.6484314148803543,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.8496376811594203,
+     "ref_s": 0.8496376811594203,
+     "v27_g": 0.9886187869108333,
+     "ref_g": 0.9886187869108333,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.947463768115942,
+     "ref_s": 0.947463768115942,
+     "v27_g": 0.9978018093760199,
+     "ref_g": 0.9978018093760199,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1037,
+   "v26_duplicates": 876,
+   "seen": 876,
+   "scored_reference": 0,
+   "scored_v27": 0,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 876,
+    "rule_dropped": 124,
+    "scored": 0,
+    "broken_rules": {
+     "count": 124,
+     "length": 124,
+     "balance": 124
+    },
+    "v26_duplicates_kept": 876,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1074,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 921,
+   "scored_v27": 921,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 79,
+    "scored": 921,
+    "broken_rules": {
+     "balance": 74,
+     "count": 51,
+     "length": 40
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 106
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.7495453313666917,
+     "ref_g": 0.7495453313666917,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.754709921036816,
+     "ref_g": 0.754709921036816,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.941388007513289,
+     "ref_g": 0.941388007513289,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.9270399554012709,
+     "ref_g": 0.9270399554012708,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1148,
+   "v26_duplicates": 831,
+   "seen": 831,
+   "scored_reference": 126,
+   "scored_v27": 126,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 831,
+    "rule_dropped": 43,
+    "scored": 126,
+    "broken_rules": {
+     "count": 43,
+     "length": 43,
+     "balance": 43
+    },
+    "v26_duplicates_kept": 831,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.875,
+     "ref_g": 0.875,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.2222222222222222,
+     "ref_g": 0.22222222222222224,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.8461538461538461,
+     "ref_g": 0.8461538461538459,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.0,
+     "ref_g": 0.0,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.0,
+     "ref_g": 0.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1222,
+   "v26_duplicates": 1000,
+   "seen": 1000,
+   "scored_reference": 0,
+   "scored_v27": 0,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 1000,
+    "rule_dropped": 0,
+    "scored": 0,
+    "broken_rules": {},
+    "v26_duplicates_kept": 1000,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1259,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 706,
+   "scored_v27": 706,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 294,
+    "scored": 706,
+    "broken_rules": {
+     "balance": 211,
+     "count": 55,
+     "mandatory": 47,
+     "df": 158,
+     "length": 32,
+     "implies": 47
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.6521789585283995,
+     "ref_g": 0.6521789585283995,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.5948699867963324,
+     "ref_g": 0.5948699867963325,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.5948699867963324,
+     "ref_g": 0.5948699867963325,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.7274318923854713,
+     "ref_g": 0.7274318923854713,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.5948699867963324,
+     "ref_g": 0.5948699867963325,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 0.9773371104815864,
+     "ref_s": 0.9773371104815864,
+     "v27_g": 0.9989577953179681,
+     "ref_g": 0.998957795317968,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.9773371104815864,
+     "ref_s": 0.9773371104815864,
+     "v27_g": 0.9989577953179681,
+     "ref_g": 0.998957795317968,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1296,
+   "v26_duplicates": 564,
+   "seen": 564,
+   "scored_reference": 92,
+   "scored_v27": 92,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 564,
+    "rule_dropped": 344,
+    "scored": 92,
+    "broken_rules": {
+     "count": 344,
+     "length": 344,
+     "balance": 344
+    },
+    "v26_duplicates_kept": 564,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.7222222222222222,
+     "ref_g": 0.7222222222222225,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.40789473684210525,
+     "ref_g": 0.40789473684210514,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.975,
+     "ref_g": 0.9749999999999995,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.5555555555555556,
+     "ref_g": 0.5555555555555555,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1333,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 904,
+   "scored_v27": 904,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 96,
+    "scored": 904,
+    "broken_rules": {
+     "balance": 96,
+     "count": 80,
+     "length": 29
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 150
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.8187660791953697,
+     "ref_g": 0.8187660791953697,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.7438004251547464,
+     "ref_g": 0.7438004251547464,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.9364649978656783,
+     "ref_g": 0.9364649978656784,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1370,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 0,
+   "scored_v27": 0,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 1000,
+    "scored": 0,
+    "broken_rules": {
+     "mandatory": 968,
+     "implies": 968,
+     "balance": 1000,
+     "count": 65,
+     "ef": 65,
+     "length": 35
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1407,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 0,
+   "scored_v27": 0,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 1000,
+    "scored": 0,
+    "broken_rules": {
+     "implies": 1000,
+     "balance": 1000
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": null,
+     "ref_s": null,
+     "v27_g": null,
+     "ref_g": null,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1444,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 27,
+   "scored_v27": 27,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 973,
+    "scored": 27,
+    "broken_rules": {
+     "mandatory": 813,
+     "implies": 820,
+     "balance": 671,
+     "count": 59,
+     "ef": 58,
+     "length": 2,
+     "df": 4
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.7712637995532732,
+     "ref_g": 0.7712637995532733,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.6587552320615201,
+     "ref_g": 0.6587552320615202,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.9016878747035906,
+     "ref_g": 0.9016878747035905,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.9352073129280695,
+     "ref_g": 0.9352073129280695,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  },
+  {
+   "mode": 6,
+   "seed": 1481,
+   "v26_duplicates": 0,
+   "seen": 0,
+   "scored_reference": 776,
+   "scored_v27": 776,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 224,
+    "scored": 776,
+    "broken_rules": {
+     "df": 171,
+     "implies": 71,
+     "balance": 147,
+     "count": 37,
+     "ef": 13,
+     "length": 4
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 100
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.6841817010309279,
+     "ref_g": 0.6841817010309278,
+     "equal": true
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.5807143189714066,
+     "ref_g": 0.5807143189714066,
+     "equal": true
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.6866171992972326,
+     "ref_g": 0.6866171992972326,
+     "equal": true
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.630735685830156,
+     "ref_g": 0.6307356858301559,
+     "equal": true
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.0,
+     "ref_s": 0.0,
+     "v27_g": 0.2217568728522337,
+     "ref_g": 0.22175687285223367,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "ref_s": 1.0,
+     "v27_g": 1.0,
+     "ref_g": 1.0,
+     "equal": true
+    }
+   ]
+  }
+ ],
+ "real": [
+  {
+   "key": "D1",
+   "rep": 0,
+   "drawn": 1000,
+   "seen": 0,
+   "v26_duplicates": 0,
+   "scored_reference": 624,
+   "scored_v27": 624,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 376,
+    "scored": 624,
+    "broken_rules": {
+     "implies": 197,
+     "balance": 374,
+     "mandatory": 113,
+     "count": 182,
+     "ef": 177,
+     "df": 6
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 370
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.6372074807444995,
+     "stored_g": 0.6044925456381468,
+     "diff_s": 0.0,
+     "diff_g": 0.032714935106352705
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.26595883776618034,
+     "stored_g": 0.26595883776618034,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.8264002007206145,
+     "stored_g": 0.8264002007206145,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.920655878755289,
+     "stored_g": 0.920655878755289,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.05128205128205128,
+     "stored_s": 0.05128205128205128,
+     "v27_g": 0.9353433448077737,
+     "stored_g": 0.9353433448077737,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.8910256410256411,
+     "stored_s": 0.8910256410256411,
+     "v27_g": 0.990878958203211,
+     "stored_g": 0.990878958203211,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    }
+   ]
+  },
+  {
+   "key": "D1",
+   "rep": 1,
+   "drawn": 1000,
+   "seen": 0,
+   "v26_duplicates": 0,
+   "scored_reference": 644,
+   "scored_v27": 644,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 356,
+    "scored": 644,
+    "broken_rules": {
+     "count": 213,
+     "ef": 214,
+     "balance": 352,
+     "implies": 155,
+     "mandatory": 83,
+     "df": 4
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 370
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.6722524524471589,
+     "stored_g": 0.683451191778092,
+     "diff_s": 0.0,
+     "diff_g": 0.011198739330933072
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.29443662625348405,
+     "stored_g": 0.29443662625348405,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.8344554371744651,
+     "stored_g": 0.8344554371744651,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.8734570285371296,
+     "stored_g": 0.8734570285371296,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.03571428571428571,
+     "stored_s": 0.03571428571428571,
+     "v27_g": 0.9327358764976242,
+     "stored_g": 0.932735876497624,
+     "diff_s": 0.0,
+     "diff_g": 2.220446049250313e-16
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.7282608695652174,
+     "stored_s": 0.7282608695652174,
+     "v27_g": 0.9831787801586254,
+     "stored_g": 0.9831636524801407,
+     "diff_s": 0.0,
+     "diff_g": 1.5127678484661011e-05
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    }
+   ]
+  },
+  {
+   "key": "D1",
+   "rep": 2,
+   "drawn": 1000,
+   "seen": 0,
+   "v26_duplicates": 0,
+   "scored_reference": 631,
+   "scored_v27": 631,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 369,
+    "scored": 631,
+    "broken_rules": {
+     "count": 204,
+     "ef": 203,
+     "balance": 367,
+     "implies": 181,
+     "mandatory": 111,
+     "df": 2
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 370
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.6182689799592614,
+     "stored_g": 0.6273511079911137,
+     "diff_s": 0.0,
+     "diff_g": 0.009082128031852266
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.2637261138032163,
+     "stored_g": 0.2637261138032163,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.8085318847508357,
+     "stored_g": 0.8085318847508357,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.9060483185385079,
+     "stored_g": 0.9060483185385079,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.039619651347068144,
+     "stored_s": 0.039619651347068144,
+     "v27_g": 0.9343053005707157,
+     "stored_g": 0.9343053005707159,
+     "diff_s": 0.0,
+     "diff_g": 2.220446049250313e-16
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.8652931854199684,
+     "stored_s": 0.8652931854199684,
+     "v27_g": 0.988514989380546,
+     "stored_g": 0.9885149893805458,
+     "diff_s": 0.0,
+     "diff_g": 2.220446049250313e-16
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    }
+   ]
+  },
+  {
+   "key": "D2",
+   "rep": 0,
+   "drawn": 1000,
+   "seen": 0,
+   "v26_duplicates": 0,
+   "scored_reference": 992,
+   "scored_v27": 992,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 8,
+    "scored": 992,
+    "broken_rules": {
+     "ef": 6,
+     "df": 5
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 246
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.601986586698375,
+     "stored_g": 0.6177754840804637,
+     "diff_s": 0.0,
+     "diff_g": 0.015788897382088662
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.2567902646630011,
+     "stored_g": 0.2567902646630011,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.6283730903291253,
+     "stored_g": 0.6283730903291253,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.8608870967741935,
+     "stored_s": 0.8608870967741935,
+     "v27_g": 0.9948535660451884,
+     "stored_g": 0.9948535660451884,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.9485887096774194,
+     "stored_s": 0.9485887096774194,
+     "v27_g": 0.9978752051313379,
+     "stored_g": 0.9978752051313379,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.8608870967741935,
+     "stored_s": 0.8608870967741935,
+     "v27_g": 0.9926086607101715,
+     "stored_g": 0.9926086607101716,
+     "diff_s": 0.0,
+     "diff_g": 1.1102230246251565e-16
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    }
+   ]
+  },
+  {
+   "key": "D2",
+   "rep": 1,
+   "drawn": 1000,
+   "seen": 0,
+   "v26_duplicates": 0,
+   "scored_reference": 990,
+   "scored_v27": 990,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 10,
+    "scored": 990,
+    "broken_rules": {
+     "df": 8,
+     "ef": 5,
+     "count": 1,
+     "balance": 1
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 246
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.6210514247974739,
+     "stored_g": 0.5999066630560559,
+     "diff_s": 0.0,
+     "diff_g": 0.021144761741417994
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.00202020202020202,
+     "stored_s": 0.00202020202020202,
+     "v27_g": 0.26071187818862285,
+     "stored_g": 0.26071187818862285,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.6260917285165398,
+     "stored_g": 0.6260917285165398,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.8454545454545455,
+     "stored_s": 0.8454545454545455,
+     "v27_g": 0.9941255529359893,
+     "stored_g": 0.9941255529359893,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.9535353535353536,
+     "stored_s": 0.9535353535353536,
+     "v27_g": 0.9979138299668286,
+     "stored_g": 0.9979138299668288,
+     "diff_s": 0.0,
+     "diff_g": 1.1102230246251565e-16
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.8434343434343434,
+     "stored_s": 0.8434343434343434,
+     "v27_g": 0.990829350062717,
+     "stored_g": 0.990829350062717,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    }
+   ]
+  },
+  {
+   "key": "D2",
+   "rep": 2,
+   "drawn": 1000,
+   "seen": 0,
+   "v26_duplicates": 0,
+   "scored_reference": 992,
+   "scored_v27": 992,
+   "traces_identical": true,
+   "info": {
+    "drawn": 1000,
+    "seen_dropped": 0,
+    "rule_dropped": 8,
+    "scored": 992,
+    "broken_rules": {
+     "df": 6,
+     "ef": 5,
+     "count": 1,
+     "balance": 1
+    },
+    "v26_duplicates_kept": 0,
+    "truncated": 0,
+    "max_trace_length_used": 246
+   },
+   "models": [
+    {
+     "name": "Trace_Filtered",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.5927883059069253,
+     "stored_g": 0.6006102317249323,
+     "diff_s": 0.0,
+     "diff_g": 0.007821925818007003
+    },
+    {
+     "name": "Alpha",
+     "v27_s": 0.0030241935483870967,
+     "stored_s": 0.0030241935483870967,
+     "v27_g": 0.25313591192692947,
+     "stored_g": 0.2531359119269294,
+     "diff_s": 0.0,
+     "diff_g": 5.551115123125783e-17
+    },
+    {
+     "name": "Alpha+",
+     "v27_s": 0.0,
+     "stored_s": 0.0,
+     "v27_g": 0.6342041757063169,
+     "stored_g": 0.6342041757063168,
+     "diff_s": 0.0,
+     "diff_g": 1.1102230246251565e-16
+    },
+    {
+     "name": "Heuristics",
+     "v27_s": 0.8397177419354839,
+     "stored_s": 0.8397177419354839,
+     "v27_g": 0.9935360443158998,
+     "stored_g": 0.9935360443158998,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Heuristics_Strict",
+     "v27_s": 0.9495967741935484,
+     "stored_s": 0.9495967741935484,
+     "v27_g": 0.9979234504283243,
+     "stored_g": 0.9979234504283243,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Strict",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Inductive_Infrequent",
+     "v27_s": 0.8397177419354839,
+     "stored_s": 0.8397177419354839,
+     "v27_g": 0.9906032382831625,
+     "stored_g": 0.9906032382831625,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    },
+    {
+     "name": "Flower",
+     "v27_s": 1.0,
+     "stored_s": 1.0,
+     "v27_g": 1.0,
+     "stored_g": 1.0,
+     "diff_s": 0.0,
+     "diff_g": 0.0
+    }
+   ]
+  }
+ ],
+ "seconds": 161.68468856811523
+}
