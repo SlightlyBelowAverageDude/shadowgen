@@ -1,0 +1,131 @@
+{
+ "dataset": "BPI2013_Incidents",
+ "levels": {
+  "0.00": {
+   "n_shadow": 1000,
+   "n_unseen": 397,
+   "shadow_multiset_valid": 0.896,
+   "shadow_multiset_absent_from_training": 0.119,
+   "unseen_multiset_absent_from_training": 0.19395465994962216,
+   "shadow_mean_len": 12.056,
+   "unseen_mean_len": 19.6448362720403,
+   "nets": {
+    "Alpha+": {
+     "shadowgen": 0.6308372793164587,
+     "shadowgen_strict": 0.0,
+     "shadowgen_stored": 0.6308372793164588,
+     "shadowgen_strict_stored": 0.0,
+     "valid_graded": 0.6061017058378787,
+     "valid_strict": 0.0,
+     "invalid_graded": 0.8439437585165346,
+     "invalid_strict": 0.0,
+     "unseen_graded": 0.8079760699849069,
+     "unseen_strict": 0.0,
+     "unseen_graded_stored": 0.8079760699849068
+    },
+    "Heuristics_Strict": {
+     "shadowgen": 0.997859945425771,
+     "shadowgen_strict": 0.948,
+     "shadowgen_stored": 0.9978599454257712,
+     "shadowgen_strict_stored": 0.948,
+     "valid_graded": 0.9984261515374955,
+     "valid_strict": 0.9631696428571429,
+     "invalid_graded": 0.9929818620016844,
+     "invalid_strict": 0.8173076923076923,
+     "unseen_graded": 0.9975555077767563,
+     "unseen_strict": 0.9269521410579346,
+     "unseen_graded_stored": 0.9975555077767563
+    },
+    "Inductive_Strict": {
+     "shadowgen": 0.999876223060094,
+     "shadowgen_strict": 0.994,
+     "shadowgen_stored": 0.999876223060094,
+     "shadowgen_strict_stored": 0.994,
+     "valid_graded": 1.0,
+     "valid_strict": 1.0,
+     "invalid_graded": 0.9988098371162887,
+     "invalid_strict": 0.9423076923076923,
+     "unseen_graded": 1.0,
+     "unseen_strict": 1.0,
+     "unseen_graded_stored": 1.0
+    },
+    "Inductive_Infrequent": {
+     "shadowgen": 0.9922725874647701,
+     "shadowgen_strict": 0.854,
+     "shadowgen_stored": 0.9922725874647701,
+     "shadowgen_strict_stored": 0.854,
+     "valid_graded": 0.9947221679238248,
+     "valid_strict": 0.9129464285714286,
+     "invalid_graded": 0.971168509663682,
+     "invalid_strict": 0.34615384615384615,
+     "unseen_graded": 0.9865739364137059,
+     "unseen_strict": 0.7380352644836272,
+     "unseen_graded_stored": 0.9865739364137059
+    }
+   }
+  },
+  "1.00": {
+   "n_shadow": 1000,
+   "n_unseen": 921,
+   "shadow_multiset_valid": 0.462,
+   "shadow_multiset_absent_from_training": 0.6,
+   "unseen_multiset_absent_from_training": 0.10423452768729642,
+   "shadow_mean_len": 9.636,
+   "unseen_mean_len": 14.273615635179153,
+   "nets": {
+    "Alpha+": {
+     "shadowgen": 0.44559783410277004,
+     "shadowgen_strict": 0.0,
+     "shadowgen_stored": 0.44559783410277,
+     "shadowgen_strict_stored": 0.0,
+     "valid_graded": 0.4417817842330829,
+     "valid_strict": 0.0,
+     "invalid_graded": 0.44887481373064253,
+     "invalid_strict": 0.0,
+     "unseen_graded": 0.5203727433413828,
+     "unseen_strict": 0.0,
+     "unseen_graded_stored": 0.5203727433413828
+    },
+    "Heuristics_Strict": {
+     "shadowgen": 1.0,
+     "shadowgen_strict": 1.0,
+     "shadowgen_stored": 1.0,
+     "shadowgen_strict_stored": 1.0,
+     "valid_graded": 1.0,
+     "valid_strict": 1.0,
+     "invalid_graded": 1.0,
+     "invalid_strict": 1.0,
+     "unseen_graded": 1.0,
+     "unseen_strict": 1.0,
+     "unseen_graded_stored": 1.0
+    },
+    "Inductive_Strict": {
+     "shadowgen": 0.9713922619047619,
+     "shadowgen_strict": 0.883,
+     "shadowgen_stored": 0.9713922619047619,
+     "shadowgen_strict_stored": 0.883,
+     "valid_graded": 0.9977272727272728,
+     "valid_strict": 0.987012987012987,
+     "invalid_graded": 0.9487774384846875,
+     "invalid_strict": 0.7936802973977695,
+     "unseen_graded": 0.9993904483617551,
+     "unseen_strict": 0.995656894679696,
+     "unseen_graded_stored": 0.9993904483617551
+    },
+    "Inductive_Infrequent": {
+     "shadowgen": 0.9178439675062944,
+     "shadowgen_strict": 0.641,
+     "shadowgen_stored": 0.9178439675062944,
+     "shadowgen_strict_stored": 0.641,
+     "valid_graded": 0.9927308802308802,
+     "valid_strict": 0.9567099567099567,
+     "invalid_graded": 0.8535358751665942,
+     "invalid_strict": 0.36988847583643125,
+     "unseen_graded": 0.9991278243110491,
+     "unseen_strict": 0.99457111834962,
+     "unseen_graded_stored": 0.9991278243110491
+    }
+   }
+  }
+ }
+}

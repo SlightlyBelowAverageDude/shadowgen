@@ -1,0 +1,131 @@
+{
+ "dataset": "Sepsis",
+ "levels": {
+  "0.00": {
+   "n_shadow": 1000,
+   "n_unseen": 246,
+   "shadow_multiset_valid": 0.312,
+   "shadow_multiset_absent_from_training": 0.721,
+   "unseen_multiset_absent_from_training": 0.43089430894308944,
+   "shadow_mean_len": 16.562,
+   "unseen_mean_len": 16.203252032520325,
+   "nets": {
+    "Alpha+": {
+     "shadowgen": 0.7467913530501396,
+     "shadowgen_strict": 0.0,
+     "shadowgen_stored": 0.7467913530501398,
+     "shadowgen_strict_stored": 0.0,
+     "valid_graded": 0.8650539035023264,
+     "valid_strict": 0.0,
+     "invalid_graded": 0.6931606615660085,
+     "invalid_strict": 0.0,
+     "unseen_graded": 0.8227904669996293,
+     "unseen_strict": 0.0,
+     "unseen_graded_stored": 0.8227904669996294
+    },
+    "Heuristics_Strict": {
+     "shadowgen": 0.9219547724182917,
+     "shadowgen_strict": 0.041,
+     "shadowgen_stored": 0.9219547724182916,
+     "shadowgen_strict_stored": 0.041,
+     "valid_graded": 0.926420268074518,
+     "valid_strict": 0.04807692307692308,
+     "invalid_graded": 0.9199297220625607,
+     "invalid_strict": 0.0377906976744186,
+     "unseen_graded": 0.9318085307478913,
+     "unseen_strict": 0.04065040650406504,
+     "unseen_graded_stored": 0.9318085307478912
+    },
+    "Inductive_Strict": {
+     "shadowgen": 0.9820223414061575,
+     "shadowgen_strict": 0.704,
+     "shadowgen_stored": 0.9820223414061574,
+     "shadowgen_strict_stored": 0.704,
+     "valid_graded": 1.0,
+     "valid_strict": 1.0,
+     "invalid_graded": 0.9738696822763917,
+     "invalid_strict": 0.5697674418604651,
+     "unseen_graded": 0.9999589389833292,
+     "unseen_strict": 0.9959349593495935,
+     "unseen_graded_stored": 0.9999589389833292
+    },
+    "Inductive_Infrequent": {
+     "shadowgen": 0.9685631493068156,
+     "shadowgen_strict": 0.606,
+     "shadowgen_stored": 0.9685631493068156,
+     "shadowgen_strict_stored": 0.606,
+     "valid_graded": 0.9916065196644894,
+     "valid_strict": 0.9166666666666666,
+     "invalid_graded": 0.9581132487957774,
+     "invalid_strict": 0.46511627906976744,
+     "unseen_graded": 0.9901887285229294,
+     "unseen_strict": 0.8821138211382114,
+     "unseen_graded_stored": 0.9901887285229294
+    }
+   }
+  },
+  "1.00": {
+   "n_shadow": 1000,
+   "n_unseen": 301,
+   "shadow_multiset_valid": 0.002,
+   "shadow_multiset_absent_from_training": 0.999,
+   "unseen_multiset_absent_from_training": 0.3122923588039867,
+   "shadow_mean_len": 13.152,
+   "unseen_mean_len": 14.574750830564785,
+   "nets": {
+    "Alpha+": {
+     "shadowgen": 0.4371465488180205,
+     "shadowgen_strict": 0.0,
+     "shadowgen_stored": 0.4371465488180205,
+     "shadowgen_strict_stored": 0.0,
+     "valid_graded": 0.5538461538461539,
+     "valid_strict": 0.0,
+     "invalid_graded": 0.43691268187407634,
+     "invalid_strict": 0.0,
+     "unseen_graded": 0.6239452199838373,
+     "unseen_strict": 0.0,
+     "unseen_graded_stored": 0.6239452199838373
+    },
+    "Heuristics_Strict": {
+     "shadowgen": 0.8387284289711502,
+     "shadowgen_strict": 0.201,
+     "shadowgen_stored": 0.8387284289711501,
+     "shadowgen_strict_stored": 0.201,
+     "valid_graded": 0.9090909090909091,
+     "valid_strict": 0.0,
+     "invalid_graded": 0.8385874219969621,
+     "invalid_strict": 0.20140280561122245,
+     "unseen_graded": 0.8169179037268639,
+     "unseen_strict": 0.006644518272425249,
+     "unseen_graded_stored": 0.8169179037268639
+    },
+    "Inductive_Strict": {
+     "shadowgen": 0.8512306220997315,
+     "shadowgen_strict": 0.034,
+     "shadowgen_stored": 0.8512306220997315,
+     "shadowgen_strict_stored": 0.034,
+     "valid_graded": 1.0,
+     "valid_strict": 1.0,
+     "invalid_graded": 0.8509324870738794,
+     "invalid_strict": 0.03206412825651302,
+     "unseen_graded": 0.9997285153904654,
+     "unseen_strict": 0.9933554817275747,
+     "unseen_graded_stored": 0.9997285153904655
+    },
+    "Inductive_Infrequent": {
+     "shadowgen": 0.7797954099181271,
+     "shadowgen_strict": 0.009,
+     "shadowgen_stored": 0.7797954099181271,
+     "shadowgen_strict_stored": 0.009,
+     "valid_graded": 0.7408928571428572,
+     "valid_strict": 0.0,
+     "invalid_graded": 0.7798733709457328,
+     "invalid_strict": 0.009018036072144289,
+     "unseen_graded": 0.9640275219626716,
+     "unseen_strict": 0.717607973421927,
+     "unseen_graded_stored": 0.9640275219626716
+    }
+   }
+  }
+ }
+}
